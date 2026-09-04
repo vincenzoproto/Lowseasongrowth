@@ -1,9 +1,9 @@
 {
   "sections": {
-    "low_season_growth_v3": {
+    "low_season_growth_v4": {
       "type": "low-season-growth-home",
       "settings": {}
     }
   },
-  "order": ["low_season_growth_v3"]
+  "order": ["low_season_growth_v4"]
 }
