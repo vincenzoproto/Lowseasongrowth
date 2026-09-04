@@ -2,199 +2,144 @@
 {% assign sprint = all_products['b-b-low-season-booking-sprint'] %}
 {% assign partner = all_products['b-b-low-season-growth-partner'] %}
 
-<section class="lsg4" aria-label="Low Season Growth">
-  <div class="lsg4-hero">
-    <div class="lsg4-wrap lsg4-hero-grid">
-      <div class="lsg4-hero-copy">
-        <p class="lsg4-kicker">LOW-SEASON STRATEGY FOR INDEPENDENT HOSPITALITY</p>
+<section class="lsg5" aria-label="Low Season Growth">
+  <div class="lsg5-hero">
+    <div class="lsg5-hero-copy">
+      <div class="lsg5-copy-inner">
+        <p class="lsg5-kicker">LOW-SEASON STRATEGY FOR INDEPENDENT PROPERTIES</p>
         <h1>Turn quiet months into a reason to book.</h1>
-        <p class="lsg4-lead">Property-specific consulting for independent B&amp;Bs and guest houses that want clearer positioning, stronger seasonal offers and more direct-booking opportunities.</p>
-        <div class="lsg4-actions">
-          <a href="#packages" class="lsg4-btn lsg4-btn-primary">Compare packages</a>
-          <a href="#process" class="lsg4-btn lsg4-btn-secondary">How it works</a>
+        <p class="lsg5-lead">Practical consulting for independent B&amp;Bs and small hospitality properties that want clearer positioning, stronger seasonal offers and more direct-booking opportunities.</p>
+        <div class="lsg5-actions">
+          <a href="#packages" class="lsg5-btn lsg5-btn-primary">Explore packages</a>
+          <a href="#process" class="lsg5-btn lsg5-btn-secondary">How it works</a>
         </div>
-        <div class="lsg4-trust" aria-label="Service highlights">
-          <span>One-time payment</span>
-          <span>Personalized for your property</span>
-          <span>English or Italian</span>
+        <div class="lsg5-trust">
+          <span>One-time payment</span><span>Property-specific</span><span>English or Italian</span>
         </div>
       </div>
-      <figure class="lsg4-hero-media">
-        <div class="lsg4-hero-frame">
-          <img src="https://cdn.shopify.com/s/files/1/1059/8488/5078/files/low-season-growth-hero.png?v=1788474201" alt="Low Season Growth strategy illustration" width="1672" height="941" fetchpriority="high">
-        </div>
-        <figcaption>From quieter dates to a clearer commercial plan.</figcaption>
-      </figure>
+    </div>
+    <div class="lsg5-hero-image" role="img" aria-label="Independent hospitality property overlooking the sea in a quiet season"></div>
+  </div>
+
+  <div class="lsg5-proof">
+    <div class="lsg5-wrap lsg5-proof-grid">
+      <div><b>01</b><span>More direct-booking opportunities</span></div>
+      <div><b>02</b><span>A stronger low-season offer</span></div>
+      <div><b>03</b><span>A clearer commercial direction</span></div>
+      <div><b>04</b><span>Built for independent hospitality</span></div>
     </div>
   </div>
 
-  <div class="lsg4-proof">
-    <div class="lsg4-wrap lsg4-proof-grid">
-      <span>Property-specific analysis</span>
-      <span>Commercial focus, not generic content</span>
-      <span>Clear scope, price and delivery</span>
-    </div>
-  </div>
+  <div class="lsg5-section" id="packages">
+    <div class="lsg5-wrap">
+      <header class="lsg5-section-head">
+        <p class="lsg5-kicker">OUR PACKAGES</p>
+        <h2>Choose the support your property needs.</h2>
+        <p>Three focused, one-time services. Clear scope, clear pricing and work built around your property.</p>
+      </header>
 
-  <div class="lsg4-section" id="packages">
-    <div class="lsg4-wrap">
-      <div class="lsg4-head">
-        <p class="lsg4-kicker">PACKAGES</p>
-        <h2>Choose the level of support you actually need.</h2>
-        <p>Three focused, one-time services. Start with diagnosis, build a complete low-season plan, or add hands-on strategic support.</p>
-      </div>
-
-      <div class="lsg4-packages">
-        <article class="lsg4-card lsg4-card-audit">
-          <div class="lsg4-card-visual">
-            {% if audit.featured_image %}
-              <img src="{{ audit.featured_image | image_url: width: 1200 }}" alt="Opportunity Audit" loading="lazy" width="1200" height="900">
-            {% endif %}
-            <span class="lsg4-visual-tag">DIAGNOSE</span>
-          </div>
-          <div class="lsg4-card-body">
-            <div class="lsg4-card-top">
-              <h3>Opportunity Audit</h3>
-              <p class="lsg4-price">{{ audit.price | money }}</p>
-            </div>
-            <p class="lsg4-card-copy">Find the positioning, booking-journey and low-season opportunities worth prioritizing first.</p>
-            <ul>
-              <li>Website &amp; booking-journey review</li>
-              <li>Competitor &amp; positioning analysis</li>
-              <li>Five prioritized opportunities</li>
-            </ul>
-            <div class="lsg4-card-footer">
-              <span>PDF strategy · 5 business days*</span>
-              <a href="{{ audit.url }}" class="lsg4-btn lsg4-btn-outline">View Audit</a>
-            </div>
+      <div class="lsg5-cards">
+        <article class="lsg5-card">
+          <a href="{{ audit.url }}" class="lsg5-card-image" aria-label="View Opportunity Audit">
+            {% if audit.featured_image %}<img src="{{ audit.featured_image | image_url: width: 1200 }}" alt="Opportunity Audit hospitality planning" width="1200" height="405" loading="lazy">{% endif %}
+          </a>
+          <div class="lsg5-card-body">
+            <p class="lsg5-label">DIAGNOSE</p>
+            <h3>Opportunity Audit</h3>
+            <p class="lsg5-card-copy">A focused diagnostic to identify low-season positioning gaps and the opportunities worth prioritizing first.</p>
+            <ul><li>Website &amp; booking-journey review</li><li>Low-season positioning analysis</li><li>Five actionable priorities</li></ul>
+            <div class="lsg5-card-bottom"><strong>{{ audit.price | money }}</strong><a href="{{ audit.url }}" class="lsg5-btn lsg5-btn-outline">Get Opportunity Audit</a></div>
           </div>
         </article>
 
-        <article class="lsg4-card lsg4-card-featured lsg4-card-sprint">
-          <div class="lsg4-recommended">RECOMMENDED</div>
-          <div class="lsg4-card-visual">
-            {% if sprint.featured_image %}
-              <img src="{{ sprint.featured_image | image_url: width: 1200 }}" alt="Booking Sprint" loading="lazy" width="1200" height="900">
-            {% endif %}
-            <span class="lsg4-visual-tag">BUILD + ACTIVATE</span>
-          </div>
-          <div class="lsg4-card-body">
-            <div class="lsg4-card-top">
-              <h3>Booking Sprint</h3>
-              <p class="lsg4-price">{{ sprint.price | money }}</p>
-            </div>
-            <p class="lsg4-card-copy">Build a tailored seasonal offer, a clear 30-day action plan and ready-to-use activation ideas.</p>
-            <ul>
-              <li>Personalized seasonal offer</li>
-              <li>30-day action plan &amp; content concepts</li>
-              <li>45-min strategy call + 14-day follow-up</li>
-            </ul>
-            <div class="lsg4-card-footer">
-              <span>Strategy + call · 5 business days*</span>
-              <a href="{{ sprint.url }}" class="lsg4-btn lsg4-btn-primary">Choose Sprint</a>
-            </div>
+        <article class="lsg5-card lsg5-card-featured">
+          <div class="lsg5-popular">MOST POPULAR</div>
+          <a href="{{ sprint.url }}" class="lsg5-card-image" aria-label="View Booking Sprint">
+            {% if sprint.featured_image %}<img src="{{ sprint.featured_image | image_url: width: 1200 }}" alt="Booking Sprint independent B&B strategy" width="1200" height="403" loading="lazy">{% endif %}
+          </a>
+          <div class="lsg5-card-body">
+            <p class="lsg5-label">BUILD + ACTIVATE</p>
+            <h3>Booking Sprint</h3>
+            <p class="lsg5-card-copy">A practical offer and messaging sprint to help your property turn quiet dates into a clearer booking proposition.</p>
+            <ul><li>Tailored seasonal offer strategy</li><li>30-day action plan &amp; content guidance</li><li>Strategy call + 14-day follow-up</li></ul>
+            <div class="lsg5-card-bottom"><strong>{{ sprint.price | money }}</strong><a href="{{ sprint.url }}" class="lsg5-btn lsg5-btn-primary">Get Booking Sprint</a></div>
           </div>
         </article>
 
-        <article class="lsg4-card lsg4-card-partner">
-          <div class="lsg4-card-visual">
-            {% if partner.featured_image %}
-              <img src="{{ partner.featured_image | image_url: width: 1200 }}" alt="Growth Partner" loading="lazy" width="1200" height="900">
-            {% endif %}
-            <span class="lsg4-visual-tag">IMPLEMENT</span>
-          </div>
-          <div class="lsg4-card-body">
-            <div class="lsg4-card-top">
-              <h3>Growth Partner</h3>
-              <p class="lsg4-price">{{ partner.price | money }}</p>
-            </div>
-            <p class="lsg4-card-copy">Higher-touch strategic support for properties that want help moving from plan to execution.</p>
-            <ul>
-              <li>Advanced strategy &amp; roadmap</li>
-              <li>Two strategy sessions + reviews</li>
-              <li>30 days of implementation support</li>
-            </ul>
-            <div class="lsg4-card-footer">
-              <span>Done-with-you · Initial plan 7 days*</span>
-              <a href="{{ partner.url }}" class="lsg4-btn lsg4-btn-outline">View Partner</a>
-            </div>
+        <article class="lsg5-card">
+          <a href="{{ partner.url }}" class="lsg5-card-image" aria-label="View Growth Partner">
+            {% if partner.featured_image %}<img src="{{ partner.featured_image | image_url: width: 1200 }}" alt="Growth Partner strategic hospitality support" width="1200" height="405" loading="lazy">{% endif %}
+          </a>
+          <div class="lsg5-card-body">
+            <p class="lsg5-label">IMPLEMENT</p>
+            <h3>Growth Partner</h3>
+            <p class="lsg5-card-copy">Deeper strategic support for properties that want a clearer commercial direction and help moving from plan to execution.</p>
+            <ul><li>Advanced analysis &amp; roadmap</li><li>Offer and distribution optimisation</li><li>30 days of strategic support</li></ul>
+            <div class="lsg5-card-bottom"><strong>{{ partner.price | money }}</strong><a href="{{ partner.url }}" class="lsg5-btn lsg5-btn-outline">Get Growth Partner</a></div>
           </div>
         </article>
       </div>
-      <p class="lsg4-delivery-note">*Delivery timing begins after all required property information is received.</p>
+      <p class="lsg5-note">Delivery timing begins after all required property information is received. Specific booking or revenue results cannot be guaranteed.</p>
     </div>
   </div>
 
-  <div class="lsg4-section lsg4-soft">
-    <div class="lsg4-wrap lsg4-split">
+  <div class="lsg5-section lsg5-soft">
+    <div class="lsg5-wrap lsg5-split">
       <div>
-        <p class="lsg4-kicker">THE LOW-SEASON GAP</p>
+        <p class="lsg5-kicker">THE LOW-SEASON GAP</p>
         <h2>Lowering the rate is not the same as creating demand.</h2>
       </div>
-      <div class="lsg4-principles">
+      <div class="lsg5-principles">
         <article><b>01</b><div><h3>Target</h3><p>Identify guest segments that can realistically travel in your quieter periods.</p></div></article>
         <article><b>02</b><div><h3>Offer</h3><p>Connect your property, destination and dates into a relevant seasonal proposition.</p></div></article>
-        <article><b>03</b><div><h3>Activate</h3><p>Turn content and messaging into a clear direct-booking action.</p></div></article>
+        <article><b>03</b><div><h3>Activate</h3><p>Turn messaging and content into a clear next step toward direct booking.</p></div></article>
       </div>
     </div>
   </div>
 
-  <div class="lsg4-section lsg4-dark" id="process">
-    <div class="lsg4-wrap">
-      <div class="lsg4-head lsg4-head-light">
-        <p class="lsg4-kicker">HOW IT WORKS</p>
-        <h2>Four steps from purchase to action.</h2>
-      </div>
-      <div class="lsg4-process">
+  <div class="lsg5-section lsg5-dark" id="process">
+    <div class="lsg5-wrap">
+      <header class="lsg5-section-head lsg5-head-light"><p class="lsg5-kicker">HOW IT WORKS</p><h2>Four steps from purchase to action.</h2></header>
+      <div class="lsg5-process">
         <article><b>01</b><h3>Choose</h3><p>Select the package that matches your current priority.</p></article>
         <article><b>02</b><h3>Share</h3><p>Send your website, OTA listings, low-season dates and core challenge.</p></article>
         <article><b>03</b><h3>Review</h3><p>Your property, positioning, competitors and booking journey are analysed.</p></article>
         <article><b>04</b><h3>Activate</h3><p>Receive the priorities, offer and support included in your package.</p></article>
       </div>
-      <a href="/pages/how-it-works" class="lsg4-text-link">Read the full process →</a>
+      <a href="/pages/how-it-works" class="lsg5-link">Read the full process →</a>
     </div>
   </div>
 
-  <div class="lsg4-section" id="faq">
-    <div class="lsg4-wrap lsg4-faq-grid">
-      <div>
-        <p class="lsg4-kicker">FAQ</p>
-        <h2>Know what you are buying before checkout.</h2>
-        <p class="lsg4-faq-intro">Clear scope, delivery and limitations. No hidden subscription and no guaranteed revenue claims.</p>
-      </div>
-      <div class="lsg4-faq-list">
-        <details><summary>Who is this for?</summary><p>Independent B&amp;Bs, guest houses, boutique stays and similar hospitality properties that want a more structured approach to low-season demand.</p></details>
-        <details><summary>What happens after I purchase?</summary><p>You share the property information required for the selected package. Delivery timing starts once all required information has been received.</p></details>
+  <div class="lsg5-section" id="faq">
+    <div class="lsg5-wrap lsg5-faq">
+      <div><p class="lsg5-kicker">FAQ</p><h2>Before you buy.</h2><p>Clear scope, delivery and limitations. No hidden subscription.</p></div>
+      <div class="lsg5-faq-list">
+        <details><summary>Who is this service for?</summary><p>Independent B&amp;Bs, guest houses, boutique stays and similar hospitality properties that want a more structured approach to low-season demand.</p></details>
+        <details><summary>What happens after purchase?</summary><p>You share the information required for your selected package. Delivery starts once the required property information has been received.</p></details>
         <details><summary>Is this ongoing revenue management?</summary><p>No. These are defined consulting packages. Paid media spend, daily campaign management and ongoing revenue management are not included unless separately agreed.</p></details>
         <details><summary>Do you guarantee bookings?</summary><p>No. The service provides analysis, strategy and activation materials, but specific booking, occupancy or revenue results cannot be guaranteed.</p></details>
       </div>
     </div>
   </div>
 
-  <div class="lsg4-final">
-    <div class="lsg4-wrap lsg4-final-inner">
-      <p class="lsg4-kicker">START WITH CLARITY</p>
-      <h2>Make your quieter months easier to understand, package and sell.</h2>
-      <p>Choose the level of support that fits your property today.</p>
-      <a href="#packages" class="lsg4-btn lsg4-btn-primary">Compare packages</a>
-      <small>Secure checkout powered by Shopify · Personalized consulting · Specific commercial results cannot be guaranteed</small>
-    </div>
+  <div class="lsg5-final">
+    <div class="lsg5-wrap lsg5-final-inner"><p class="lsg5-kicker">START WITH CLARITY</p><h2>Give your property a stronger reason to be booked this low season.</h2><p>Choose the level of support that fits your property today.</p><a href="#packages" class="lsg5-btn lsg5-btn-primary">Explore packages</a><small>Secure checkout powered by Shopify · Personalized consulting</small></div>
   </div>
 
-  <a class="lsg4-mobile-cta" href="#packages" aria-label="Compare Low Season Growth packages">Compare packages <span>→</span></a>
+  <a class="lsg5-mobile-cta" href="#packages">Explore packages <span>→</span></a>
 </section>
 
 {% stylesheet %}
-.lsg4{--paper:#fff;--cream:#f4f1ea;--soft:#faf8f3;--forest:#173f35;--forest2:#215246;--ink:#202925;--muted:#69726e;--accent:#9a654e;--line:#dfd9cf;color:var(--ink);background:var(--paper);font-family:var(--font-body--family);scroll-behavior:smooth}.lsg4 *{box-sizing:border-box}.lsg4-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}.lsg4 h1,.lsg4 h2,.lsg4 h3{font-family:Georgia,var(--font-heading--family),serif}.lsg4-kicker{margin:0 0 14px;color:var(--accent);font-size:.7rem;font-weight:850;letter-spacing:.15em;text-transform:uppercase}.lsg4-hero{padding:88px 0 76px;background:linear-gradient(180deg,#f7f4ed 0%,#f1ebe1 100%)}.lsg4-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.lsg4-hero h1{max-width:740px;margin:0;color:var(--forest);font-size:clamp(3.2rem,5.8vw,5.65rem);font-weight:400;line-height:.99;letter-spacing:-.05em}.lsg4-lead{max-width:650px;margin:25px 0 0;color:#59645f;font-size:clamp(1.04rem,1.45vw,1.18rem);line-height:1.68}.lsg4-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:31px}.lsg4-btn{display:inline-flex;min-height:49px;align-items:center;justify-content:center;padding:12px 21px;border:1px solid var(--forest);border-radius:7px;text-decoration:none;font-size:.91rem;font-weight:780;transition:background .2s ease,border-color .2s ease,transform .2s ease}.lsg4-btn:hover{transform:translateY(-1px)}.lsg4-btn-primary{color:#fff;background:var(--forest)}.lsg4-btn-primary:hover{background:var(--forest2)}.lsg4-btn-secondary,.lsg4-btn-outline{color:var(--forest);background:transparent}.lsg4-btn-secondary:hover,.lsg4-btn-outline:hover{background:#fff}.lsg4-trust{display:flex;gap:8px 18px;flex-wrap:wrap;margin-top:18px;color:#6a746f;font-size:.82rem}.lsg4-trust span{position:relative;padding-left:13px}.lsg4-trust span:before{content:'•';position:absolute;left:0;color:var(--accent)}.lsg4-hero-media{margin:0}.lsg4-hero-frame{overflow:hidden;border:1px solid rgba(23,63,53,.08);border-radius:18px;background:#ece6dc;box-shadow:0 22px 55px rgba(23,63,53,.11)}.lsg4-hero-frame img{display:block;width:100%;height:auto}.lsg4-hero-media figcaption{margin-top:10px;color:#777f7b;font-size:.76rem;text-align:right}.lsg4-proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.lsg4-proof-grid{display:grid;grid-template-columns:repeat(3,1fr)}.lsg4-proof span{padding:19px 22px;text-align:center;border-right:1px solid var(--line);font-size:.84rem;font-weight:690}.lsg4-proof span:last-child{border:0}.lsg4-section{padding:94px 0}.lsg4-soft{background:var(--soft)}.lsg4-head{max-width:760px;margin-bottom:42px}.lsg4-head h2,.lsg4-split h2,.lsg4-faq-grid h2,.lsg4-final h2{margin:0;color:var(--forest);font-size:clamp(2.35rem,4.1vw,4rem);font-weight:400;line-height:1.06;letter-spacing:-.04em}.lsg4-head>p:last-child{max-width:690px;margin:18px 0 0;color:var(--muted);font-size:1.03rem;line-height:1.68}.lsg4-packages{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}.lsg4-card{position:relative;overflow:hidden;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 7px 24px rgba(23,63,53,.045)}.lsg4-card-featured{border:1.5px solid var(--forest);box-shadow:0 18px 44px rgba(23,63,53,.1)}.lsg4-recommended{position:absolute;z-index:3;top:15px;right:15px;padding:7px 10px;border-radius:999px;color:#fff;background:var(--forest);font-size:.61rem;font-weight:850;letter-spacing:.11em}.lsg4-card-visual{position:relative;overflow:hidden;aspect-ratio:16/10;margin:14px 14px 0;border-radius:11px;background:#eee9df}.lsg4-card-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,42,35,.16) 100%);pointer-events:none}.lsg4-card-visual img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(.78) contrast(.96) brightness(1.03);transform:scale(1.18);transition:transform .45s ease,filter .3s ease}.lsg4-card-audit .lsg4-card-visual img{object-position:center 68%}.lsg4-card-sprint .lsg4-card-visual img{object-position:center 66%}.lsg4-card-partner .lsg4-card-visual img{object-position:center 70%}.lsg4-card:hover .lsg4-card-visual img{transform:scale(1.22);filter:saturate(.86) contrast(.98) brightness(1.02)}.lsg4-visual-tag{position:absolute;z-index:2;left:12px;bottom:12px;padding:6px 8px;border-radius:6px;color:#fff;background:rgba(23,63,53,.9);font-size:.61rem;font-weight:850;letter-spacing:.12em}.lsg4-card-body{display:flex;flex:1;flex-direction:column;padding:24px 25px 25px}.lsg4-card-top{display:flex;gap:14px;align-items:flex-start;justify-content:space-between}.lsg4-card h3{margin:0;color:var(--forest);font-size:1.6rem;font-weight:400;line-height:1.12}.lsg4-price{margin:0;color:var(--forest);font-size:1.2rem;font-weight:800;white-space:nowrap}.lsg4-card-copy{margin:18px 0 0;color:var(--muted);line-height:1.58}.lsg4-card ul{display:grid;gap:10px;margin:22px 0;padding:19px 0 0;border-top:1px solid var(--line);list-style:none}.lsg4-card li{position:relative;padding-left:20px;color:#59645f;font-size:.92rem;line-height:1.42}.lsg4-card li:before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:900}.lsg4-card-footer{display:grid;gap:14px;margin-top:auto}.lsg4-card-footer>span{color:#7a827e;font-size:.75rem}.lsg4-card-footer .lsg4-btn{width:100%}.lsg4-delivery-note{margin:17px 0 0;color:#7c847f;font-size:.74rem}.lsg4-split{display:grid;grid-template-columns:.9fr 1.1fr;gap:78px;align-items:start}.lsg4-principles{display:grid}.lsg4-principles article{display:grid;grid-template-columns:42px 1fr;gap:16px;padding:21px 0;border-top:1px solid var(--line)}.lsg4-principles article:first-child{border-top:0;padding-top:0}.lsg4-principles b{color:var(--accent);font-size:.72rem}.lsg4-principles h3{margin:0 0 5px;color:var(--forest);font-size:1.25rem;font-weight:400}.lsg4-principles p{margin:0;color:var(--muted);line-height:1.58}.lsg4-dark{color:#fff;background:var(--forest)}.lsg4-head-light h2{color:#fff}.lsg4-head-light .lsg4-kicker{color:#dfad94}.lsg4-process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.lsg4-process article{padding:24px;border:1px solid rgba(255,255,255,.15);border-radius:10px;background:rgba(255,255,255,.035)}.lsg4-process b{display:grid;width:31px;height:31px;place-items:center;border-radius:50%;color:var(--forest);background:#fff;font-size:.67rem}.lsg4-process h3{margin:25px 0 8px;color:#fff;font-size:1.2rem;font-weight:400}.lsg4-process p{margin:0;color:#d8e1dd;font-size:.9rem;line-height:1.57}.lsg4-text-link{display:inline-flex;margin-top:26px;color:#fff;text-decoration:none;font-weight:760}.lsg4-faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start}.lsg4-faq-intro{max-width:480px;margin:18px 0 0;color:var(--muted);line-height:1.65}.lsg4-faq-list details{border-bottom:1px solid var(--line);padding:20px 0}.lsg4-faq-list summary{cursor:pointer;color:var(--forest);font-weight:760;line-height:1.45}.lsg4-faq-list details p{margin:12px 0 0;color:var(--muted);line-height:1.65}.lsg4-final{padding:92px 0;background:var(--cream)}.lsg4-final-inner{max-width:850px;text-align:center}.lsg4-final h2{margin-inline:auto}.lsg4-final-inner>p:not(.lsg4-kicker){max-width:620px;margin:18px auto;color:var(--muted);font-size:1.04rem;line-height:1.65}.lsg4-final .lsg4-btn{margin-top:7px}.lsg4-final small{display:block;margin-top:18px;color:#777f7b;font-size:.76rem}.lsg4-mobile-cta{display:none}.lsg4 a:focus-visible,.lsg4 summary:focus-visible{outline:3px solid var(--forest);outline-offset:4px}
-@media(max-width:960px){.lsg4-hero-grid,.lsg4-split,.lsg4-faq-grid{grid-template-columns:1fr}.lsg4-hero-grid{gap:46px}.lsg4-hero-media{max-width:720px}.lsg4-packages{grid-template-columns:1fr}.lsg4-card-featured{order:-1}.lsg4-process{grid-template-columns:1fr 1fr}.lsg4-split,.lsg4-faq-grid{gap:38px}.lsg4-card-visual{aspect-ratio:16/8.8}}
-@media(max-width:640px){.lsg4-wrap{width:min(100% - 28px,1180px)}.lsg4-hero{padding:58px 0 52px}.lsg4-hero h1{font-size:2.92rem}.lsg4-actions{display:grid}.lsg4-btn{width:100%}.lsg4-hero-media figcaption{display:none}.lsg4-proof-grid{grid-template-columns:1fr}.lsg4-proof span{border-right:0;border-bottom:1px solid var(--line)}.lsg4-proof span:last-child{border-bottom:0}.lsg4-section{padding:66px 0}.lsg4-packages{gap:16px}.lsg4-card-visual{margin:10px 10px 0;aspect-ratio:16/9}.lsg4-card-body{padding:21px}.lsg4-card-top{align-items:flex-end}.lsg4-card h3{font-size:1.48rem}.lsg4-process{grid-template-columns:1fr}.lsg4-final{padding:68px 0 92px}.lsg4-mobile-cta{position:fixed;z-index:30;right:14px;bottom:14px;left:14px;display:flex;min-height:50px;align-items:center;justify-content:space-between;padding:12px 18px;border-radius:10px;color:#fff;background:var(--forest);box-shadow:0 12px 30px rgba(23,63,53,.22);text-decoration:none;font-weight:800}.lsg4-mobile-cta span{font-size:1.15rem}}
-@media(prefers-reduced-motion:reduce){.lsg4 *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.lsg5{--paper:#fff;--cream:#f6f2ea;--soft:#fbf9f5;--forest:#0d3f34;--forest2:#175348;--ink:#202824;--muted:#626b67;--line:#ded8cd;color:var(--ink);background:var(--paper);font-family:var(--font-body--family);scroll-behavior:smooth}.lsg5 *{box-sizing:border-box}.lsg5-wrap{width:min(1240px,calc(100% - 48px));margin:0 auto}.lsg5 h1,.lsg5 h2,.lsg5 h3{font-family:Georgia,var(--font-heading--family),serif;font-weight:400}.lsg5-kicker{margin:0 0 16px;color:var(--forest);font-size:.69rem;font-weight:800;letter-spacing:.19em;text-transform:uppercase}.lsg5-hero{display:grid;grid-template-columns:49% 51%;min-height:590px;background:var(--cream)}.lsg5-hero-copy{display:flex;align-items:center}.lsg5-copy-inner{width:min(640px,calc(100% - 48px));margin-left:max(24px,calc((100vw - 1240px)/2))}.lsg5-hero h1{max-width:650px;margin:0;color:var(--forest);font-size:clamp(3.35rem,5.6vw,5.8rem);line-height:.98;letter-spacing:-.052em}.lsg5-lead{max-width:600px;margin:24px 0 0;color:#515b56;font-size:clamp(1.03rem,1.35vw,1.18rem);line-height:1.65}.lsg5-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:31px}.lsg5-btn{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:11px 22px;border:1px solid var(--forest);border-radius:4px;text-decoration:none;font-size:.9rem;font-weight:760;transition:.2s ease}.lsg5-btn:hover{transform:translateY(-1px)}.lsg5-btn-primary{color:#fff;background:var(--forest)}.lsg5-btn-primary:hover{background:var(--forest2)}.lsg5-btn-secondary,.lsg5-btn-outline{color:var(--forest);background:transparent}.lsg5-btn-secondary:hover,.lsg5-btn-outline:hover{background:#fff}.lsg5-trust{display:flex;gap:8px 18px;flex-wrap:wrap;margin-top:18px;color:#6c746f;font-size:.79rem}.lsg5-trust span:before{content:'✓';margin-right:7px;color:var(--forest)}.lsg5-hero-image{min-height:590px;background:url('https://cdn.shopify.com/s/files/1/1059/8488/5078/files/low-season-growth-hero-clean.png?v=1788549393') center center/cover no-repeat}.lsg5-proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.lsg5-proof-grid{display:grid;grid-template-columns:repeat(4,1fr)}.lsg5-proof-grid>div{display:flex;gap:12px;align-items:center;padding:22px 18px;border-right:1px solid var(--line)}.lsg5-proof-grid>div:last-child{border-right:0}.lsg5-proof b{color:var(--forest);font-size:.72rem}.lsg5-proof span{font-size:.82rem;font-weight:700}.lsg5-section{padding:88px 0}.lsg5-section-head{max-width:780px;margin:0 auto 40px;text-align:center}.lsg5-section-head h2,.lsg5-split h2,.lsg5-faq h2,.lsg5-final h2{margin:0;color:var(--forest);font-size:clamp(2.4rem,4vw,4rem);line-height:1.05;letter-spacing:-.038em}.lsg5-section-head>p:last-child{max-width:660px;margin:16px auto 0;color:var(--muted);font-size:1rem;line-height:1.62}.lsg5-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;align-items:stretch}.lsg5-card{position:relative;display:flex;overflow:hidden;flex-direction:column;border:1px solid var(--line);border-radius:7px;background:#fff;box-shadow:0 8px 24px rgba(20,45,37,.035)}.lsg5-card-featured{border-color:#6ea393;box-shadow:0 16px 42px rgba(13,63,52,.10)}.lsg5-popular{position:absolute;z-index:3;top:0;left:50%;padding:8px 15px;transform:translate(-50%,-1px);border-radius:0 0 5px 5px;color:#fff;background:#2e7867;font-size:.63rem;font-weight:800;letter-spacing:.12em}.lsg5-card-image{display:block;overflow:hidden;aspect-ratio:16/6.1;background:#eee9df}.lsg5-card-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease}.lsg5-card:hover .lsg5-card-image img{transform:scale(1.025)}.lsg5-card-body{display:flex;flex:1;flex-direction:column;padding:24px}.lsg5-label{margin:0 0 9px;color:#78827d;font-size:.65rem;font-weight:800;letter-spacing:.13em}.lsg5-card h3{margin:0;color:var(--forest);font-size:1.55rem;line-height:1.12}.lsg5-card-copy{margin:14px 0 0;color:var(--muted);font-size:.94rem;line-height:1.55}.lsg5-card ul{display:grid;gap:9px;margin:19px 0 25px;padding:18px 0 0;border-top:1px solid var(--line);list-style:none}.lsg5-card li{position:relative;padding-left:20px;color:#505b56;font-size:.87rem;line-height:1.42}.lsg5-card li:before{content:'✓';position:absolute;left:0;color:var(--forest);font-weight:900}.lsg5-card-bottom{display:grid;gap:15px;margin-top:auto}.lsg5-card-bottom strong{color:#111;font-family:Georgia,serif;font-size:1.65rem;font-weight:400}.lsg5-card-bottom .lsg5-btn{width:100%}.lsg5-note{margin:17px 0 0;text-align:center;color:#818782;font-size:.72rem}.lsg5-soft{background:var(--soft)}.lsg5-split{display:grid;grid-template-columns:.9fr 1.1fr;gap:90px;align-items:start}.lsg5-principles article{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}.lsg5-principles article:first-child{padding-top:0;border-top:0}.lsg5-principles b{color:#846652;font-size:.7rem}.lsg5-principles h3{margin:0 0 5px;color:var(--forest);font-size:1.28rem}.lsg5-principles p{margin:0;color:var(--muted);line-height:1.58}.lsg5-dark{color:#fff;background:var(--forest)}.lsg5-head-light h2{color:#fff}.lsg5-head-light .lsg5-kicker{color:#d6bca8}.lsg5-process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.lsg5-process article{padding:24px;border:1px solid rgba(255,255,255,.15);border-radius:6px;background:rgba(255,255,255,.035)}.lsg5-process b{color:#d7bba6;font-size:.68rem}.lsg5-process h3{margin:24px 0 7px;color:#fff;font-size:1.2rem}.lsg5-process p{margin:0;color:#d7e0dc;font-size:.88rem;line-height:1.56}.lsg5-link{display:inline-flex;margin-top:27px;color:#fff;text-decoration:none;font-weight:760}.lsg5-faq{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px;align-items:start}.lsg5-faq>div:first-child>p:last-child{color:var(--muted);line-height:1.6}.lsg5-faq-list details{padding:20px 0;border-bottom:1px solid var(--line)}.lsg5-faq-list summary{cursor:pointer;color:var(--forest);font-weight:760}.lsg5-faq-list details p{margin:12px 0 0;color:var(--muted);line-height:1.62}.lsg5-final{padding:86px 0;background:var(--cream)}.lsg5-final-inner{max-width:850px;text-align:center}.lsg5-final-inner>p:not(.lsg5-kicker){max-width:620px;margin:17px auto;color:var(--muted);line-height:1.6}.lsg5-final .lsg5-btn{margin-top:5px}.lsg5-final small{display:block;margin-top:18px;color:#7b827e}.lsg5-mobile-cta{display:none}.lsg5 a:focus-visible,.lsg5 summary:focus-visible{outline:3px solid var(--forest);outline-offset:4px}
+@media(max-width:980px){.lsg5-hero{grid-template-columns:1fr}.lsg5-hero-copy{padding:64px 0 54px}.lsg5-copy-inner{width:min(100% - 40px,760px);margin:0 auto}.lsg5-hero-image{min-height:450px}.lsg5-proof-grid{grid-template-columns:1fr 1fr}.lsg5-proof-grid>div:nth-child(2){border-right:0}.lsg5-proof-grid>div:nth-child(-n+2){border-bottom:1px solid var(--line)}.lsg5-cards{grid-template-columns:1fr}.lsg5-card-featured{order:-1}.lsg5-card-image{aspect-ratio:16/5}.lsg5-split,.lsg5-faq{grid-template-columns:1fr;gap:42px}.lsg5-process{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.lsg5-wrap{width:min(100% - 28px,1240px)}.lsg5-hero-copy{padding:52px 0 42px}.lsg5-copy-inner{width:calc(100% - 28px)}.lsg5-hero h1{font-size:2.95rem}.lsg5-actions{display:grid}.lsg5-btn{width:100%}.lsg5-hero-image{min-height:330px;background-position:58% center}.lsg5-proof-grid{grid-template-columns:1fr}.lsg5-proof-grid>div{border-right:0;border-bottom:1px solid var(--line)!important;padding:16px 8px}.lsg5-proof-grid>div:last-child{border-bottom:0!important}.lsg5-section{padding:64px 0}.lsg5-section-head{text-align:left;margin-bottom:28px}.lsg5-section-head>p:last-child{margin-left:0}.lsg5-cards{gap:17px}.lsg5-card-image{aspect-ratio:16/7}.lsg5-card-body{padding:21px}.lsg5-process{grid-template-columns:1fr}.lsg5-final{padding:66px 0 88px}.lsg5-mobile-cta{position:fixed;z-index:30;right:14px;bottom:14px;left:14px;display:flex;min-height:50px;align-items:center;justify-content:space-between;padding:12px 18px;border-radius:6px;color:#fff;background:var(--forest);box-shadow:0 12px 30px rgba(13,63,52,.24);text-decoration:none;font-weight:800}}
+@media(prefers-reduced-motion:reduce){.lsg5 *{transition:none!important;scroll-behavior:auto!important}}
 {% endstylesheet %}
 
 {% schema %}
 {
-  "name": "Low Season Growth v4",
+  "name": "Low Season Growth v5",
   "settings": [],
-  "presets": [{"name":"Low Season Growth v4"}]
+  "presets": [{"name":"Low Season Growth v5"}]
 }
 {% endschema %}
