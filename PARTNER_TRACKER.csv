@@ -1,2 +1,2 @@
-partner_id,partner_name,email,status,start_date,lead_property,lead_contact,lead_email,lead_source,utm_url,first_contact_date,follow_up_date,response_status,call_date,product,order_reference,order_value_eur,commission_eur,commission_status,notes
-P-BECK,Beck Photography,info@beck.photography,do_not_follow_up,2026-09-05,,,,public_website,,2026-09-05,,closed,,,,,,,Contacted once during initial exploration; not part of current Low Season Growth sales strategy
+partner_id,partner_name,email,role,commission_rate,status,start_date,lead_property,lead_contact,lead_email,lead_source,utm_url,first_contact_date,last_activity_date,follow_up_date,response_status,call_date,product,order_reference,order_value_eur,commission_eur,commission_status,notes
+P-BECK,Beck Photography,info@beck.photography,,0,do_not_follow_up,2026-09-05,,,,public_website,,2026-09-05,2026-09-05,,closed,,,,,,,Contacted once during initial exploration; not part of current Low Season Growth sales strategy
