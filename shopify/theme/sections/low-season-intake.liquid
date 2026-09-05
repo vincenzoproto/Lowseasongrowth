@@ -1,0 +1,82 @@
+{% liquid
+  assign is_it = false
+  if request.locale.iso_code == 'it'
+    assign is_it = true
+  endif
+%}
+
+<section class="lsg-intake page-width">
+  <div class="lsg-intake__header">
+    {% if is_it %}
+      <p class="lsg-intake__eyebrow">LOW SEASON GROWTH</p>
+      <h1>Iniziamo dal tuo periodo più debole.</h1>
+      <p>Compila il questionario dopo l'acquisto. Useremo queste informazioni per preparare l'analisi e il piano operativo della tua struttura.</p>
+    {% else %}
+      <p class="lsg-intake__eyebrow">LOW SEASON GROWTH</p>
+      <h1>Let's start with your slowest period.</h1>
+      <p>Complete this questionnaire after purchase. We'll use your answers to build the analysis and action plan for your property.</p>
+    {% endif %}
+  </div>
+
+  {% form 'contact', class: 'lsg-intake__form' %}
+    {% if form.posted_successfully? %}
+      <div class="lsg-intake__success" role="status">
+        {% if is_it %}<strong>Ricevuto.</strong> Il tuo questionario è stato inviato correttamente.{% else %}<strong>Received.</strong> Your questionnaire has been submitted successfully.{% endif %}
+      </div>
+    {% endif %}
+    {{ form.errors | default_errors }}
+
+    <fieldset>
+      <legend>{% if is_it %}1. Ordine e contatto{% else %}1. Order & contact{% endif %}</legend>
+      <div class="lsg-grid">
+        <label>{% if is_it %}Numero ordine Shopify{% else %}Shopify order number{% endif %}<input required name="contact[Order number]" placeholder="#1001"></label>
+        <label>{% if is_it %}Email usata al checkout{% else %}Checkout email{% endif %}<input required type="email" name="contact[email]" autocomplete="email"></label>
+        <label>{% if is_it %}Nome e cognome{% else %}Full name{% endif %}<input required name="contact[Full name]" autocomplete="name"></label>
+        <label>{% if is_it %}Nome struttura{% else %}Property name{% endif %}<input required name="contact[Property name]"></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>{% if is_it %}2. La struttura{% else %}2. Your property{% endif %}</legend>
+      <div class="lsg-grid">
+        <label>{% if is_it %}Città / destinazione{% else %}City / destination{% endif %}<input required name="contact[Destination]"></label>
+        <label>{% if is_it %}Paese{% else %}Country{% endif %}<input required name="contact[Country]"></label>
+        <label>{% if is_it %}Camere o unità{% else %}Rooms or units{% endif %}<input type="number" min="1" name="contact[Rooms or units]"></label>
+        <label>{% if is_it %}ADR medio / tariffa media{% else %}Average ADR / nightly rate{% endif %}<input name="contact[Average ADR]"></label>
+      </div>
+      <label>Website / Airbnb / Booking URL<textarea required name="contact[Property URLs]" rows="3"></textarea></label>
+      <label>Instagram / social URL<textarea name="contact[Social URLs]" rows="2"></textarea></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>{% if is_it %}3. Il problema di bassa stagione{% else %}3. Your low-season problem{% endif %}</legend>
+      <label>{% if is_it %}Quali mesi, settimane o date vuoi riempire?{% else %}Which months, weeks or dates do you want to fill?{% endif %}<textarea required name="contact[Weak dates]" rows="3"></textarea></label>
+      <div class="lsg-grid">
+        <label>{% if is_it %}Occupazione stimata nel periodo debole{% else %}Estimated occupancy in the weak period{% endif %}<input name="contact[Weak period occupancy]" placeholder="e.g. 35%"></label>
+        <label>{% if is_it %}Budget marketing mensile{% else %}Monthly marketing budget{% endif %}<input name="contact[Marketing budget]"></label>
+      </div>
+      <label>{% if is_it %}Chi prenota normalmente la struttura?{% else %}Who normally books your property?{% endif %}<textarea name="contact[Guest segments]" rows="3"></textarea></label>
+      <label>{% if is_it %}Da dove arrivano oggi le prenotazioni?{% else %}Where do bookings currently come from?{% endif %}<textarea name="contact[Booking channels]" rows="3" placeholder="Booking.com, Airbnb, direct, Google, social..."></textarea></label>
+      <label>{% if is_it %}Sconti, offerte o promozioni già provati{% else %}Discounts, offers or promotions already tried{% endif %}<textarea name="contact[Promotions tried]" rows="3"></textarea></label>
+    </fieldset>
+
+    <fieldset>
+      <legend>{% if is_it %}4. Obiettivo{% else %}4. Goal{% endif %}</legend>
+      <label>{% if is_it %}Qual è il risultato più importante nei prossimi 90 giorni?{% else %}What's the most important result you want in the next 90 days?{% endif %}<textarea required name="contact[90 day goal]" rows="4"></textarea></label>
+      <label>{% if is_it %}Concorrenti o strutture di riferimento{% else %}Competitors or benchmark properties{% endif %}<textarea name="contact[Competitors]" rows="3"></textarea></label>
+      <label>{% if is_it %}Qualsiasi altra informazione utile{% else %}Anything else we should know{% endif %}<textarea name="contact[body]" rows="4"></textarea></label>
+    </fieldset>
+
+    <label class="lsg-consent"><input required type="checkbox" name="contact[Data confirmation]" value="Confirmed"> <span>{% if is_it %}Confermo che i dati forniti possono essere utilizzati per preparare il servizio acquistato.{% else %}I confirm that the information provided can be used to prepare the service I purchased.{% endif %}</span></label>
+
+    <button type="submit" class="button">{% if is_it %}Invia il questionario{% else %}Submit questionnaire{% endif %}</button>
+  {% endform %}
+</section>
+
+<style>
+.lsg-intake{max-width:900px;margin:0 auto;padding-top:48px;padding-bottom:72px}.lsg-intake__header{max-width:720px;margin-bottom:36px}.lsg-intake__eyebrow{font-size:12px;letter-spacing:.16em;font-weight:700}.lsg-intake h1{font-size:clamp(34px,6vw,58px);line-height:1.02;margin:10px 0 18px}.lsg-intake__form{display:grid;gap:28px}.lsg-intake fieldset{border:1px solid rgba(0,0,0,.14);border-radius:18px;padding:22px}.lsg-intake legend{font-weight:700;padding:0 8px}.lsg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.lsg-intake label{display:grid;gap:8px;font-size:14px;font-weight:600;margin-top:14px}.lsg-intake input,.lsg-intake textarea{width:100%;font:inherit;border:1px solid rgba(0,0,0,.2);border-radius:10px;padding:13px;background:transparent;color:inherit}.lsg-consent{grid-template-columns:auto 1fr!important;align-items:start}.lsg-consent input{width:auto;margin-top:3px}.lsg-intake__success{padding:16px;border-radius:12px;background:rgba(0,128,0,.08)}@media(max-width:700px){.lsg-grid{grid-template-columns:1fr}.lsg-intake{padding-top:28px}.lsg-intake fieldset{padding:16px}}
+</style>
+
+{% schema %}
+{"name":"Low Season intake","settings":[],"presets":[{"name":"Low Season intake"}]}
+{% endschema %}
