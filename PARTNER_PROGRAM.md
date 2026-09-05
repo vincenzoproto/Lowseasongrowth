@@ -1,75 +1,157 @@
-# Low Season Growth — Pilot Sales Partner Program
+# Low Season Growth — Sales Partner Program
 
 _Last updated: 5 September 2026_
 
-## Objective
+## Purpose
 
-Recruit two pilot partners who already have access to independent B&Bs, guest houses or small hospitality operators. Validate the sales process before expanding the network.
+Build a separate commission-only commercial network for Low Season Growth. This programme is independent from Smart Creator and must never use Smart Creator leads, CRM records, creator relationships or sponsor contacts unless explicitly re-qualified for Low Season Growth.
 
-## Ideal partner
+## Commercial model
 
-- Freelance hospitality salesperson
-- Revenue manager or hotel consultant
-- Hospitality social media manager
-- Photographer, creator or supplier with existing property relationships
-- Business developer with verifiable B2B hospitality access
+Partners are paid only on revenue actually collected from customers they can prove they originated or closed.
 
-Generic influencers and untargeted traffic partners are not the priority.
+### Roles and commissions
 
-## Commission
+| Role | What they do | Commission |
+|---|---|---:|
+| Setter | Finds the property, opens the conversation and books a qualified call. Vincenzo/closer closes. | 10% of collected revenue |
+| Closer | Closes a qualified lead provided by Low Season Growth. | 15% of collected revenue |
+| Full-cycle Sales Partner | Sources, contacts, qualifies and closes the customer independently. | 25% of collected revenue |
 
-| Paid service | Customer price | Partner commission |
-|---|---:|---:|
-| Low-Season Revenue Audit | €249 | €50 |
-| Low-Season Booking Sprint | €479 | €100 |
-| Low-Season Growth Partner | €990 | €200 |
+A partner cannot stack roles on the same deal unless explicitly approved before the sale. Maximum standard commission per deal: 25%.
 
-Commission is earned only when:
+## Current offers and example payouts
 
-1. The customer is attributable to the partner before purchase.
-2. Payment has been received in full.
-3. The order is not refunded, charged back or cancelled.
-4. The partner has not used misleading claims, spam or unauthorised discounts.
+| Paid service | Customer price | Setter 10% | Closer 15% | Full-cycle 25% |
+|---|---:|---:|---:|---:|
+| Low-Season Revenue Audit | €249 | €24.90 | €37.35 | €62.25 |
+| Low-Season Booking Sprint | €479 | €47.90 | €71.85 | €119.75 |
+| Low-Season Growth Partner | €990 | €99.00 | €148.50 | €247.50 |
 
-Commission is payable after the applicable refund/chargeback review period and no later than 30 days after a valid sale is confirmed.
+Commission is earned only when payment has been received and the transaction remains valid after any refund, cancellation or chargeback window.
 
-## Pilot structure
+## Ideal partner profile
 
-- Two partners
-- Ten qualified properties per partner
-- Fourteen-day initial test
-- Personalised outreach only
-- One specific commercial observation per property
-- Central support from Vincenzo for fit calls and closing
+Priority profiles:
 
-Success threshold: at least two qualified calls and one paid sale from the first 20 properties. If this is reached, expand the programme.
+- freelance B2B salesperson
+- appointment setter with hospitality experience
+- hotel/revenue consultant
+- independent business developer
+- hospitality supplier with existing property relationships
+- commercial freelancer comfortable with cold outreach
 
-## Attribution
+The programme is not designed for generic influencers or people who only repost affiliate links.
 
-Until a dedicated affiliate platform is justified:
+## Recruitment target
 
-- Assign each partner a unique partner ID.
-- Add the partner ID to every lead before the first sales conversation.
-- Use a partner-specific UTM link:
-  `https://lowseasongrowth.com/?utm_source=partner&utm_medium=referral&utm_campaign=pilot&utm_content=PARTNER_ID`
-- Confirm attribution in the partner tracker before paying commission.
-- Do not create public discount codes unless specifically approved.
+Phase 1 target: recruit 10 active partners.
+
+Suggested mix:
+
+- 5 setters
+- 2 closers
+- 3 full-cycle partners
+
+A partner is considered active only after they have submitted at least 10 qualified prospects or completed one qualified sales conversation.
+
+## Lead ownership and attribution
+
+Every prospect must be recorded before or at the time of first contact.
+
+Required data:
+
+- partner ID
+- property name
+- decision-maker where known
+- email/contact channel
+- date of first contact
+- source
+- role on the deal: setter, closer or full-cycle
+
+Lead ownership lasts 30 days from the last documented commercial activity. If there is no activity for 30 days, the lead can be reassigned.
+
+Duplicate claims are resolved using the earliest verifiable CRM timestamp.
+
+## Qualified lead definition
+
+A qualified Low Season Growth prospect should normally be an independent hotel, B&B, guest house, aparthotel or small hospitality operator with at least one of these signals:
+
+- evident low-season or weekday demand gaps
+- weak direct-booking proposition
+- generic or unclear seasonal offers
+- strong OTA dependence
+- weak conversion journey on the direct website
+- limited promotion of quiet periods
+
+A scraped email address alone is not a qualified lead.
+
+## Outreach standards
+
+Massive outreach is allowed only if it remains targeted and compliant.
+
+Partners must:
+
+- target relevant hospitality properties
+- avoid false personalisation
+- use accurate claims only
+- respect opt-outs
+- avoid misleading subject lines
+- avoid unauthorised discounts
+- log all material activity in the CRM/tracker
+
+Recommended daily approach for a new partner:
+
+- 20–30 new targeted contacts
+- 10–20 follow-ups
+- prioritise named owners, GMs, commercial managers or revenue decision-makers
+- stop following up after a clear refusal
+
+## Sales process
+
+1. Prospect selected and entered in CRM.
+2. First outreach sent.
+3. Follow-up if no reply.
+4. Prospect qualified.
+5. Qualified call booked or handled by full-cycle partner.
+6. Correct offer proposed.
+7. Payment completed.
+8. Commission marked as pending.
+9. Commission released after validation period.
+10. Customer moves to onboarding/delivery.
 
 ## Sales rules
 
-Partners may say:
-
-- The services are designed for independent hospitality properties.
-- Deliverables, timing and prices exactly as published on the website.
-- The €249 Audit fee can be credited toward an eligible upgrade within 14 days of Audit delivery.
+Partners may explain the published service, deliverables, timing and price.
 
 Partners may not:
 
-- Guarantee occupancy, bookings or revenue.
-- Claim existing clients, results or endorsements that do not exist.
-- Mass-email scraped lists without review.
-- Change prices or promise extra deliverables.
-- Represent themselves as employees.
+- guarantee occupancy, bookings, ROI or revenue
+- fabricate case studies, clients, endorsements or scarcity
+- offer discounts without approval
+- change scope or promise extra deliverables
+- collect customer payments into personal accounts
+- represent themselves as employees of Low Season Growth
+- use Smart Creator databases, contacts or identity for this programme
+
+## Commission payment rule
+
+Commission base = net customer revenue actually collected for the eligible sale, excluding refunded amounts, chargebacks, taxes collected on behalf of authorities where applicable, and payment amounts later reversed.
+
+Target payment timing: within 30 days after the sale is confirmed as valid.
+
+## Partner onboarding checklist
+
+Before outreach starts, each partner receives:
+
+- partner ID
+- assigned role and commission rate
+- approved outreach script
+- qualification checklist
+- offer/pricing sheet
+- CRM/tracker instructions
+- escalation rule for hot leads
+- payment/commission terms
 
 ## Recruitment message
 
@@ -77,32 +159,30 @@ Subject: Commission-based hospitality sales partnership
 
 Hi [Name],
 
-I am selecting two pilot commercial partners for Low Season Growth, a service designed for independent B&Bs and guest houses that want to improve low-season demand and direct-booking opportunities.
+I’m building a small independent sales network for Low Season Growth, a service focused on helping independent hospitality properties improve low-season demand and direct-booking opportunities.
 
-The role is to identify suitable properties, open qualified conversations and introduce our Revenue Audit. There is no fixed salary. Commission is €50 for the Revenue Audit, €100 for the Booking Sprint and €200 for the Growth Partner programme for each eligible paid sale.
+This is a commission-based role. Depending on the commercial role, commission ranges from 10% to 25% of revenue actually collected from eligible sales.
 
-We provide the website, offer materials, outreach framework and support during qualified sales conversations. The pilot starts with ten selected properties and is reviewed after 14 days.
+We provide the offer, sales materials, qualification framework and support on qualified opportunities. I’m currently selecting the first 10 commercial partners.
 
-Would you be open to a short introductory call?
+If you already work in B2B sales, hospitality, appointment setting or business development, I’d be happy to explain the model in a short call.
 
 Best,
 Vincenzo Proto
 Low Season Growth
-https://lowseasongrowth.com
 
 ## Property outreach message
 
-Subject: Three observations for [Property]
+Subject: A few low-season observations for [Property]
 
 Hi [Name],
 
-I reviewed [Property] and noticed that [one specific observation tied to quiet dates, offer clarity or the direct-booking journey].
+I reviewed [Property] and noticed [one specific observation related to quiet periods, offer clarity or the direct-booking journey].
 
-Low Season Growth helps independent hospitality properties turn quiet dates into a clearer offer and more direct-booking opportunities.
+Low Season Growth works with independent hospitality properties on low-season positioning and direct-booking opportunities.
 
-I can send you three specific observations about your current positioning. If they are useful, the next step is a personalised Revenue Audit delivered within five business days.
+If useful, I can send you three specific observations on what I would test first for [Property].
 
 Best,
 [Partner name]
 Commercial Partner — Low Season Growth
-https://lowseasongrowth.com
