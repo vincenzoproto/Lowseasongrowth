@@ -8,8 +8,20 @@
     {% assign is_it = false %}
     {% if request.locale.iso_code == 'it' %}{% assign is_it = true %}{% endif %}
 
+    {% assign clean_title = 'Low Season Growth Audit' %}
+    {% assign service_detail_en = 'One-time diagnostic · Asynchronous delivery · No call required' %}
+    {% assign service_detail_it = 'Diagnosi una tantum · Consegna asincrona · Nessuna call richiesta' %}
+    {% if product.handle == 'b-b-low-season-booking-sprint' %}
+      {% assign clean_title = 'Low Season Booking Sprint' %}
+      {% assign service_detail_en = '30-day activation plan · 1 strategy call · 1 review' %}
+      {% assign service_detail_it = 'Piano di attivazione 30 giorni · 1 call strategica · 1 revisione' %}
+    {% elsif product.handle == 'b-b-low-season-growth-partner' %}
+      {% assign clean_title = 'Low Season Growth Partner' %}
+      {% assign service_detail_en = '30-day done-with-you programme · 2 strategy calls · 2 reviews' %}
+      {% assign service_detail_it = 'Programma 30 giorni done-with-you · 2 call strategiche · 2 revisioni' %}
+    {% endif %}
+
     <style>
-      /* LowSeasonGrowth service checkout cleanup */
       body.lsg-service-product product-information quantity-selector-component,
       body.lsg-service-product product-information .quantity-selector,
       body.lsg-service-product product-information .quantity-selector-wrapper,
@@ -27,22 +39,27 @@
         line-height: 1.05 !important;
         letter-spacing: -.035em !important;
         color: #10372e !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 6px !important;
       }
 
-      body.lsg-service-product product-information .price,
-      body.lsg-service-product product-information [class*='price'] {
-        font-weight: 700;
+      body.lsg-service-product product-information product-price,
+      body.lsg-service-product product-information product-price [ref='priceContainer'],
+      body.lsg-service-product product-information .price {
+        color:#10372e !important;
+        font-size:clamp(1.28rem,2.6vw,1.65rem) !important;
+        line-height:1.15 !important;
+        font-weight:800 !important;
+        letter-spacing:-.015em !important;
       }
 
       body.lsg-service-product product-information .buy-buttons-block {
         display:block;
-        margin-top: 8px;
+        margin-top: 14px;
       }
 
       body.lsg-service-product product-information add-to-cart-component button[ref='addToCartButton'],
       body.lsg-service-product product-information button[name='add'][ref='addToCartButton'] {
-        min-height: 54px !important;
+        min-height: 56px !important;
         width: 100% !important;
         border-radius: 4px !important;
         font-size: 14px !important;
@@ -50,19 +67,62 @@
         letter-spacing: .01em !important;
       }
 
+      .lsg-service-eyebrow {
+        margin:0 0 9px;
+        color:#69756f;
+        font:800 11px/1.25 Arial,Helvetica,sans-serif;
+        letter-spacing:.11em;
+        text-transform:uppercase;
+      }
+
+      .lsg-service-purchase-summary {
+        margin:13px 0 2px;
+        padding:15px 16px;
+        border:1px solid #d9d3c4;
+        border-radius:8px;
+        background:#fbfaf6;
+        color:#173e35;
+      }
+      .lsg-service-purchase-summary strong {
+        display:block;
+        margin-bottom:5px;
+        font:800 13px/1.35 Arial,Helvetica,sans-serif;
+      }
+      .lsg-service-purchase-summary p {
+        margin:0;
+        color:#596660;
+        font:500 12.5px/1.55 Arial,Helvetica,sans-serif;
+      }
+
       .lsg-service-trustline {
         display:flex;
         flex-wrap:wrap;
         gap:7px 14px;
-        margin:10px 0 0;
+        margin:11px 0 0;
         color:#59635f;
-        font:600 11.5px/1.45 Arial,Helvetica,sans-serif;
+        font:650 11.5px/1.45 Arial,Helvetica,sans-serif;
       }
       .lsg-service-trustline span:before {
         content:'✓';
         margin-right:5px;
         color:#0d3f34;
         font-weight:800;
+      }
+
+      .lsg-service-checkout-note {
+        margin:9px 0 0;
+        color:#78827e;
+        text-align:center;
+        font:500 10.5px/1.4 Arial,Helvetica,sans-serif;
+      }
+
+      body.lsg-service-product .lsgpc-inline-meta {
+        display:none !important;
+      }
+
+      @media (max-width:749px) {
+        .lsg-service-purchase-summary { margin-top:11px; padding:14px; }
+        .lsg-service-trustline { gap:6px 11px; }
       }
     </style>
 
@@ -73,7 +133,6 @@
         var productInfo = document.querySelector('product-information, .product-information');
         if (!productInfo) return;
 
-        /* Quantity is irrelevant for a one-off consulting service. */
         productInfo.querySelectorAll(
           'quantity-selector-component, .quantity-selector-wrapper, .quantity-selector, [data-quantity-selector], .product-form__quantity'
         ).forEach(function (el) {
@@ -81,14 +140,35 @@
           (wrapper || el).style.display = 'none';
         });
 
-        /* Keep one decision-focused CTA; preserve Shopify's native product form and events. */
         productInfo.querySelectorAll('accelerated-checkout, shopify-accelerated-checkout, .shopify-payment-button').forEach(function (el) {
           el.style.display = 'none';
         });
 
-        /* Make the result of the native add-to-cart action immediately visible. */
         var cartDrawerComponent = document.querySelector('cart-drawer-component');
         if (cartDrawerComponent) cartDrawerComponent.setAttribute('auto-open', '');
+
+        var title = productInfo.querySelector('h1');
+        if (title) {
+          title.textContent = {{ clean_title | json }};
+          if (!productInfo.querySelector('.lsg-service-eyebrow')) {
+            var eyebrow = document.createElement('div');
+            eyebrow.className = 'lsg-service-eyebrow';
+            eyebrow.textContent = {% if is_it %}'Low Season Growth · Servizio strategico'{% else %}'Low Season Growth · Strategy service'{% endif %};
+            title.insertAdjacentElement('beforebegin', eyebrow);
+          }
+        }
+
+        var buyButtons = productInfo.querySelector('.buy-buttons-block');
+        if (buyButtons && !productInfo.querySelector('.lsg-service-purchase-summary')) {
+          var summary = document.createElement('div');
+          summary.className = 'lsg-service-purchase-summary';
+          summary.innerHTML = {% if is_it %}
+            '<strong>Servizio strategico una tantum</strong><p>{{ service_detail_it | escape }}</p>'
+          {% else %}
+            '<strong>One-time strategy service</strong><p>{{ service_detail_en | escape }}</p>'
+          {% endif %};
+          buyButtons.insertAdjacentElement('beforebegin', summary);
+        }
 
         var addButton = productInfo.querySelector('button[ref="addToCartButton"][name="add"]');
         if (addButton) {
@@ -105,21 +185,202 @@
           addButton.setAttribute('aria-label', label);
         }
 
-        var buyButtons = productInfo.querySelector('.buy-buttons-block');
         if (buyButtons && !productInfo.querySelector('.lsg-service-trustline')) {
           var trust = document.createElement('div');
           trust.className = 'lsg-service-trustline';
           trust.innerHTML = {% if is_it %}
-            '<span>Servizio digitale</span><span>Nessuna spedizione</span><span>Questionario dopo il checkout</span>'
+            '<span>Acquisto una tantum</span><span>Nessun abbonamento</span><span>Servizio da remoto</span><span>Questionario dopo il checkout</span>'
           {% else %}
-            '<span>Digital service</span><span>No shipping</span><span>Questionnaire after checkout</span>'
+            '<span>One-time purchase</span><span>No subscription</span><span>Remote service</span><span>Questionnaire after checkout</span>'
           {% endif %};
           buyButtons.insertAdjacentElement('afterend', trust);
         }
+
+        if (buyButtons && !productInfo.querySelector('.lsg-service-checkout-note')) {
+          var checkoutNote = document.createElement('div');
+          checkoutNote.className = 'lsg-service-checkout-note';
+          checkoutNote.textContent = {% if is_it %}'Pagamento gestito tramite checkout Shopify.'{% else %}'Payment handled through Shopify checkout.'{% endif %};
+          var trustLine = productInfo.querySelector('.lsg-service-trustline');
+          (trustLine || buyButtons).insertAdjacentElement('afterend', checkoutNote);
+        }
+
+        window.requestAnimationFrame(function () {
+          productInfo.querySelectorAll('.lsgpc-inline-meta').forEach(function (el) { el.style.display = 'none'; });
+        });
       });
     </script>
   {% endif %}
 {% endif %}
+
+<style>
+  .cart-items__table-row.lsg-service-line quantity-selector-component,
+  .cart-items__table-row.lsg-service-line .quantity-selector {
+    display:none !important;
+  }
+
+  body.lsg-service-cart .cart-totals__tax-note,
+  body.lsg-service-cart .additional-checkout-buttons {
+    display:none !important;
+  }
+
+  .lsg-cart-service-note {
+    margin: 8px 0 0;
+    color: #52615c;
+    font: 600 12px/1.45 Arial, Helvetica, sans-serif;
+  }
+
+  .lsg-cart-service-note:before {
+    content: '✓';
+    margin-right: 6px;
+    color: #0d3f34;
+    font-weight: 800;
+  }
+
+  body.lsg-service-cart .cart__checkout-button {
+    min-height: 54px;
+    border-radius: 4px;
+    font-weight: 800;
+  }
+</style>
+
+<script>
+  (function () {
+    var serviceHandles = {
+      'b-b-low-season-opportunity-audit': 'Low Season Growth Audit',
+      'b-b-low-season-booking-sprint': 'Low Season Booking Sprint',
+      'b-b-low-season-growth-partner': 'Low Season Growth Partner'
+    };
+    var isIt = {% if request.locale.iso_code == 'it' %}true{% else %}false{% endif %};
+    var serviceNote = isIt
+      ? 'Servizio digitale una tantum · Nessuna spedizione · Questionario dopo il checkout'
+      : 'One-time digital service · No shipping required · Questionnaire after checkout';
+    var serviceCheckout = isIt ? 'Continua al pagamento sicuro' : 'Continue to secure checkout';
+    var scheduled = false;
+
+    function handleFromHref(href) {
+      if (!href) return '';
+      var match = href.match(/\/products\/([^?#\/]+)/);
+      return match ? match[1] : '';
+    }
+
+    function getProductInfo(row) {
+      var links = Array.prototype.slice.call(row.querySelectorAll('a[href*="/products/"]'));
+      var productHandle = '';
+      var titleLink = null;
+
+      for (var i = 0; i < links.length; i++) {
+        var handle = handleFromHref(links[i].getAttribute('href') || links[i].href);
+        if (!handle) continue;
+        if (!productHandle) productHandle = handle;
+        if (serviceHandles[handle] && links[i].textContent.trim().length > 0) {
+          productHandle = handle;
+          titleLink = links[i];
+          break;
+        }
+      }
+
+      return { handle: productHandle, titleLink: titleLink };
+    }
+
+    function setHidden(selector, hide) {
+      document.querySelectorAll(selector).forEach(function (el) {
+        if (hide) {
+          if (!el.hasAttribute('data-lsg-original-display')) {
+            el.setAttribute('data-lsg-original-display', el.style.display || '');
+          }
+          el.style.setProperty('display', 'none', 'important');
+        } else if (el.hasAttribute('data-lsg-original-display')) {
+          var original = el.getAttribute('data-lsg-original-display');
+          if (original) el.style.display = original;
+          else el.style.removeProperty('display');
+          el.removeAttribute('data-lsg-original-display');
+        }
+      });
+    }
+
+    function restoreCheckoutLabels() {
+      document.querySelectorAll('.cart__checkout-button .button-text').forEach(function (label) {
+        if (label.dataset.lsgOriginalText) {
+          if (label.textContent.trim() !== label.dataset.lsgOriginalText) {
+            label.textContent = label.dataset.lsgOriginalText;
+          }
+          delete label.dataset.lsgOriginalText;
+        }
+      });
+    }
+
+    function applyCartCleanup() {
+      scheduled = false;
+      var rows = Array.prototype.slice.call(document.querySelectorAll('.cart-items__table-row'));
+      var productRowCount = 0;
+      var serviceCount = 0;
+
+      rows.forEach(function (row) {
+        var info = getProductInfo(row);
+
+        if (!info.handle) {
+          row.classList.remove('lsg-service-line');
+          return;
+        }
+
+        productRowCount += 1;
+        var isService = Boolean(serviceHandles[info.handle]);
+        row.classList.toggle('lsg-service-line', isService);
+
+        if (!isService) return;
+        serviceCount += 1;
+
+        if (info.titleLink) {
+          var desiredTitle = serviceHandles[info.handle];
+          if (info.titleLink.textContent.trim() !== desiredTitle) {
+            info.titleLink.textContent = desiredTitle;
+          }
+        }
+      });
+
+      var allService = productRowCount > 0 && serviceCount === productRowCount;
+      document.body.classList.toggle('lsg-service-cart', allService);
+
+      setHidden('.cart-totals__tax-note, .additional-checkout-buttons', allService);
+
+      if (!allService) {
+        document.querySelectorAll('.lsg-cart-service-note').forEach(function (note) { note.remove(); });
+        restoreCheckoutLabels();
+        return;
+      }
+
+      document.querySelectorAll('.cart-totals__container').forEach(function (totals) {
+        if (totals.querySelector('.lsg-cart-service-note')) return;
+        var note = document.createElement('div');
+        note.className = 'lsg-cart-service-note';
+        note.textContent = serviceNote;
+        totals.appendChild(note);
+      });
+
+      document.querySelectorAll('.cart__checkout-button .button-text').forEach(function (label) {
+        if (!label.dataset.lsgOriginalText) label.dataset.lsgOriginalText = label.textContent.trim();
+        if (label.textContent.trim() !== serviceCheckout) label.textContent = serviceCheckout;
+      });
+    }
+
+    function scheduleCartCleanup() {
+      if (scheduled) return;
+      scheduled = true;
+      window.requestAnimationFrame(applyCartCleanup);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', scheduleCartCleanup, { once: true });
+    } else {
+      scheduleCartCleanup();
+    }
+
+    document.addEventListener('cart:update', scheduleCartCleanup);
+
+    var observer = new MutationObserver(scheduleCartCleanup);
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+  })();
+</script>
 
 {% schema %}
 {
