@@ -1,0 +1,128 @@
+{% if template.name == 'product' %}
+  {% assign lsg_service = false %}
+  {% if product.handle == 'b-b-low-season-opportunity-audit' or product.handle == 'b-b-low-season-booking-sprint' or product.handle == 'b-b-low-season-growth-partner' %}
+    {% assign lsg_service = true %}
+  {% endif %}
+
+  {% if lsg_service %}
+    {% assign is_it = false %}
+    {% if request.locale.iso_code == 'it' %}{% assign is_it = true %}{% endif %}
+
+    <style>
+      /* LowSeasonGrowth service checkout cleanup */
+      body.lsg-service-product product-information quantity-selector,
+      body.lsg-service-product product-information .quantity-selector,
+      body.lsg-service-product product-information [data-quantity-selector],
+      body.lsg-service-product product-information .product-form__quantity,
+      body.lsg-service-product product-information accelerated-checkout,
+      body.lsg-service-product product-information .shopify-payment-button {
+        display:none !important;
+      }
+
+      body.lsg-service-product product-information h1 {
+        font-family: Georgia, 'Times New Roman', serif !important;
+        font-size: clamp(2rem, 4vw, 3.25rem) !important;
+        line-height: 1.05 !important;
+        letter-spacing: -.035em !important;
+        color: #10372e !important;
+        margin-bottom: 8px !important;
+      }
+
+      body.lsg-service-product product-information .price,
+      body.lsg-service-product product-information [class*='price'] {
+        font-weight: 700;
+      }
+
+      body.lsg-service-product product-information buy-buttons {
+        display:block;
+        margin-top: 8px;
+      }
+
+      body.lsg-service-product product-information add-to-cart button,
+      body.lsg-service-product product-information button[name='add'] {
+        min-height: 54px !important;
+        width: 100% !important;
+        border-radius: 4px !important;
+        font-size: 14px !important;
+        font-weight: 800 !important;
+        letter-spacing: .01em !important;
+      }
+
+      .lsg-service-trustline {
+        display:flex;
+        flex-wrap:wrap;
+        gap:7px 14px;
+        margin:10px 0 0;
+        color:#59635f;
+        font:600 11.5px/1.45 Arial,Helvetica,sans-serif;
+      }
+      .lsg-service-trustline span:before {
+        content:'✓';
+        margin-right:5px;
+        color:#0d3f34;
+        font-weight:800;
+      }
+    </style>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.body.classList.add('lsg-service-product');
+
+        var productInfo = document.querySelector('product-information, .product-information');
+        if (!productInfo) return;
+
+        /* Quantity is irrelevant for a one-off consulting service. */
+        var quantityCandidates = productInfo.querySelectorAll(
+          'quantity-selector, .quantity-selector, [data-quantity-selector], .product-form__quantity'
+        );
+        quantityCandidates.forEach(function (el) {
+          var parentBlock = el.closest('[class*="quantity"], .shopify-block, .product-form__input');
+          (parentBlock || el).style.display = 'none';
+        });
+
+        /* Keep a single decision-focused CTA instead of ecommerce-style express checkout. */
+        productInfo.querySelectorAll('accelerated-checkout, .shopify-payment-button').forEach(function (el) {
+          el.style.display = 'none';
+        });
+
+        var addButton = productInfo.querySelector('add-to-cart button, button[name="add"]');
+        if (addButton) {
+          var label = {% if is_it %}'Inizia il mio piano'{% else %}'Start my plan'{% endif %};
+          var textNodes = addButton.querySelectorAll('span');
+          if (textNodes.length) {
+            var target = Array.prototype.find.call(textNodes, function (node) {
+              return node.offsetParent !== null && node.textContent.trim().length > 0;
+            });
+            if (target) target.textContent = label;
+            else addButton.textContent = label;
+          } else {
+            addButton.textContent = label;
+          }
+          addButton.setAttribute('aria-label', label);
+        }
+
+        var buyButtons = productInfo.querySelector('buy-buttons');
+        if (buyButtons && !productInfo.querySelector('.lsg-service-trustline')) {
+          var trust = document.createElement('div');
+          trust.className = 'lsg-service-trustline';
+          trust.innerHTML = {% if is_it %}
+            '<span>Servizio digitale</span><span>Nessuna spedizione</span><span>Questionario dopo il checkout</span>'
+          {% else %}
+            '<span>Digital service</span><span>No shipping</span><span>Questionnaire after checkout</span>'
+          {% endif %};
+          buyButtons.insertAdjacentElement('afterend', trust);
+        }
+      });
+    </script>
+  {% endif %}
+{% endif %}
+
+{% schema %}
+{
+  "name": "LSG checkout cleanup",
+  "class": "lsg-product-checkout-cleanup",
+  "settings": [],
+  "enabled_on": {"groups": ["header"]},
+  "presets": [{"name": "LSG checkout cleanup"}]
+}
+{% endschema %}
