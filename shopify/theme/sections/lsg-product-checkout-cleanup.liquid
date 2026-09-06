@@ -10,11 +10,13 @@
 
     <style>
       /* LowSeasonGrowth service checkout cleanup */
-      body.lsg-service-product product-information quantity-selector,
+      body.lsg-service-product product-information quantity-selector-component,
       body.lsg-service-product product-information .quantity-selector,
+      body.lsg-service-product product-information .quantity-selector-wrapper,
       body.lsg-service-product product-information [data-quantity-selector],
       body.lsg-service-product product-information .product-form__quantity,
       body.lsg-service-product product-information accelerated-checkout,
+      body.lsg-service-product product-information shopify-accelerated-checkout,
       body.lsg-service-product product-information .shopify-payment-button {
         display:none !important;
       }
@@ -33,13 +35,13 @@
         font-weight: 700;
       }
 
-      body.lsg-service-product product-information buy-buttons {
+      body.lsg-service-product product-information .buy-buttons-block {
         display:block;
         margin-top: 8px;
       }
 
-      body.lsg-service-product product-information add-to-cart button,
-      body.lsg-service-product product-information button[name='add'] {
+      body.lsg-service-product product-information add-to-cart-component button[ref='addToCartButton'],
+      body.lsg-service-product product-information button[name='add'][ref='addToCartButton'] {
         min-height: 54px !important;
         width: 100% !important;
         border-radius: 4px !important;
@@ -72,36 +74,38 @@
         if (!productInfo) return;
 
         /* Quantity is irrelevant for a one-off consulting service. */
-        var quantityCandidates = productInfo.querySelectorAll(
-          'quantity-selector, .quantity-selector, [data-quantity-selector], .product-form__quantity'
-        );
-        quantityCandidates.forEach(function (el) {
-          var parentBlock = el.closest('[class*="quantity"], .shopify-block, .product-form__input');
-          (parentBlock || el).style.display = 'none';
+        productInfo.querySelectorAll(
+          'quantity-selector-component, .quantity-selector-wrapper, .quantity-selector, [data-quantity-selector], .product-form__quantity'
+        ).forEach(function (el) {
+          var wrapper = el.closest('.quantity-selector-wrapper, .shopify-block, .product-form__input');
+          (wrapper || el).style.display = 'none';
         });
 
-        /* Keep a single decision-focused CTA instead of ecommerce-style express checkout. */
-        productInfo.querySelectorAll('accelerated-checkout, .shopify-payment-button').forEach(function (el) {
+        /* Keep one decision-focused CTA; preserve Shopify's native product form and events. */
+        productInfo.querySelectorAll('accelerated-checkout, shopify-accelerated-checkout, .shopify-payment-button').forEach(function (el) {
           el.style.display = 'none';
         });
 
-        var addButton = productInfo.querySelector('add-to-cart button, button[name="add"]');
+        /* Make the result of the native add-to-cart action immediately visible. */
+        var cartDrawerComponent = document.querySelector('cart-drawer-component');
+        if (cartDrawerComponent) cartDrawerComponent.setAttribute('auto-open', '');
+
+        var addButton = productInfo.querySelector('button[ref="addToCartButton"][name="add"]');
         if (addButton) {
           var label = {% if is_it %}'Inizia il mio piano'{% else %}'Start my plan'{% endif %};
-          var textNodes = addButton.querySelectorAll('span');
-          if (textNodes.length) {
-            var target = Array.prototype.find.call(textNodes, function (node) {
-              return node.offsetParent !== null && node.textContent.trim().length > 0;
-            });
-            if (target) target.textContent = label;
-            else addButton.textContent = label;
-          } else {
-            addButton.textContent = label;
-          }
+          var textNode = null;
+          Array.prototype.some.call(addButton.childNodes, function (node) {
+            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim().length > 0) {
+              textNode = node;
+              return true;
+            }
+            return false;
+          });
+          if (textNode) textNode.textContent = '\n    ' + label + '\n    ';
           addButton.setAttribute('aria-label', label);
         }
 
-        var buyButtons = productInfo.querySelector('buy-buttons');
+        var buyButtons = productInfo.querySelector('.buy-buttons-block');
         if (buyButtons && !productInfo.querySelector('.lsg-service-trustline')) {
           var trust = document.createElement('div');
           trust.className = 'lsg-service-trustline';
