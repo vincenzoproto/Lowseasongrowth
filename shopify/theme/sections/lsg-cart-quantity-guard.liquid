@@ -1,0 +1,37 @@
+<script>
+(function () {
+  var serviceHandles = {
+    'b-b-low-season-opportunity-audit': true,
+    'b-b-low-season-booking-sprint': true,
+    'b-b-low-season-growth-partner': true
+  };
+
+  var match = window.location.pathname.match(/\/products\/([^\/?#]+)/);
+  var currentHandle = match ? match[1] : '';
+  if (!serviceHandles[currentHandle]) return;
+
+  function enforceSingleQuantity() {
+    document.querySelectorAll('product-information input[name="quantity"], .product-information input[name="quantity"]').forEach(function (input) {
+      input.value = '1';
+      input.min = '1';
+      input.max = '1';
+      input.step = '1';
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enforceSingleQuantity, { once: true });
+  } else {
+    enforceSingleQuantity();
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "LSG quantity guard",
+  "settings": [],
+  "enabled_on": {"groups": ["header"]},
+  "presets": [{"name": "LSG quantity guard"}]
+}
+{% endschema %}
