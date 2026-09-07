@@ -1,0 +1,110 @@
+{% if template.name == 'product' %}
+<script>
+(function () {
+  var serviceHandles = {
+    'b-b-low-season-opportunity-audit': true,
+    'b-b-low-season-booking-sprint': true,
+    'b-b-low-season-growth-partner': true
+  };
+
+  var match = window.location.pathname.match(/\/products\/([^\/?#]+)/);
+  var currentHandle = match ? match[1] : '';
+  if (!serviceHandles[currentHandle]) return;
+
+  var processing = false;
+
+  function getVariantId(button) {
+    var form = button.form || button.closest('form');
+    if (!form) {
+      var component = button.closest('product-form-component, product-information, .product-information');
+      form = component && component.querySelector('form[action*="/cart/add"]');
+    }
+    var input = form && form.querySelector('input[name="id"], select[name="id"]');
+    return input && input.value ? String(input.value) : '';
+  }
+
+  function setBusy(button, busy) {
+    if (!button) return;
+    button.disabled = busy;
+    button.setAttribute('aria-busy', busy ? 'true' : 'false');
+    button.classList.toggle('is-loading', busy);
+  }
+
+  async function sendToCheckout(button) {
+    if (processing) return;
+    var variantId = getVariantId(button);
+    if (!variantId) {
+      window.location.assign('/cart');
+      return;
+    }
+
+    processing = true;
+    setBusy(button, true);
+
+    try {
+      var cartResponse = await fetch('/cart.js', {
+        credentials: 'same-origin',
+        headers: { 'Accept': 'application/json' }
+      });
+      if (!cartResponse.ok) throw new Error('Unable to read cart');
+      var cart = await cartResponse.json();
+
+      var existing = (cart.items || []).find(function (item) {
+        return String(item.variant_id) === variantId;
+      });
+
+      if (existing && existing.quantity !== 1) {
+        var changeResponse = await fetch('/cart/change.js', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({ id: existing.key, quantity: 1 })
+        });
+        if (!changeResponse.ok) throw new Error('Unable to normalize cart');
+      } else if (!existing) {
+        var addResponse = await fetch('/cart/add.js', {
+          method: 'POST',
+          credentials: 'same-origin',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            items: [{ id: Number(variantId), quantity: 1 }]
+          })
+        });
+        if (!addResponse.ok) throw new Error('Unable to add service');
+      }
+
+      window.location.assign('/checkout');
+    } catch (error) {
+      console.warn('LSG service checkout fallback:', error);
+      window.location.assign('/cart/' + encodeURIComponent(variantId) + ':1');
+    }
+  }
+
+  window.addEventListener('click', function (event) {
+    var target = event.target instanceof Element ? event.target : null;
+    if (!target) return;
+    var button = target.closest('button[name="add"], button[ref="addToCartButton"]');
+    if (!button || !button.closest('product-information, .product-information')) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+    sendToCheckout(button);
+  }, true);
+})();
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "LSG service checkout",
+  "settings": [],
+  "enabled_on": {"groups": ["header"]},
+  "presets": [{"name": "LSG service checkout"}]
+}
+{% endschema %}
