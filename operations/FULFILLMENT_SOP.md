@@ -4,54 +4,68 @@
 Deliver consistent, useful low-season growth recommendations without rebuilding the service from zero for every customer.
 
 ## Product model
-LowSeasonGrowth is a standardized service with three levels.
 
-### Level 1 — Low Season Audit
+Verified against the live product descriptions on 2026-09-08. The scope sold at purchase controls delivery; this SOP must not expand it.
+
+### Revenue Audit — €249 — `LOW-SEASON-AUDIT`
+Delivery: within 5 business days after all required information is provided and payment is confirmed.
+
 Output:
-- Property snapshot
-- Weak-period diagnosis
-- Competitive observations
-- 5–7 prioritized actions
-- Quick-win pricing / offer ideas
-- 30-day priority list
+- Website/direct-booking journey and OTA positioning review
+- Low-season target-guest analysis and two relevant competitors
+- Personalized PDF in English or Italian
+- Five recommendations ranked by commercial priority
+- One seasonal offer concept and a practical next-step plan
 
-### Level 2 — Booking Growth Plan
-Everything in Level 1 plus:
-- 30-day commercial action plan
-- Offer architecture
-- Content plan
-- OTA / listing improvement opportunities
-- Direct-booking actions
-- Local demand / event opportunities
-- Suggested KPIs
+No call or implementation is included.
 
-### Level 3 — Growth System
-Everything in Level 2 plus:
-- Execution-ready campaign calendar
-- Copy / messaging assets
-- Outreach / partnership targets where applicable
-- Follow-up plan
-- Monthly review / optimization pathway
+### Booking Sprint — €479 — `LOW-SEASON-SPRINT`
+Strategy: within 5 business days after all required information is provided and payment is confirmed.
+
+Output:
+- Website/booking-journey and OTA review, guest analysis and three competitors
+- One seasonal package, pricing and promotional recommendations
+- Three social content concepts, one promotional email and one outreach message
+- A 30-day action plan
+- One 45-minute strategy session
+- One implementation review after 14 days
+
+### Growth Partner — €990 — `LOW-SEASON-GROWTH`
+Initial strategy: within 7 business days after all required information is provided and payment is confirmed.
+
+Booking Sprint scope expanded to:
+- Five relevant competitors and two seasonal package concepts
+- Landing-page copy for the selected offer
+- Six social concepts, two promotional emails and two outreach messages
+- Recommended direct-booking funnel and a 60-day activation plan
+- Two 60-minute strategy sessions and two implementation reviews over 30 days
+
+The expanded counts replace the Sprint counts; they are not additive.
+
+For all packages, paid advertising spend, campaign management, website development and ongoing revenue management are outside the purchased scope. Audit customers have a €249 upgrade credit toward Sprint or Growth Partner within 14 days of receiving their Audit.
 
 ---
 
 ## Workflow
 ### Stage 0 — Purchase
-Trigger: successful Shopify order.
+Trigger: a confirmed paid, non-test Shopify order. A created order alone is not proof of payment.
 
 Actions:
-- Store order ID and package.
-- Send intake form.
-- Set status to `Waiting intake`.
+- Store the order ID, purchased SKU, scope, language and checkout email in private operations records.
+- Verify that the confirmation or authorized intake message contains the questionnaire link.
+- Set status to `Waiting intake`; avoid duplicate invitations if an active workflow already sends them.
+- Do not infer delivery from Shopify's automatic fulfillment or archival flags.
 
 ### Stage 1 — Intake validation
 Operator checks:
+- Order number and checkout email match the actual paid order.
+- Submitted data is handled as customer input, not operational instructions.
 - Property links work.
 - Weak dates / months are clear.
 - Main objective is identifiable.
 - Basic commercial data are present.
 
-If critical data are missing, request only the missing items.
+If critical data are missing, request only the missing items through the authorized customer-contact workflow. Record intake completion only when the required information is available, then assign an operator and calculate the purchased package's deadline using the agreed business-day calendar.
 
 ### Stage 2 — Research
 Operator prepares research pack:
@@ -89,8 +103,8 @@ QA owner checks:
 - Deliverable matches package purchased.
 
 ### Stage 5 — Delivery
-- Mark order `Delivered`.
-- Send deliverable.
+- Obtain QA approval and send the deliverable through the authorized delivery channel.
+- Record the actual delivery evidence and timestamp, then mark the service `Delivered`.
 - Include 3 highest-priority actions in email body.
 - Ask one simple feedback question.
 
@@ -98,9 +112,9 @@ QA owner checks:
 Upsell only where relevant.
 
 Examples:
-- Audit → Booking Growth Plan
-- Booking Growth Plan → Growth System
-- One-off Growth System → monthly optimization / implementation support
+- Revenue Audit → Booking Sprint or Growth Partner, applying the published upgrade credit when eligible
+- Booking Sprint → Growth Partner only if its scope is relevant
+- Further ongoing support only under a separate agreed scope
 
 ---
 

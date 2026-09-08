@@ -49,3 +49,16 @@ Google chooses whether and when to show images, favicons and enhanced results. D
 - [Google organization markup](https://developers.google.com/search/docs/appearance/structured-data/organization)
 - [Google favicon requirements](https://developers.google.com/search/docs/appearance/favicon-in-search)
 - [Shopify locale-aware URLs](https://shopify.dev/docs/storefronts/themes/markets/multiple-currencies-languages)
+
+## Search Console alert clarification — 2026-09-08
+
+Existing Google alert emails dated September 6–7 were reviewed after the publication checks:
+- Indexing: “Page with redirect.” The email does not identify the affected URLs, so it cannot establish whether each redirect is intentional or whether a specific current canonical page is excluded.
+- Product snippets: missing `review` and `aggregateRating`, explicitly described as non-critical.
+- Merchant listings: missing `hasMerchantReturnPolicy` and `shippingDetails`, explicitly described as non-critical.
+
+These alerts predate the September 8 publication. They are not proof of a site-wide indexing block or proof that the new version has been reprocessed. Do not invent reviews, ratings or physical-shipping terms for this consulting service.
+
+The connected GSC SEO Content Planning skill and tools are read-only. No URL inspection, indexing request, sitemap submission or validation request was performed. Next owner action in Search Console: inspect the canonical EN/IT homepage and Audit URLs, check the live URL result, and request indexing where appropriate. Investigate the redirect report's actual affected URLs before changing redirects.
+
+[Google recrawl guidance](https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl) explains that a request does not guarantee immediate indexing.

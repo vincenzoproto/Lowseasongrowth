@@ -1,0 +1,48 @@
+{% comment %}
+LowSeasonGrowth post-purchase block — prepared 2026-09-08, not installed.
+Insert once in the order confirmation's main message cell after backing up
+the existing template. Keep the existing payment instructions and order summary.
+Uses documented notification variables; no assumed customer_locale variable.
+{% endcomment %}
+{% assign lsg_has_audit = false %}
+{% assign lsg_has_sprint = false %}
+{% assign lsg_has_growth = false %}
+{% for lsg_line in line_items %}
+  {% case lsg_line.variant.sku %}
+    {% when 'LOW-SEASON-AUDIT' %}{% assign lsg_has_audit = true %}
+    {% when 'LOW-SEASON-SPRINT' %}{% assign lsg_has_sprint = true %}
+    {% when 'LOW-SEASON-GROWTH' %}{% assign lsg_has_growth = true %}
+  {% endcase %}
+{% endfor %}
+{% assign lsg_intake_required = false %}
+{% if lsg_has_audit or lsg_has_sprint or lsg_has_growth %}
+  {% assign lsg_intake_required = true %}
+{% endif %}
+{% if lsg_intake_required and cancelled != true and financial_status != 'refunded' and financial_status != 'voided' %}
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;border:1px solid #d8ded5;border-radius:12px;background:#f7f6ef;">
+  <tr>
+    <td style="padding:24px;font-family:Arial,sans-serif;color:#173e32;line-height:1.6;">
+      <h2 style="margin:0 0 12px;font-size:22px;color:#173e32;">Il prossimo passo: raccontaci la tua struttura</h2>
+      <p>Compila il questionario usando il numero ordine <strong>{{ name | escape }}</strong> e la stessa email del checkout. Tieni a portata i link della struttura e le date che vuoi riempire.</p>
+      <p><a href="https://lowseasongrowth.com/it/pages/start-your-low-season-plan" style="display:inline-block;padding:14px 20px;background:#173e32;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;">Compila il questionario</a></p>
+      <p>Il lavoro parte dopo la conferma del pagamento e la ricezione di tutte le informazioni necessarie.</p>
+      <ul>
+        {% if lsg_has_audit %}<li><strong>Revenue Audit:</strong> consegna entro 5 giorni lavorativi dalla ricezione delle informazioni complete.</li>{% endif %}
+        {% if lsg_has_sprint %}<li><strong>Booking Sprint:</strong> strategia entro 5 giorni lavorativi dalla ricezione delle informazioni complete; seguiranno la sessione e la verifica previste dal pacchetto.</li>{% endif %}
+        {% if lsg_has_growth %}<li><strong>Growth Partner:</strong> strategia iniziale entro 7 giorni lavorativi dalla ricezione delle informazioni complete; seguiranno le sessioni e le verifiche previste dal programma.</li>{% endif %}
+      </ul>
+      <hr style="border:0;border-top:1px solid #d8ded5;margin:24px 0;">
+      <h2 style="margin:0 0 12px;font-size:22px;color:#173e32;">Your next step: tell us about your property</h2>
+      <p>Complete the questionnaire with order number <strong>{{ name | escape }}</strong> and the email used at checkout. Have your property links and quiet dates ready.</p>
+      <p><a href="https://lowseasongrowth.com/pages/start-your-low-season-plan" style="display:inline-block;padding:14px 20px;background:#173e32;color:#ffffff;text-decoration:none;border-radius:6px;font-weight:bold;">Complete the questionnaire</a></p>
+      <p>Work starts after payment is confirmed and we have all the information needed.</p>
+      <ul>
+        {% if lsg_has_audit %}<li><strong>Revenue Audit:</strong> delivery within 5 business days of receiving complete information.</li>{% endif %}
+        {% if lsg_has_sprint %}<li><strong>Booking Sprint:</strong> strategy within 5 business days of receiving complete information, followed by the session and review included in your package.</li>{% endif %}
+        {% if lsg_has_growth %}<li><strong>Growth Partner:</strong> initial strategy within 7 business days of receiving complete information, followed by the sessions and reviews included in your programme.</li>{% endif %}
+      </ul>
+      <p>Domande / Questions: <a href="mailto:info@vincenzoproto.com" style="color:#173e32;">info@vincenzoproto.com</a></p>
+    </td>
+  </tr>
+</table>
+{% endif %}

@@ -6,75 +6,103 @@
 %}
 
 <section class="lsg-intake page-width">
-  <div class="lsg-intake__header">
-    {% if is_it %}
-      <p class="lsg-intake__eyebrow">LOW SEASON GROWTH</p>
-      <h1>Iniziamo dal tuo periodo più debole.</h1>
-      <p>Compila il questionario dopo l'acquisto. Useremo queste informazioni per preparare l'analisi e il piano operativo della tua struttura.</p>
-    {% else %}
-      <p class="lsg-intake__eyebrow">LOW SEASON GROWTH</p>
-      <h1>Let's start with your slowest period.</h1>
-      <p>Complete this questionnaire after purchase. We'll use your answers to build the analysis and action plan for your property.</p>
-    {% endif %}
+  <div class="lsg-intake__hero">
+    <div class="lsg-intake__header">
+      <p class="lsg-intake__eyebrow">LOW SEASON GROWTH · {% if is_it %}CLIENT INTAKE{% else %}CLIENT INTAKE{% endif %}</p>
+      {% if is_it %}
+        <h1>Partiamo dal periodo che vuoi riempire.</h1>
+        <p>Condividi il contesto della struttura una sola volta. Useremo queste informazioni per preparare l’analisi e il piano operativo del servizio acquistato.</p>
+      {% else %}
+        <h1>Let's start with the dates you want to fill.</h1>
+        <p>Share your property context once. We’ll use it to prepare the analysis and action plan included in your purchase.</p>
+      {% endif %}
+    </div>
+
+    <div class="lsg-intake__prep" aria-label="{% if is_it %}Prima di iniziare{% else %}Before you start{% endif %}">
+      <div><strong>4–6 min</strong><span>{% if is_it %}Tempo medio{% else %}Typical completion time{% endif %}</span></div>
+      <div><strong>#1001</strong><span>{% if is_it %}Tieni a portata il numero ordine{% else %}Have your order number ready{% endif %}</span></div>
+      <div><strong>Links</strong><span>{% if is_it %}Sito, OTA e social della struttura{% else %}Property site, OTA and social links{% endif %}</span></div>
+    </div>
   </div>
 
   {% form 'contact', class: 'lsg-intake__form' %}
+    <input type="hidden" name="contact[Subject]" value="Low Season Growth client intake">
+    <input type="hidden" name="contact[Form type]" value="Post-purchase questionnaire">
+
     {% if form.posted_successfully? %}
       <div class="lsg-intake__success" role="status">
-        {% if is_it %}<strong>Ricevuto.</strong> Il tuo questionario è stato inviato correttamente.{% else %}<strong>Received.</strong> Your questionnaire has been submitted successfully.{% endif %}
+        <span class="lsg-intake__success-icon">✓</span>
+        <div>
+          {% if is_it %}<strong>Questionario ricevuto.</strong><p>Abbiamo ricevuto le informazioni della struttura. Puoi chiudere questa pagina.</p>{% else %}<strong>Questionnaire received.</strong><p>We have your property information. You can close this page.</p>{% endif %}
+        </div>
       </div>
     {% endif %}
-    {{ form.errors | default_errors }}
+
+    {% if form.errors %}
+      <div class="lsg-intake__errors">{{ form.errors | default_errors }}</div>
+    {% endif %}
 
     <fieldset>
-      <legend>{% if is_it %}1. Ordine e contatto{% else %}1. Order & contact{% endif %}</legend>
+      <legend><span>01</span>{% if is_it %}Ordine e contatto{% else %}Order & contact{% endif %}</legend>
+      <p class="lsg-intake__section-note">{% if is_it %}Questi due dati ci permettono di collegare il questionario all’acquisto corretto.{% else %}These details let us match your questionnaire to the correct purchase.{% endif %}</p>
       <div class="lsg-grid">
-        <label>{% if is_it %}Numero ordine Shopify{% else %}Shopify order number{% endif %}<input required name="contact[Order number]" placeholder="#1001"></label>
-        <label>{% if is_it %}Email usata al checkout{% else %}Checkout email{% endif %}<input required type="email" name="contact[email]" autocomplete="email"></label>
-        <label>{% if is_it %}Nome e cognome{% else %}Full name{% endif %}<input required name="contact[Full name]" autocomplete="name"></label>
-        <label>{% if is_it %}Nome struttura{% else %}Property name{% endif %}<input required name="contact[Property name]"></label>
+        <label><span>{% if is_it %}Numero ordine Shopify{% else %}Shopify order number{% endif %} <b>*</b></span><input required name="contact[Order number]" placeholder="#1001" inputmode="text"></label>
+        <label><span>{% if is_it %}Email usata al checkout{% else %}Checkout email{% endif %} <b>*</b></span><input required type="email" name="contact[email]" autocomplete="email" placeholder="name@example.com"></label>
+        <label><span>{% if is_it %}Nome e cognome{% else %}Full name{% endif %} <b>*</b></span><input required name="contact[Full name]" autocomplete="name"></label>
+        <label><span>{% if is_it %}Nome struttura{% else %}Property name{% endif %} <b>*</b></span><input required name="contact[Property name]"></label>
       </div>
     </fieldset>
 
     <fieldset>
-      <legend>{% if is_it %}2. La struttura{% else %}2. Your property{% endif %}</legend>
+      <legend><span>02</span>{% if is_it %}La struttura{% else %}Your property{% endif %}</legend>
+      <p class="lsg-intake__section-note">{% if is_it %}Ci serve una fotografia rapida del prodotto che il cliente vede e acquista oggi.{% else %}Give us a quick snapshot of the product guests see and book today.{% endif %}</p>
       <div class="lsg-grid">
-        <label>{% if is_it %}Città / destinazione{% else %}City / destination{% endif %}<input required name="contact[Destination]"></label>
-        <label>{% if is_it %}Paese{% else %}Country{% endif %}<input required name="contact[Country]"></label>
-        <label>{% if is_it %}Camere o unità{% else %}Rooms or units{% endif %}<input type="number" min="1" name="contact[Rooms or units]"></label>
-        <label>{% if is_it %}ADR medio / tariffa media{% else %}Average ADR / nightly rate{% endif %}<input name="contact[Average ADR]"></label>
+        <label><span>{% if is_it %}Città / destinazione{% else %}City / destination{% endif %} <b>*</b></span><input required name="contact[Destination]"></label>
+        <label><span>{% if is_it %}Paese{% else %}Country{% endif %} <b>*</b></span><input required name="contact[Country]"></label>
+        <label><span>{% if is_it %}Camere o unità{% else %}Rooms or units{% endif %}</span><input type="number" min="1" name="contact[Rooms or units]"></label>
+        <label><span>{% if is_it %}ADR / tariffa media{% else %}Average ADR / nightly rate{% endif %}</span><input name="contact[Average ADR]" placeholder="€120 / $140"></label>
       </div>
-      <label>Website / Airbnb / Booking URL<textarea required name="contact[Property URLs]" rows="3"></textarea></label>
-      <label>Instagram / social URL<textarea name="contact[Social URLs]" rows="2"></textarea></label>
+      <label><span>Website / Airbnb / Booking URL <b>*</b></span><textarea required name="contact[Property URLs]" rows="3" placeholder="https://..."></textarea></label>
+      <label><span>Instagram / social URL</span><textarea name="contact[Social URLs]" rows="2" placeholder="https://..."></textarea></label>
     </fieldset>
 
     <fieldset>
-      <legend>{% if is_it %}3. Il problema di bassa stagione{% else %}3. Your low-season problem{% endif %}</legend>
-      <label>{% if is_it %}Quali mesi, settimane o date vuoi riempire?{% else %}Which months, weeks or dates do you want to fill?{% endif %}<textarea required name="contact[Weak dates]" rows="3"></textarea></label>
+      <legend><span>03</span>{% if is_it %}La bassa stagione{% else %}Your low season{% endif %}</legend>
+      <p class="lsg-intake__section-note">{% if is_it %}Più sei preciso sulle date deboli, più il piano potrà essere concreto.{% else %}The more specific you are about weak dates, the more actionable the plan can be.{% endif %}</p>
+      <label><span>{% if is_it %}Quali mesi, settimane o date vuoi riempire?{% else %}Which months, weeks or dates do you want to fill?{% endif %} <b>*</b></span><textarea required name="contact[Weak dates]" rows="3" placeholder="{% if is_it %}Es. novembre–febbraio, escluso Natale{% else %}e.g. November–February, excluding Christmas{% endif %}"></textarea></label>
       <div class="lsg-grid">
-        <label>{% if is_it %}Occupazione stimata nel periodo debole{% else %}Estimated occupancy in the weak period{% endif %}<input name="contact[Weak period occupancy]" placeholder="e.g. 35%"></label>
-        <label>{% if is_it %}Budget marketing mensile{% else %}Monthly marketing budget{% endif %}<input name="contact[Marketing budget]"></label>
+        <label><span>{% if is_it %}Occupazione stimata nel periodo debole{% else %}Estimated occupancy in the weak period{% endif %}</span><input name="contact[Weak period occupancy]" placeholder="e.g. 35%"></label>
+        <label><span>{% if is_it %}Budget marketing mensile{% else %}Monthly marketing budget{% endif %}</span><input name="contact[Marketing budget]" placeholder="€ / $"></label>
       </div>
-      <label>{% if is_it %}Chi prenota normalmente la struttura?{% else %}Who normally books your property?{% endif %}<textarea name="contact[Guest segments]" rows="3"></textarea></label>
-      <label>{% if is_it %}Da dove arrivano oggi le prenotazioni?{% else %}Where do bookings currently come from?{% endif %}<textarea name="contact[Booking channels]" rows="3" placeholder="Booking.com, Airbnb, direct, Google, social..."></textarea></label>
-      <label>{% if is_it %}Sconti, offerte o promozioni già provati{% else %}Discounts, offers or promotions already tried{% endif %}<textarea name="contact[Promotions tried]" rows="3"></textarea></label>
+      <label><span>{% if is_it %}Chi prenota normalmente la struttura?{% else %}Who normally books your property?{% endif %}</span><textarea name="contact[Guest segments]" rows="3"></textarea></label>
+      <label><span>{% if is_it %}Da dove arrivano oggi le prenotazioni?{% else %}Where do bookings currently come from?{% endif %}</span><textarea name="contact[Booking channels]" rows="3" placeholder="Booking.com, Airbnb, direct, Google, social..."></textarea></label>
+      <label><span>{% if is_it %}Sconti, offerte o promozioni già provati{% else %}Discounts, offers or promotions already tried{% endif %}</span><textarea name="contact[Promotions tried]" rows="3"></textarea></label>
     </fieldset>
 
     <fieldset>
-      <legend>{% if is_it %}4. Obiettivo{% else %}4. Goal{% endif %}</legend>
-      <label>{% if is_it %}Qual è il risultato più importante nei prossimi 90 giorni?{% else %}What's the most important result you want in the next 90 days?{% endif %}<textarea required name="contact[90 day goal]" rows="4"></textarea></label>
-      <label>{% if is_it %}Concorrenti o strutture di riferimento{% else %}Competitors or benchmark properties{% endif %}<textarea name="contact[Competitors]" rows="3"></textarea></label>
-      <label>{% if is_it %}Qualsiasi altra informazione utile{% else %}Anything else we should know{% endif %}<textarea name="contact[body]" rows="4"></textarea></label>
+      <legend><span>04</span>{% if is_it %}Obiettivo{% else %}Goal{% endif %}</legend>
+      <p class="lsg-intake__section-note">{% if is_it %}Chiudiamo con il risultato che vuoi ottenere e i riferimenti che ritieni utili.{% else %}Finish with the result you want and any useful benchmarks or context.{% endif %}</p>
+      <label><span>{% if is_it %}Qual è il risultato più importante nei prossimi 90 giorni?{% else %}What's the most important result you want in the next 90 days?{% endif %} <b>*</b></span><textarea required name="contact[90 day goal]" rows="4"></textarea></label>
+      <label><span>{% if is_it %}Concorrenti o strutture di riferimento{% else %}Competitors or benchmark properties{% endif %}</span><textarea name="contact[Competitors]" rows="3"></textarea></label>
+      <label><span>{% if is_it %}Altre informazioni utili{% else %}Anything else we should know{% endif %}</span><textarea name="contact[body]" rows="4"></textarea></label>
     </fieldset>
 
-    <label class="lsg-consent"><input required type="checkbox" name="contact[Data confirmation]" value="Confirmed"> <span>{% if is_it %}Confermo che i dati forniti possono essere utilizzati per preparare il servizio acquistato.{% else %}I confirm that the information provided can be used to prepare the service I purchased.{% endif %}</span></label>
-
-    <button type="submit" class="button">{% if is_it %}Invia il questionario{% else %}Submit questionnaire{% endif %}</button>
+    <div class="lsg-intake__finish">
+      <label class="lsg-consent"><input required type="checkbox" name="contact[Data confirmation]" value="Confirmed"> <span>{% if is_it %}Confermo che i dati forniti possono essere utilizzati per preparare il servizio acquistato.{% else %}I confirm that the information provided can be used to prepare the service I purchased.{% endif %}</span></label>
+      <button type="submit" class="lsg-intake__submit">{% if is_it %}Invia il questionario{% else %}Submit questionnaire{% endif %}<span aria-hidden="true">→</span></button>
+      <p class="lsg-intake__required">* {% if is_it %}Campi obbligatori · I dati sono usati per l’erogazione del servizio acquistato.{% else %}Required fields · Information is used to deliver the service you purchased.{% endif %}</p>
+    </div>
   {% endform %}
 </section>
 
 <style>
-.lsg-intake{max-width:900px;margin:0 auto;padding-top:48px;padding-bottom:72px}.lsg-intake__header{max-width:720px;margin-bottom:36px}.lsg-intake__eyebrow{font-size:12px;letter-spacing:.16em;font-weight:700}.lsg-intake h1{font-size:clamp(34px,6vw,58px);line-height:1.02;margin:10px 0 18px}.lsg-intake__form{display:grid;gap:28px}.lsg-intake fieldset{border:1px solid rgba(0,0,0,.14);border-radius:18px;padding:22px}.lsg-intake legend{font-weight:700;padding:0 8px}.lsg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.lsg-intake label{display:grid;gap:8px;font-size:14px;font-weight:600;margin-top:14px}.lsg-intake input,.lsg-intake textarea{width:100%;font:inherit;border:1px solid rgba(0,0,0,.2);border-radius:10px;padding:13px;background:transparent;color:inherit}.lsg-consent{grid-template-columns:auto 1fr!important;align-items:start}.lsg-consent input{width:auto;margin-top:3px}.lsg-intake__success{padding:16px;border-radius:12px;background:rgba(0,128,0,.08)}@media(max-width:700px){.lsg-grid{grid-template-columns:1fr}.lsg-intake{padding-top:28px}.lsg-intake fieldset{padding:16px}}
+.lsg-intake{--forest:#0d3f34;--cream:#f4f1e9;--paper:#fffdfa;--ink:#17201c;--muted:#5c6661;--line:#ded9cf;max-width:960px;margin:0 auto;padding-top:44px;padding-bottom:80px;color:var(--ink)}
+.lsg-intake__hero{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(250px,.55fr);gap:34px;align-items:end;margin-bottom:35px;padding-bottom:30px;border-bottom:1px solid var(--line)}
+.lsg-intake__header{max-width:690px}.lsg-intake__eyebrow{margin:0 0 12px;color:var(--forest);font-size:10px;letter-spacing:.18em;font-weight:800}.lsg-intake h1{margin:0;font-family:Georgia,'Times New Roman',serif;color:#10372e;font-size:clamp(38px,5.7vw,59px);font-weight:400;line-height:1.02;letter-spacing:-.035em}.lsg-intake__header>p:last-child{max-width:650px;margin:17px 0 0;color:#4e5954;font-size:15px;line-height:1.55}
+.lsg-intake__prep{display:grid;border:1px solid var(--line);border-radius:7px;background:#faf8f3;overflow:hidden}.lsg-intake__prep div{display:grid;grid-template-columns:64px 1fr;gap:10px;align-items:center;padding:11px 13px;border-bottom:1px solid #e7e2d9}.lsg-intake__prep div:last-child{border-bottom:0}.lsg-intake__prep strong{color:var(--forest);font-family:Georgia,'Times New Roman',serif;font-size:15px}.lsg-intake__prep span{color:#64706a;font-size:10.5px;line-height:1.35}
+.lsg-intake__form{display:grid;gap:18px}.lsg-intake fieldset{min-width:0;margin:0;border:1px solid var(--line);border-radius:7px;padding:22px 24px 25px;background:#fff}.lsg-intake legend{display:flex;align-items:center;gap:9px;padding:0 7px;color:#143d33;font-family:Georgia,'Times New Roman',serif;font-size:20px;font-weight:700}.lsg-intake legend span{display:grid;place-items:center;width:27px;height:27px;border:1px solid #9ab5ad;border-radius:50%;font-family:Arial,Helvetica,sans-serif;font-size:8.5px;font-weight:800;letter-spacing:.05em}.lsg-intake__section-note{margin:2px 0 12px;color:#7a817e;font-size:11.5px;line-height:1.45}.lsg-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 16px}.lsg-intake label{display:grid;gap:7px;margin-top:13px;color:#34403b;font-size:12px;font-weight:700;line-height:1.35}.lsg-intake label>span b{color:#0d3f34;font-weight:800}.lsg-intake input,.lsg-intake textarea{width:100%;font:inherit;font-weight:400;border:1px solid #d6d1c7;border-radius:5px;padding:12px 13px;background:#fffdfa;color:#1d2723;outline:none;transition:border-color .15s ease,box-shadow .15s ease}.lsg-intake input:focus,.lsg-intake textarea:focus{border-color:#6d9d90;box-shadow:0 0 0 3px rgba(13,63,52,.07)}.lsg-intake textarea{resize:vertical;min-height:74px}.lsg-intake input::placeholder,.lsg-intake textarea::placeholder{color:#9b9e9c}.lsg-intake__finish{display:grid;gap:13px;margin-top:4px;padding:20px 22px;border-radius:7px;background:#0d3f34;color:#fff}.lsg-consent{grid-template-columns:auto 1fr!important;align-items:start!important;margin:0!important;color:#e2ebe7!important;font-size:11px!important;font-weight:500!important}.lsg-consent input{width:auto;margin:2px 0 0;accent-color:#fff}.lsg-intake__submit{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:52px;padding:0 18px;border:1px solid #fff;border-radius:4px;background:#fff;color:#0d3f34;font-size:13px;font-weight:800;cursor:pointer}.lsg-intake__submit span{font-size:18px}.lsg-intake__required{margin:0;color:#bed0ca;font-size:9.5px;line-height:1.4}.lsg-intake__success{display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:start;padding:17px 18px;border:1px solid #a7c2b9;border-radius:7px;background:#f2f8f5;color:#23483e}.lsg-intake__success-icon{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#0d3f34;color:#fff;font-weight:800}.lsg-intake__success strong{display:block;margin-top:2px}.lsg-intake__success p{margin:4px 0 0;font-size:12px}.lsg-intake__errors{padding:14px 16px;border:1px solid #d7aaa5;border-radius:7px;background:#fff5f3;font-size:12px}
+@media(max-width:760px){.lsg-intake{padding-top:28px;padding-bottom:58px}.lsg-intake__hero{grid-template-columns:1fr;gap:22px;margin-bottom:25px}.lsg-intake__prep{grid-template-columns:1fr 1fr 1fr}.lsg-intake__prep div{grid-template-columns:1fr;gap:3px;border-bottom:0;border-right:1px solid #e7e2d9}.lsg-intake__prep div:last-child{border-right:0}.lsg-grid{grid-template-columns:1fr}.lsg-intake fieldset{padding:18px 16px 20px}.lsg-intake legend{font-size:18px}.lsg-intake__finish{padding:18px 16px}}
+@media(max-width:480px){.lsg-intake h1{font-size:39px}.lsg-intake__prep{grid-template-columns:1fr}.lsg-intake__prep div{grid-template-columns:58px 1fr;border-right:0;border-bottom:1px solid #e7e2d9}.lsg-intake__prep div:last-child{border-bottom:0}}
 </style>
 
 {% schema %}
