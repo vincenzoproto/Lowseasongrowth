@@ -5,11 +5,9 @@
   "created_on": "2026-09-08",
   "daily_account_send_cap": 80,
   "execution": {
-    "batch_size": 10,
-    "cadence": "hourly",
-    "first_run_local": "2026-09-09T08:00:00",
-    "notes": "Campagna finita a 70 invii complessivi. Ogni esecuzione elabora al massimo 10 invii; intervallo minimo reale di 90 secondi; nessun invio oltre il limite di 80 per giorno Europe/Rome.",
-    "scheduled_runs": 7
+    "mode": "immediate_user_requested",
+    "max_total": 70,
+    "minimum_seconds_between_sends": 90
   },
   "instagram": "https://www.instagram.com/lowseasongrowth/",
   "leads": [
@@ -1486,12 +1484,21 @@
   ],
   "minimum_seconds_between_sends": 90,
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
-  "scheduled_date": "2026-09-09",
+  "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
   "sent_count": 0,
-  "status": "scheduled",
+  "status": "sending",
   "timezone": "Europe/Rome",
-  "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Rome:20260909T080000\nRRULE:FREQ=HOURLY;COUNT=7\nEND:VEVENT",
+  "schedule": null,
   "timing_mode": "flexible_schedule",
-  "scheduling_confirmed_at": "2026-09-08T19:47:54.434491+00:00"
+  "scheduling_confirmed_at": "2026-09-08T19:47:54.434491+00:00",
+  "previous_schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Rome:20260909T080000\nRRULE:FREQ=HOURLY;COUNT=7\nEND:VEVENT",
+  "automation_enabled": false,
+  "schedule_cancelled_at": "2026-09-08T19:56:00.642Z",
+  "daily_account_send_cap_override": {
+    "scope": "Only the 70 emails in LSG-20260909-IG70",
+    "authorization": "Inviale lo Stesso",
+    "authorized_on": "2026-09-08T19:56:00.642Z",
+    "description": "User explicitly requested immediate sending despite the disclosed 170 sends today and prior limit of 80/day. Keep the 90-second interval; the usual cap remains for other campaigns."
+  }
 }
