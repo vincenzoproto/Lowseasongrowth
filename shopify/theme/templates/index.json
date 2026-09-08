@@ -1,0 +1,9 @@
+{
+  "sections": {
+    "lsg_revenue_first_home": {
+      "type": "lsg-revenue-first-home",
+      "settings": {}
+    }
+  },
+  "order": ["lsg_revenue_first_home"]
+}
