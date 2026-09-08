@@ -2,9 +2,9 @@
 
 ## Release status
 
-Initially prepared and verified in the unpublished Shopify theme **LSG Backup 2026-09-08 — SEO preview** (`206501708118`). Follow-up verification on 8 September confirmed that this theme is now MAIN and **LSG** (`206472773974`) is UNPUBLISHED. The Shopify connector permits theme-file writes on unpublished themes and does not permit publishing themes; publication is performed in Shopify admin.
+The SEO changes are published as part of **LSG Backup 2026-09-08 — Checkout corretto** (`206505902422`), confirmed as MAIN after the user's publication confirmation. The earlier SEO theme `206501708118` is UNPUBLISHED. The active theme also includes the Italian cart-opening correction documented in [CHECKOUT_FIX_2026-09-08.md](CHECKOUT_FIX_2026-09-08.md).
 
-A subsequent Italian add-to-cart issue was reproduced and corrected in a separate unpublished duplicate. See [CHECKOUT_FIX_2026-09-08.md](CHECKOUT_FIX_2026-09-08.md) for the current checkout correction and activation steps.
+Public requests without preview cookies confirmed the active theme, updated SEO metadata and native cart auto-open setting on the English homepage, Italian homepage and Italian Audit page. Publication and rollback steps below record the original release procedure.
 
 The working copy was duplicated from the live theme before changes, following `operations/BACKUP_AND_CHANGE_MANAGEMENT.md`. Shopify remains the source of truth for store content and transactions. This change belongs only to LowSeasonGrowth.
 

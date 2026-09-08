@@ -2,9 +2,7 @@
 
 ## Status
 
-The SEO theme `206501708118` was confirmed as MAIN during this follow-up. Its previous version `206472773974` is UNPUBLISHED.
-
-The checkout correction is saved in the unpublished duplicate **LSG Backup 2026-09-08 — Checkout corretto** (`206505902422`). It includes the published SEO changes. The Shopify connector does not allow publishing themes; activate the corrected copy from Shopify admin after checking its mobile preview.
+The checkout correction is now published in **LSG Backup 2026-09-08 — Checkout corretto** (`206505902422`). After the user's publication confirmation, Shopify verified this theme as MAIN and the previous SEO theme `206501708118` as UNPUBLISHED. The active theme includes all SEO changes.
 
 ## Reproduced problem
 
@@ -28,11 +26,13 @@ Set `current.auto_open_cart_drawer` to `true` in `config/settings_data.json` on 
 - The telemetry-enabled theme validator was blocked by automated approval review because it would transmit the full settings file to an external validation endpoint. It was not retried. Validation instead used the local JSON comparison, Shopify settings schema and readback, and the real browser checkout path.
 - Browser testing used a desktop viewport. Mobile emulation and payment processing were not tested. This update changes a native cart setting and adds no CSS or JavaScript.
 
-## Activation and rollback
+## Publication verification and rollback
 
-1. Open Shopify admin → Online Store → Themes.
-2. Preview **LSG Backup 2026-09-08 — Checkout corretto**, including on a phone.
-3. Publish the corrected copy. Keep the previous theme as the rollback option.
-4. If needed, revert `auto_open_cart_drawer` to `false` on an unpublished copy or publish the previous theme.
+- Publication is complete. Public requests without a preview session returned HTTP 200 for the English homepage, Italian homepage and Italian Audit page, all serving theme `206505902422`.
+- All three pages include the native cart `auto-open` attribute, updated localized SEO titles/descriptions, canonical URLs and preferred image metadata.
+- Keep the previous theme as the rollback option. Further theme changes should continue on unpublished duplicates.
+- Visitors can also access the cart directly at `https://lowseasongrowth.com/it/cart`.
 
-Until publication, visitors can reach the existing working checkout through the cart page at `https://lowseasongrowth.com/it/cart`.
+## Next SEO action
+
+Use Search Console URL Inspection to request a recrawl of the updated homepage and Audit pages. The connected planning tool is read-only; no indexing request has been submitted by the assistant. Google controls crawl timing and search-result imagery.
