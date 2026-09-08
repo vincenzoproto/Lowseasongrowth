@@ -1,0 +1,105 @@
+{% assign root = routes.root_url %}
+{% assign lsg_refund_url = shop.refund_policy.url | default: pages['refund-policy'].url %}
+{% assign lsg_terms_url = shop.terms_of_service.url | default: pages['terms-and-conditions'].url %}
+{% assign is_it = false %}
+{% if request.locale.iso_code == 'it' %}{% assign is_it = true %}{% endif %}
+
+<footer class="lsg-premium-footer">
+  <div class="lsgpf-inner">
+    <div class="lsgpf-grid">
+      <div class="lsgpf-brand">
+        <a class="lsgpf-logo" href="{{ root }}">Low Season Growth</a>
+        {% if is_it %}
+          <p>Strategia pratica per la bassa stagione delle strutture ricettive indipendenti.</p>
+        {% else %}
+          <p>Practical low-season strategy for independent hospitality properties.</p>
+        {% endif %}
+        <div class="lsgpf-trust">
+          <span>{% if is_it %}Servizio digitale{% else %}Digital service{% endif %}</span>
+          <span>{% if is_it %}Nessun contratto a lungo termine{% else %}No long-term contract{% endif %}</span>
+          <span>{% if is_it %}Supporto EN / IT{% else %}EN / IT support{% endif %}</span>
+        </div>
+      </div>
+
+      <nav class="lsgpf-column" aria-label="{% if is_it %}Navigazione{% else %}Explore{% endif %}">
+        <p class="lsgpf-heading">{% if is_it %}Esplora{% else %}Explore{% endif %}</p>
+        <a href="{{ root }}">Home</a>
+        <a href="{{ root }}#packages">{% if is_it %}Pacchetti{% else %}Packages{% endif %}</a>
+        <a href="{{ pages['how-it-works'].url }}">{% if is_it %}Come funziona{% else %}How it works{% endif %}</a>
+        <a href="{{ pages['faq'].url }}">FAQ</a>
+        <a href="{{ pages['contact'].url }}">{% if is_it %}Contatti{% else %}Contact{% endif %}</a>
+      </nav>
+
+      <nav class="lsgpf-column" aria-label="{% if is_it %}Servizi{% else %}Services{% endif %}">
+        <p class="lsgpf-heading">{% if is_it %}Servizi{% else %}Services{% endif %}</p>
+        <a href="{{ all_products['b-b-low-season-opportunity-audit'].url }}">Opportunity Audit</a>
+        <a href="{{ all_products['b-b-low-season-booking-sprint'].url }}">Booking Sprint</a>
+        <a href="{{ all_products['b-b-low-season-growth-partner'].url }}">Growth Partner</a>
+      </nav>
+
+      <div class="lsgpf-column lsgpf-partner">
+        <p class="lsgpf-heading">{% if is_it %}Lavora con noi{% else %}Work with us{% endif %}</p>
+        {% if is_it %}
+          <p>Hai esperienza commerciale B2B o contatti nel settore hospitality?</p>
+          <a class="lsgpf-partner-link" href="{{ pages['become-a-sales-partner'].url }}">Diventa Sales Partner <span aria-hidden="true">→</span></a>
+        {% else %}
+          <p>Do you have B2B sales experience or hospitality relationships?</p>
+          <a class="lsgpf-partner-link" href="{{ pages['become-a-sales-partner'].url }}">Become a Sales Partner <span aria-hidden="true">→</span></a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="lsgpf-bottom">
+      <span>© {{ 'now' | date: '%Y' }} Low Season Growth</span>
+      <div class="lsgpf-legal">
+        {% if lsg_terms_url != blank %}<a href="{{ lsg_terms_url }}">{% if is_it %}Termini e condizioni{% else %}Terms &amp; Conditions{% endif %}</a>{% endif %}
+        {% if shop.privacy_policy.url != blank %}<a href="{{ shop.privacy_policy.url }}">Privacy</a>{% endif %}
+        {% if lsg_refund_url != blank %}<a href="{{ lsg_refund_url }}">{% if is_it %}Rimborsi{% else %}Refunds{% endif %}</a>{% endif %}
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .lsg-premium-footer{background:#0d3f34;color:#f5f1e8;margin-top:0}
+  .lsgpf-inner{max-width:1280px;margin:0 auto;padding:58px 32px 24px}
+  .lsgpf-grid{display:grid;grid-template-columns:minmax(280px,1.65fr) repeat(3,minmax(150px,1fr));gap:44px}
+  .lsgpf-brand{max-width:390px}
+  .lsgpf-logo{display:inline-block;color:#fff;text-decoration:none;font-family:Georgia,'Times New Roman',serif;font-size:30px;line-height:1.05;letter-spacing:-.025em}
+  .lsgpf-brand>p{margin:15px 0 20px;max-width:340px;color:#d9e4df;font-size:14px;line-height:1.55}
+  .lsgpf-trust{display:flex;flex-wrap:wrap;gap:8px}
+  .lsgpf-trust span{padding:7px 9px;border:1px solid rgba(255,255,255,.16);border-radius:4px;color:#e9efec;font-size:10.5px;font-weight:700;letter-spacing:.02em}
+  .lsgpf-column{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+  .lsgpf-column .lsgpf-heading{margin:0 0 5px;color:#aebfb8;font-size:10px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+  .lsgpf-column>a{color:#f5f1e8;text-decoration:none;font-size:13.5px;line-height:1.45;transition:opacity .2s ease}
+  .lsgpf-column>a:hover{opacity:.7}
+  .lsgpf-partner>p:not(.lsgpf-heading){margin:0;color:#d9e4df;font-size:13px;line-height:1.55}
+  .lsgpf-column .lsgpf-partner-link{margin-top:5px;padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.4);font-weight:800}
+  .lsgpf-bottom{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-top:48px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);color:#aebfb8;font-size:11px}
+  .lsgpf-legal{display:flex;flex-wrap:wrap;gap:18px}
+  .lsgpf-legal a{color:#cbd8d3;text-decoration:none}
+  .lsgpf-legal a:hover{color:#fff}
+  @media(max-width:900px){
+    .lsgpf-grid{grid-template-columns:1.4fr 1fr 1fr;gap:34px}
+    .lsgpf-partner{grid-column:2/4}
+  }
+  @media(max-width:640px){
+    .lsgpf-inner{padding:42px 24px 22px}
+    .lsgpf-grid{grid-template-columns:1fr 1fr;gap:34px 24px}
+    .lsgpf-brand{grid-column:1/-1;max-width:none;padding-bottom:4px}
+    .lsgpf-logo{font-size:28px}
+    .lsgpf-brand>p{max-width:440px}
+    .lsgpf-partner{grid-column:1/-1;padding-top:4px}
+    .lsgpf-bottom{align-items:flex-start;flex-direction:column;margin-top:36px;gap:13px}
+    .lsgpf-legal{gap:14px}
+  }
+</style>
+
+{% schema %}
+{
+  "name": "LSG premium footer",
+  "settings": [],
+  "enabled_on": {"groups": ["footer"]},
+  "presets": [{"name": "LSG premium footer"}]
+}
+{% endschema %}
