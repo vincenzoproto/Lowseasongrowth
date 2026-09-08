@@ -3,7 +3,11 @@
     "lsg_revenue_first_home": {
       "type": "lsg-revenue-first-home",
       "settings": {}
+    },
+    "lsg_cta_contrast_fix": {
+      "type": "lsg-cta-contrast-fix",
+      "settings": {}
     }
   },
-  "order": ["lsg_revenue_first_home"]
+  "order": ["lsg_revenue_first_home", "lsg_cta_contrast_fix"]
 }
