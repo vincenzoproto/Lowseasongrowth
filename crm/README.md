@@ -1,29 +1,25 @@
 # LowSeasonGrowth CRM
 
-CRM commerciale dedicato esclusivamente a LowSeasonGrowth. Non inserire lead o attività del progetto Smart Creator.
+CRM commerciale **esclusivamente LowSeasonGrowth**. Smart Creator mantiene il proprio CRM nel repo `vincenzoproto/smart-stay-creator`; GuestFlow resta separato.
 
-## Pipeline
+## Struttura
 
-1. Lead
-2. Contacted
-3. Interested
-4. Call Scheduled
-5. Proposal Sent
-6. Paid
-7. Onboarding
-8. Delivery
-9. Upsell
-10. Lost
+- `LEADS.csv` — pipeline clienti/prospect LSG.
+- `../PARTNER_TRACKER.csv` — recruitment e attività di setter, closer e full-cycle partner.
+- `DEALS.csv` — incassi, rimborsi, revenue eleggibile e commissioni delle vendite reali.
+- `OPERATING_SYSTEM.md` — regole operative, stati, ownership e separazione tra business.
+- `ACTIVITY_LOG_*.md` — storico operativo; non è il database corrente.
 
-## Regole operative
+## Pipeline cliente ufficiale
 
-- Ogni nuovo prospect va inserito in `LEADS.csv` prima o contestualmente al primo contatto.
-- Aggiornare `last_contact` dopo ogni interazione.
-- Ogni opportunità aperta deve avere `next_follow_up` quando applicabile.
-- Inserire in `deal_value_eur` il valore potenziale della vendita.
-- Usare `notes` per obiezioni, esigenze della struttura e prossima azione.
-- Smart Creator mantiene il proprio CRM separato.
+`lead` → `contacted` → `replied` → `qualified` → `call_scheduled` → `proposal_sent` → `payment_pending` → `paid` → `onboarding` → `delivery` → `upsell`
 
-## Campi principali
+Usare `lost` quando l'opportunità è chiusa. Non usare `paid` senza verifica dell'incasso.
 
-`lead_id`, `property_name`, `contact_name`, `role`, `email`, `phone`, `city`, `country`, `website`, `lead_source`, `package`, `deal_value_eur`, `status`, `last_contact`, `next_follow_up`, `owner`, `notes`.
+## Regola obbligatoria
+
+Ogni nuovo contatto, invio realmente effettuato, risposta, follow-up, cambio di stato, proposta, pagamento o variazione importante va aggiornato **contestualmente** nel CRM.
+
+Per i thread email, conservare `thread_sender` e `thread_id` quando disponibili: non cambiare casella nello stesso thread senza motivo operativo esplicito.
+
+Per modello partner, commissioni e offerte standard fare riferimento a `../PARTNER_PROGRAM.md`. Per le regole complete leggere `OPERATING_SYSTEM.md`.

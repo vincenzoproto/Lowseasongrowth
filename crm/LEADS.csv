@@ -1,1 +1,1 @@
-lead_id,property_name,contact_name,role,email,phone,city,country,website,lead_source,package,deal_value_eur,status,last_contact,next_follow_up,owner,notes
+lead_id,property_name,contact_name,role,email,phone,city,country,website,lead_source,partner_id,partner_role,package,deal_value_eur,status,priority,qualification_score,last_contact,next_follow_up,follow_up_mode,thread_sender,thread_id,owner,opt_out,payment_status,amount_collected_eur,commission_rate,commission_eur,commission_status,notes
