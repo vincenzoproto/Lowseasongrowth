@@ -1,0 +1,48 @@
+{% doc %}
+  Describes the website and each public content page using canonical URLs.
+
+  @param {string} seo_title - Localized page title.
+  @param {string} seo_description - Localized page description.
+  @param {image} [seo_image] - Representative page image.
+  @param {string} [seo_image_alt] - Description of the representative image.
+{% enddoc %}
+
+{%- if request.page_type == 'index' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": {{ shop.url | append: '/#website' | json }},
+      "url": {{ shop.url | append: '/' | json }},
+      "name": "Low Season Growth",
+      "alternateName": ["LowSeasonGrowth", "LSG"],
+      "inLanguage": ["en", "it"],
+      "publisher": {"@id": {{ shop.url | append: '/#organization' | json }}}
+    }
+  </script>
+{%- endif -%}
+
+{%- if request.page_type == 'index' or request.page_type == 'product' or request.page_type == 'page' or request.page_type == 'collection' or request.page_type == 'article' or request.page_type == 'blog' -%}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": {{ canonical_url | append: '#webpage' | json }},
+      "url": {{ canonical_url | json }},
+      "name": {{ seo_title | json }},
+      "description": {{ seo_description | json }},
+      "inLanguage": {{ request.locale.iso_code | json }},
+      "isPartOf": {"@id": {{ shop.url | append: '/#website' | json }}},
+      "about": {"@id": {{ shop.url | append: '/#organization' | json }}}
+      {%- if seo_image != blank -%},
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": {{ seo_image | image_url: width: seo_image.width | prepend: 'https:' | json }},
+          "width": {{ seo_image.width | json }},
+          "height": {{ seo_image.height | json }},
+          "caption": {{ seo_image_alt | json }}
+        }
+      {%- endif -%}
+    }
+  </script>
+{%- endif -%}

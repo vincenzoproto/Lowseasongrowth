@@ -1,0 +1,85 @@
+{% doc %}
+  Renders localized SEO, Open Graph and social image metadata.
+
+  @param {object} [product] - Product used for price metadata on product pages.
+{% enddoc %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#103e34">
+<meta name="robots" content="max-image-preview:large">
+
+{%- liquid
+  assign seo_brand = 'Low Season Growth'
+  assign og_title = page_title | default: seo_brand
+  assign og_url = canonical_url | default: request.origin
+  assign og_type = 'website'
+  assign og_description = page_description | default: shop.description | default: seo_brand
+  assign og_image = page_image | default: images['low-season-growth-hero-clean.png']
+  assign og_image_alt = og_image.alt | default: og_title
+
+  if request.page_type == 'index'
+    assign og_title = 'lsg.seo.home_title' | t | replace: '&amp;', '&'
+    assign og_description = 'lsg.seo.home_description' | t | replace: '&amp;', '&'
+    assign og_image_alt = 'lsg.seo.home_image_alt' | t
+  elsif request.page_type == 'product'
+    assign og_type = 'product'
+  elsif request.page_type == 'article'
+    assign og_type = 'article'
+  elsif request.page_type == 'password'
+    assign og_url = request.origin
+  endif
+
+  assign normalized_title = og_title | downcase | remove: ' '
+  assign normalized_brand = seo_brand | downcase | remove: ' '
+  assign normalized_shop = shop.name | downcase | remove: ' '
+  assign show_brand_suffix = true
+  if normalized_title contains normalized_brand or normalized_title contains normalized_shop
+    assign show_brand_suffix = false
+  endif
+
+  if og_image != blank
+    assign og_image_url = og_image | image_url: width: og_image.width | prepend: 'https:'
+  endif
+-%}
+
+<meta property="og:site_name" content="{{ seo_brand | escape }}">
+<meta property="og:url" content="{{ og_url | escape }}">
+<meta property="og:title" content="{{ og_title | escape }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:description" content="{{ og_description | escape }}">
+
+{%- if og_image != blank -%}
+  <meta property="og:image" content="{{ og_image_url | escape }}">
+  <meta property="og:image:secure_url" content="{{ og_image_url | escape }}">
+  <meta property="og:image:width" content="{{ og_image.width }}">
+  <meta property="og:image:height" content="{{ og_image.height }}">
+  <meta property="og:image:alt" content="{{ og_image_alt | escape }}">
+  <meta name="twitter:image" content="{{ og_image_url | escape }}">
+  <meta name="twitter:image:alt" content="{{ og_image_alt | escape }}">
+{%- endif -%}
+
+{%- if request.page_type == 'product' -%}
+  <meta property="og:price:amount" content="{{ product.price | divided_by: 100.0 }}">
+  <meta property="og:price:currency" content="{{ cart.currency.iso_code }}">
+{%- endif -%}
+
+{%- if settings.social_twitter_link != blank -%}
+  <meta name="twitter:site" content="{{ settings.social_twitter_link | split: 'twitter.com/' | last | prepend: '@' | escape }}">
+{%- endif -%}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ og_title | escape }}">
+<meta name="twitter:description" content="{{ og_description | escape }}">
+
+<title>
+  {{- og_title | escape -}}
+  {%- if current_tags %} &ndash; {{ current_tags | join: ', ' | escape }}{% endif -%}
+  {%- if current_page > 1 %} &ndash; {{ 'lsg.seo.page_number' | t: number: current_page }}{% endif -%}
+  {%- if show_brand_suffix %} &ndash; {{ seo_brand | escape }}{% endif -%}
+</title>
+
+<link rel="canonical" href="{{ canonical_url | escape }}">
+<meta name="description" content="{{ og_description | escape }}">
+
+{%- render 'lsg-search-schema', seo_title: og_title, seo_description: og_description, seo_image: og_image, seo_image_alt: og_image_alt -%}
