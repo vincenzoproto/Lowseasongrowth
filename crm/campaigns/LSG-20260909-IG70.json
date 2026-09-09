@@ -959,23 +959,24 @@
     {
       "city": "Sellano",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r-8704583372188550428",
       "draft_message_id": "1a0828ecc9b0f49c",
       "email": "info@castellodipostignano.it",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra proposta di ospitalità nel borgo di Postignano. Potrebbe essere un buon punto di partenza per proporre un soggiorno tra storia, arte e paesaggio umbro anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0057",
-      "message_id": null,
+      "message_id": "1a086314194b79ad",
       "personalization_fact": "la vostra proposta di ospitalità nel borgo di Postignano",
       "property_name": "Castello di Postignano",
       "region": "Umbria",
-      "sent_at": null,
+      "sent_at": "2026-09-09T12:48:00Z",
       "source_url": "https://www.castellodipostignano.it/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Castello di Postignano",
       "text_body": "Buongiorno,\n\nho visto la vostra proposta di ospitalità nel borgo di Postignano. Potrebbe essere un buon punto di partenza per proporre un soggiorno tra storia, arte e paesaggio umbro anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828ecc9b0f49c",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "Vicchio",
@@ -1534,7 +1535,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 46,
+  "sent_count": 47,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1551,14 +1552,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
-  "remaining_count": 24,
+  "remaining_count": 23,
   "last_sent_at": "2026-09-09T05:55:21Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T12:42:51.402202+00:00",
-    "campaign_sent_total": 46,
-    "campaign_remaining": 24,
+    "recorded_at": "2026-09-09T12:43:04.206150+00:00",
+    "campaign_sent_total": 47,
+    "campaign_remaining": 23,
     "automatic_email_continuation": false
   },
-  "updated_at": "2026-09-09T12:42:51.402202+00:00"
+  "updated_at": "2026-09-09T12:43:04.206150+00:00"
 }
