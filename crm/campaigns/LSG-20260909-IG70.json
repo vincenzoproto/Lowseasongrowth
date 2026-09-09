@@ -602,23 +602,24 @@
     {
       "city": "San Casciano dei Bagni",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r5817396794581005976",
       "draft_message_id": "1a0828e965a0fef0",
       "email": "toscana@casafabbrini.it",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra casa di campagna in Toscana, a San Casciano dei Bagni. Potrebbe essere un buon punto di partenza per proporre un soggiorno tranquillo nel paesaggio della Val d'Orcia anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0040",
-      "message_id": null,
+      "message_id": "1a08634d96051745",
       "personalization_fact": "la vostra casa di campagna in Toscana, a San Casciano dei Bagni",
       "property_name": "Casa Fabbrini",
       "region": "Toscana",
-      "sent_at": null,
+      "sent_at": "2026-09-09T13:22:00Z",
       "source_url": "https://www.casafabbrini.it/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Casa Fabbrini",
       "text_body": "Buongiorno,\n\nho visto la vostra casa di campagna in Toscana, a San Casciano dei Bagni. Potrebbe essere un buon punto di partenza per proporre un soggiorno tranquillo nel paesaggio della Val d'Orcia anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828e965a0fef0",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "Ragusa",
@@ -1551,7 +1552,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 63,
+  "sent_count": 64,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1568,14 +1569,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
-  "remaining_count": 7,
+  "remaining_count": 6,
   "last_sent_at": "2026-09-09T05:55:21Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T12:46:47.039759+00:00",
-    "campaign_sent_total": 63,
-    "campaign_remaining": 7,
+    "recorded_at": "2026-09-09T12:47:00.723020+00:00",
+    "campaign_sent_total": 64,
+    "campaign_remaining": 6,
     "automatic_email_continuation": false
   },
-  "updated_at": "2026-09-09T12:46:47.039759+00:00"
+  "updated_at": "2026-09-09T12:47:00.723020+00:00"
 }
