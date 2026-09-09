@@ -1,0 +1,106 @@
+{%- comment -%}
+  LowSeasonGrowth affiliate attribution
+
+  Usage:
+    https://lowseasongrowth.com/?ref=PARTNERID
+
+  Behaviour:
+  - accepts only safe referral IDs
+  - persists the most recent valid referral for 30 days
+  - syncs the referral into Shopify cart attributes
+  - cart attributes are carried into the resulting Shopify order as order attributes
+  - also records first landing path and attribution timestamp for auditing
+{%- endcomment -%}
+
+<script>
+  (function () {
+    'use strict';
+
+    var STORAGE_KEY = 'lsg_affiliate_ref';
+    var LANDING_KEY = 'lsg_affiliate_landing';
+    var TS_KEY = 'lsg_affiliate_timestamp';
+    var TTL_DAYS = 30;
+    var MAX_AGE = TTL_DAYS * 24 * 60 * 60 * 1000;
+
+    function safeRef(value) {
+      if (!value) return null;
+      var normalized = String(value).trim().toLowerCase();
+      return /^[a-z0-9][a-z0-9_-]{2,39}$/.test(normalized) ? normalized : null;
+    }
+
+    function readStoredReferral() {
+      try {
+        var ref = safeRef(localStorage.getItem(STORAGE_KEY));
+        var ts = Number(localStorage.getItem(TS_KEY) || 0);
+        if (!ref || !ts || (Date.now() - ts) > MAX_AGE) {
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(LANDING_KEY);
+          localStorage.removeItem(TS_KEY);
+          return null;
+        }
+        return ref;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function storeReferral(ref) {
+      try {
+        localStorage.setItem(STORAGE_KEY, ref);
+        localStorage.setItem(TS_KEY, String(Date.now()));
+        localStorage.setItem(LANDING_KEY, window.location.pathname + window.location.search);
+      } catch (e) {}
+    }
+
+    function getLanding() {
+      try {
+        return localStorage.getItem(LANDING_KEY) || window.location.pathname;
+      } catch (e) {
+        return window.location.pathname;
+      }
+    }
+
+    function getTimestampIso() {
+      try {
+        var ts = Number(localStorage.getItem(TS_KEY) || Date.now());
+        return new Date(ts).toISOString();
+      } catch (e) {
+        return new Date().toISOString();
+      }
+    }
+
+    function syncCart(ref) {
+      if (!ref || !window.fetch) return;
+
+      fetch('/cart/update.js', {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          attributes: {
+            affiliate_ref: ref,
+            affiliate_landing: getLanding(),
+            affiliate_attributed_at: getTimestampIso()
+          }
+        })
+      }).catch(function () {
+        // Attribution remains stored locally and will be retried on the next page load.
+      });
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var incomingRef = safeRef(params.get('ref'));
+
+    if (incomingRef) {
+      storeReferral(incomingRef);
+      syncCart(incomingRef);
+      return;
+    }
+
+    var storedRef = readStoredReferral();
+    if (storedRef) syncCart(storedRef);
+  })();
+</script>
