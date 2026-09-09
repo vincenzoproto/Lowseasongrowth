@@ -476,23 +476,24 @@
     {
       "city": "Sorano",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r5700858912267334794",
       "draft_message_id": "1a0828e8cd801a1c",
       "email": "info@agriturismobiologicotoscana.it",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra proposta di agriturismo biologico a Sorano. Potrebbe essere un buon punto di partenza per proporre una pausa sostenibile nella campagna toscana anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0034",
-      "message_id": null,
+      "message_id": "1a086364866559eb",
       "personalization_fact": "la vostra proposta di agriturismo biologico a Sorano",
       "property_name": "Agriturismo Biologico Sant'Egle",
       "region": "Toscana",
-      "sent_at": null,
+      "sent_at": "2026-09-09T13:34:00Z",
       "source_url": "https://www.santegle.it/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Agriturismo Biologico Sant'Egle",
       "text_body": "Buongiorno,\n\nho visto la vostra proposta di agriturismo biologico a Sorano. Potrebbe essere un buon punto di partenza per proporre una pausa sostenibile nella campagna toscana anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828e8cd801a1c",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "San Gimignano",
@@ -1557,8 +1558,8 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 69,
-  "status": "manual_session",
+  "sent_count": 70,
+  "status": "completed",
   "timezone": "Europe/Rome",
   "schedule": null,
   "timing_mode": "flexible_schedule",
@@ -1574,14 +1575,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
-  "remaining_count": 1,
+  "remaining_count": 0,
   "last_sent_at": "2026-09-09T05:55:21Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T12:48:16.658426+00:00",
-    "campaign_sent_total": 69,
-    "campaign_remaining": 1,
+    "recorded_at": "2026-09-09T12:48:38.788290+00:00",
+    "campaign_sent_total": 70,
+    "campaign_remaining": 0,
     "automatic_email_continuation": false
   },
-  "updated_at": "2026-09-09T12:48:16.658426+00:00"
+  "updated_at": "2026-09-09T12:48:38.788290+00:00"
 }
