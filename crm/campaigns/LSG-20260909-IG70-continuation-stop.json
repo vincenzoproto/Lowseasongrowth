@@ -1,0 +1,14 @@
+{
+  "campaign_id": "LSG-20260909-IG70",
+  "status": "paused",
+  "blocked_on": "2026-09-09",
+  "reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
+  "blocked_recipient": "info@villaparri.it",
+  "blocked_draft_id": "r7822140613317732775",
+  "blocked_draft_message_id": "1a0828ed3eb82441",
+  "blocked_draft_verified_as": "DRAFT",
+  "continuation_sends_verified": 17,
+  "campaign_sent_total": 42,
+  "campaign_remaining": 28,
+  "automatic_email_continuation": false
+}
