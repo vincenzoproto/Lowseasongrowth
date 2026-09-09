@@ -1358,23 +1358,24 @@
     {
       "city": "Chiusdino",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r2301063378717184754",
       "draft_message_id": "1a0828eecc85d561",
       "email": "info@tenutadipapena.it",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto i vostri appartamenti nell'antico monastero vicino a San Galgano. Potrebbe essere un buon punto di partenza per proporre un soggiorno dedicato alla storia e alla campagna toscana anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0076",
-      "message_id": null,
+      "message_id": "1a084a3bb6b021ab",
       "personalization_fact": "i vostri appartamenti nell'antico monastero vicino a San Galgano",
       "property_name": "Tenuta di Papena",
       "region": "Toscana",
-      "sent_at": null,
+      "sent_at": "2026-09-09T05:28:37Z",
       "source_url": "https://www.tenutadipapena.it/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Tenuta di Papena",
       "text_body": "Buongiorno,\n\nho visto i vostri appartamenti nell'antico monastero vicino a San Galgano. Potrebbe essere un buon punto di partenza per proporre un soggiorno dedicato alla storia e alla campagna toscana anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828eecc85d561",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "Assisi",
@@ -1512,7 +1513,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 26,
+  "sent_count": 27,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1529,20 +1530,21 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "Execution interrupted by user during cadence wait; remaining emails left unsent. Tomorrow's automation remains disabled.",
-  "remaining_count": 44,
-  "last_sent_at": "2026-09-09T05:26:24Z",
+  "remaining_count": 43,
+  "last_sent_at": "2026-09-09T05:28:37Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T05:27:57.555116+00:00",
-    "continuation_sends_verified": 1,
-    "campaign_sent_total": 26,
-    "campaign_remaining": 44,
+    "recorded_at": "2026-09-09T05:29:24.889695+00:00",
+    "continuation_sends_verified": 2,
+    "campaign_sent_total": 27,
+    "campaign_remaining": 43,
     "status": "manual_session",
     "automatic_email_continuation": false,
-    "minimum_seconds_between_verified_sends": null,
+    "minimum_seconds_between_verified_sends": 133.0,
     "message_ids": [
-      "1a084a1b300774e7"
+      "1a084a1b300774e7",
+      "1a084a3bb6b021ab"
     ]
   },
-  "updated_at": "2026-09-09T05:27:57.555116+00:00"
+  "updated_at": "2026-09-09T05:29:24.889695+00:00"
 }
