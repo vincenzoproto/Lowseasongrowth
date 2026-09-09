@@ -1,0 +1,82 @@
+name: LSG BnB outreach CRM sync
+on:
+  push:
+    branches: [main]
+    paths:
+      - crm/campaigns/LSG-20260909-BNB80.csv
+      - .github/workflows/lsg-bnb-crm-sync.yml
+permissions:
+  contents: write
+concurrency:
+  group: lsg-bnb80-crm-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Merge verified receipt rows without regressing existing leads
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            python3 - <<'PY'
+          import csv, hashlib
+          from pathlib import Path
+          target = Path('crm/LEADS.csv')
+          source = Path('crm/campaigns/LSG-20260909-BNB80.csv')
+          with target.open(newline='', encoding='utf-8-sig') as f:
+              reader = csv.DictReader(f)
+              fields = reader.fieldnames
+              rows = list(reader)
+          with source.open(newline='', encoding='utf-8-sig') as f:
+              incoming = list(csv.DictReader(f))
+          by_email = {r['email'].strip().lower(): r for r in rows if r.get('email')}
+          for item in incoming:
+              email = item['email'].strip().lower()
+              if not email or not item.get('message_id') or item.get('status') != 'contacted':
+                  continue
+              marker = 'Verified Gmail SENT message ' + item['message_id']
+              existing = by_email.get(email)
+              if existing:
+                  if marker not in existing.get('notes', ''):
+                      existing['notes'] = (existing.get('notes', '') + '; ' + marker + '; campaign LSG-20260909-BNB80').strip('; ')
+                  continue
+              row = {field: '' for field in fields}
+              row.update({
+                  'lead_id': 'LSG-BNB-20260909-' + hashlib.sha256(email.encode()).hexdigest()[:10],
+                  'property_name': item['property_name'], 'email': email,
+                  'city': item['city'], 'country': item['country'],
+                  'website': item['source_url'], 'lead_source': 'public_website',
+                  'package': item['package'], 'deal_value_eur': item['price_eur'],
+                  'status': 'contacted', 'priority': 'medium',
+                  'last_contact': item['last_contact'], 'next_follow_up': item['next_follow_up'],
+                  'follow_up_mode': 'manual', 'thread_sender': item['thread_sender'],
+                  'thread_id': item['thread_id'], 'owner': 'Vincenzo', 'opt_out': 'false',
+                  'payment_status': 'none', 'amount_collected_eur': '0',
+                  'commission_rate': '0', 'commission_eur': '0', 'commission_status': 'none',
+                  'notes': item['notes'] + '; ' + marker + '; public source ' + item['source_url']
+              })
+              rows.append(row)
+              by_email[email] = row
+          with target.open('w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(rows)
+          print('CRM rows:', len(rows), '| Receipt rows:', len(incoming))
+          PY
+            git add crm/LEADS.csv
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m 'crm: reconcile verified LSG BnB outreach receipts'
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 2
+          done
+          exit 1
