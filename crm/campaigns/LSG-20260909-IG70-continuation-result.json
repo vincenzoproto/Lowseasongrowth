@@ -1,9 +1,9 @@
 {
   "campaign_id": "LSG-20260909-IG70",
-  "recorded_at": "2026-09-09T05:46:56.574241+00:00",
-  "continuation_sends_verified": 12,
-  "campaign_sent_total": 37,
-  "campaign_remaining": 33,
+  "recorded_at": "2026-09-09T05:48:33.341879+00:00",
+  "continuation_sends_verified": 13,
+  "campaign_sent_total": 38,
+  "campaign_remaining": 32,
   "status": "manual_session",
   "automatic_email_continuation": false,
   "minimum_seconds_between_verified_sends": 95.0,
@@ -19,6 +19,7 @@
     "1a084aef99b9f75b",
     "1a084b07f39cc17a",
     "1a084b255718adfb",
-    "1a084b40542863e9"
+    "1a084b40542863e9",
+    "1a084b58ada651e5"
   ]
 }
