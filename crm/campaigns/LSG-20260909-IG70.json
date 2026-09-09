@@ -1211,23 +1211,24 @@
     {
       "city": "Firenze",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r-4217881034366740259",
       "draft_message_id": "1a0828ee08aeae30",
       "email": "info@marignolle.com",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra ospitalità sulle colline di Firenze. Potrebbe essere un buon punto di partenza per proporre una pausa tra campagna e visite in città anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0069",
-      "message_id": null,
+      "message_id": "1a084b07f39cc17a",
       "personalization_fact": "la vostra ospitalità sulle colline di Firenze",
       "property_name": "Marignolle Relais & Charme",
       "region": "Toscana",
-      "sent_at": null,
+      "sent_at": "2026-09-09T05:42:34Z",
       "source_url": "https://www.marignolle.com/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Marignolle Relais & Charme",
       "text_body": "Buongiorno,\n\nho visto la vostra ospitalità sulle colline di Firenze. Potrebbe essere un buon punto di partenza per proporre una pausa tra campagna e visite in città anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828ee08aeae30",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "San Marcello",
@@ -1520,7 +1521,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 34,
+  "sent_count": 35,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1537,14 +1538,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "Execution interrupted by user during cadence wait; remaining emails left unsent. Tomorrow's automation remains disabled.",
-  "remaining_count": 36,
-  "last_sent_at": "2026-09-09T05:40:54Z",
+  "remaining_count": 35,
+  "last_sent_at": "2026-09-09T05:42:34Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T05:41:41.017411+00:00",
-    "continuation_sends_verified": 9,
-    "campaign_sent_total": 34,
-    "campaign_remaining": 36,
+    "recorded_at": "2026-09-09T05:42:59.765082+00:00",
+    "continuation_sends_verified": 10,
+    "campaign_sent_total": 35,
+    "campaign_remaining": 35,
     "status": "manual_session",
     "automatic_email_continuation": false,
     "minimum_seconds_between_verified_sends": 95.0,
@@ -1557,8 +1558,9 @@
       "1a084a9e0e460631",
       "1a084ab98a1c51e3",
       "1a084ad631ab57c8",
-      "1a084aef99b9f75b"
+      "1a084aef99b9f75b",
+      "1a084b07f39cc17a"
     ]
   },
-  "updated_at": "2026-09-09T05:41:41.017411+00:00"
+  "updated_at": "2026-09-09T05:42:59.765082+00:00"
 }
