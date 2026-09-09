@@ -1295,23 +1295,24 @@
     {
       "city": "Chiusi",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r6214138248806610516",
       "draft_message_id": "1a0828ee79d7b0ce",
       "email": "info@poggiopiglia.com",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra dimora nella campagna di Chiusi. Potrebbe essere un buon punto di partenza per proporre una pausa dedicata al paesaggio e ai sapori toscani anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0073",
-      "message_id": null,
+      "message_id": "1a084a9e0e460631",
       "personalization_fact": "la vostra dimora nella campagna di Chiusi",
       "property_name": "Poggio Piglia",
       "region": "Toscana",
-      "sent_at": null,
+      "sent_at": "2026-09-09T05:35:20Z",
       "source_url": "https://www.poggiopiglia.com/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Poggio Piglia",
       "text_body": "Buongiorno,\n\nho visto la vostra dimora nella campagna di Chiusi. Potrebbe essere un buon punto di partenza per proporre una pausa dedicata al paesaggio e ai sapori toscani anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828ee79d7b0ce",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "San Casciano dei Bagni",
@@ -1516,7 +1517,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 30,
+  "sent_count": 31,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1533,24 +1534,25 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "Execution interrupted by user during cadence wait; remaining emails left unsent. Tomorrow's automation remains disabled.",
-  "remaining_count": 40,
-  "last_sent_at": "2026-09-09T05:33:45Z",
+  "remaining_count": 39,
+  "last_sent_at": "2026-09-09T05:35:20Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T05:34:14.808859+00:00",
-    "continuation_sends_verified": 5,
-    "campaign_sent_total": 30,
-    "campaign_remaining": 40,
+    "recorded_at": "2026-09-09T05:35:44.650419+00:00",
+    "continuation_sends_verified": 6,
+    "campaign_sent_total": 31,
+    "campaign_remaining": 39,
     "status": "manual_session",
     "automatic_email_continuation": false,
-    "minimum_seconds_between_verified_sends": 97.0,
+    "minimum_seconds_between_verified_sends": 95.0,
     "message_ids": [
       "1a084a1b300774e7",
       "1a084a3bb6b021ab",
       "1a084a534d4154cd",
       "1a084a6d945f59d8",
-      "1a084a86fa49cad6"
+      "1a084a86fa49cad6",
+      "1a084a9e0e460631"
     ]
   },
-  "updated_at": "2026-09-09T05:34:14.808859+00:00"
+  "updated_at": "2026-09-09T05:35:44.650419+00:00"
 }
