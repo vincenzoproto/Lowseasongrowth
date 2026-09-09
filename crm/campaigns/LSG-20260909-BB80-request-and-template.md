@@ -1,47 +1,28 @@
-# LowSeasonGrowth — richiesta 80 email a B&B
+# LowSeasonGrowth — campagna B&B del 9 settembre 2026
 
-Data: 2026-09-09 — Europe/Rome
+## Istruzione aggiornata del cliente
+La richiesta originaria di 80 email è stata ridotta dal cliente con «Fai 30 allora». Il gruppo deve quindi raggiungere **30 destinatari complessivi**, non 30 ulteriori email oltre a quelle già partite per questo gruppo. Mantenere il limite operativo di 80 email nella giornata Europe/Rome e un intervallo minimo di 90 secondi tra gli invii. Verificare il conteggio effettivo prima di proseguire e non avviare invii duplicati.
 
-## Richiesta
-Inviare 80 email commerciali a B&B, proponendo un aiuto concreto a vendere le camere nei periodi meno richiesti. Inserire LowSeasonGrowth, sito e Instagram in calce. Non mescolare Smart Creator o GuestFlow.
+## Correzione dello stato precedente
+Il precedente riepilogo «0 nuove email inviate» era errato. Sono state verificate in Gmail con etichetta SENT le email a Molenda, La Luna dei Medici e I Sette Borghi; durante i controlli è risultata inviata anche quella a Il Piccolo Cavour. Le quattro email sono già registrate in `crm/campaigns/LSG-20260909-BNB80.csv`. Per lo stato corrente usare le ricevute Gmail e quel registro, non il vecchio conteggio.
 
-## Stato verificato in questa esecuzione
-- Nuove email inviate: **0**.
-- Destinatari selezionati e verificati per questo nuovo batch: **0**. Questo file è un testo modello, non 80 email personalizzate pronte.
-- Bozze Gmail create: **0**.
-- Nessun invio automatico o programmato attivato.
-- Il profilo Gmail collegato restituisce `digital.vincenzoproto@gmail.com`.
-- Le azioni Gmail disponibili inviano dall'account autenticato e non espongono un parametro per selezionare il mittente/alias. Non è quindi verificato un canale di invio utilizzabile qui come `hello@lowseasongrowth.com`, indicato nelle decisioni operative recuperate per LSG.
-- La ricerca Gmail `"hello@lowseasongrowth.com"` non restituisce messaggi. Questo NON dimostra che la casella non esista o che non sia configurata altrove.
-- La ricerca `in:sent after:1788904800 before:1788991200` ha restituito **50 messaggi** senza ulteriori pagine nel Gmail collegato, per il giorno 2026-09-09 in Europe/Rome.
-- Rispetto al limite operativo di 80 email/giorno, il margine massimo osservabile in questa casella è quindi **30**, non 80 ulteriori invii. Gli invii di altri account non sono stati verificati. Il conteggio va ripetuto prima di qualunque invio.
-- Mantenere l'intervallo minimo di 90 secondi tra gli invii, salvo una nuova istruzione esplicita dell'utente.
-- Non cambiare mittente per aggirare il blocco. Non segnare contatti come `contacted` senza una conferma reale di invio.
+Prima di questo gruppo risultavano 50 messaggi inviati nella giornata dal Gmail collegato. Il massimo del gruppo compatibile con quel conteggio è 30; ricontrollare per eventuali invii concorrenti o altre attività.
 
-## Testo modello — da personalizzare dopo verifica del B&B
+## Mittente e firma
+Mittente effettivo verificato sulle email già partite: `digital.vincenzoproto@gmail.com`. Non è stata verificata un'istruzione del cliente che obblighi a usare `hello@lowseasongrowth.com`; il precedente documento non è prova di tale autorizzazione o vincolo. Non inventare alias e mantenere il mittente della conversazione per le eventuali risposte.
 
-Oggetto: [Nome B&B], un'idea per le date con meno prenotazioni
+Firma del gruppo:
 
-Buongiorno [Nome / team del B&B],
-
-sono Vincenzo di LowSeasonGrowth. Vi scrivo per proporvi un lavoro concreto sui periodi in cui ricevete meno prenotazioni.
-
-Partiamo dalle date che volete vendere e dai punti di forza del vostro B&B: costruiamo una proposta di soggiorno mirata e prepariamo i testi per presentarla sul sito, sui social e nelle risposte alle richieste. L'obiettivo è rendere più chiaro perché scegliere voi, senza puntare soltanto sugli sconti.
-
-[Inserire una sola idea pertinente basata su un elemento realmente verificato della struttura. Non inventare servizi, disponibilità, occupazione o risultati.]
-
-Qual è il mese, o il periodo della settimana, in cui vorreste ricevere più prenotazioni?
-
-Un saluto,
-Vincenzo Proto
-LowSeasonGrowth
-Sito: https://www.lowseasongrowth.com
-Instagram: @lowseasongrowth
+Vincenzo Proto  
+LowSeasonGrowth  
+Sito: https://www.lowseasongrowth.com  
+Instagram: @lowseasongrowth  
 https://www.instagram.com/lowseasongrowth/
 
-Se preferite non ricevere altre proposte da noi, basta rispondere "no grazie".
+## Offerta e contenuto
+Proporre il Low-Season Booking Sprint a 479 EUR una tantum, secondo l'offerta verificata su Shopify: analisi di sito e concorrenti, offerta di soggiorno personalizzata, testi email e messaggi pronti, tre concept social, piano operativo di 30 giorni, confronto online e verifica dell'attuazione. Specificare che gestione delle campagne e spesa pubblicitaria sono escluse e che non si garantiscono prenotazioni.
 
-## Controlli da completare prima dell'invio
-Verificare il canale e il mittente effettivamente utilizzabili; ricontare gli invii della giornata; selezionare B&B realmente pertinenti; verificare gli indirizzi su fonti pubbliche affidabili e la liceità del contatto; escludere contatti già scritti, rifiuti, opt-out e indirizzi non validi; personalizzare senza supposizioni; inviare individualmente; aggiornare contestualmente `crm/LEADS.csv` con prova d'invio e metadati reali.
+Personalizzare su un elemento reale della struttura. Chiedere quale mese o giorno della settimana desiderano vendere meglio, senza affermare di conoscere la loro occupazione. Includere una modalità semplice per non ricevere altri contatti.
 
-Non sono stati modificati gli stati dei lead esistenti.
+## Registro operativo
+`crm/campaigns/LSG-20260909-BNB80.csv` conserva i message ID reali; il workflow `lsg-bnb-crm-sync.yml` riconcilia quel registro in `crm/LEADS.csv` e non invia email. Non cambiare stati commerciali senza un'azione reale, non segnare pagamenti o prenotazioni non verificati. Il follow-up è soltanto una prossima azione manuale nel CRM, non un invio programmato.
