@@ -1,0 +1,13 @@
+{
+  "campaign_id": "LSG-20260909-IG70",
+  "recorded_at": "2026-09-09T05:27:57.555116+00:00",
+  "continuation_sends_verified": 1,
+  "campaign_sent_total": 26,
+  "campaign_remaining": 44,
+  "status": "manual_session",
+  "automatic_email_continuation": false,
+  "minimum_seconds_between_verified_sends": null,
+  "message_ids": [
+    "1a084a1b300774e7"
+  ]
+}
