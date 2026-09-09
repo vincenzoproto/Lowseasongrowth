@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - crm/OUTREACH_CONTINUATION_2026-09-09.csv
+      - crm/continuation_receipts/*.json
       - .github/workflows/reconcile-lsg-continuation.yml
 permissions:
   contents: write
@@ -32,6 +33,9 @@ jobs:
           campaign_path = root / 'campaigns/LSG-20260909-IG70.json'
           with log.open(newline='', encoding='utf-8') as f:
               events = list(csv.DictReader(f))
+          for receipt in sorted((root / 'continuation_receipts').glob('*.json')):
+              events.append(json.loads(receipt.read_text(encoding='utf-8')))
+          events.sort(key=lambda e: e['sent_at_utc'])
           with leads_path.open(newline='', encoding='utf-8') as f:
               reader = csv.DictReader(f)
               fields = reader.fieldnames
@@ -68,7 +72,7 @@ jobs:
               row['notes'] = row['notes'].replace('bozza pronta, non inviata', 'bozza inviata')
               row['notes'] = row['notes'].replace('Campagna sospesa dopo interruzione dell\'esecuzione; email ancora non inviata; nessun invio automatico attivo.', 'Invio ripreso su richiesta utente il 2026-09-09; nessun invio automatico attivo.')
               if e['message_id'] not in row['notes']:
-                  row['notes'] += '; Invio confermato Gmail SENT ' + e['sent_at_utc'] + '; message ' + e['message_id'] + '; registro OUTREACH_CONTINUATION_2026-09-09.csv.'
+                  row['notes'] += '; Invio confermato Gmail SENT ' + e['sent_at_utc'] + '; message ' + e['message_id'] + '; registri OUTREACH_CONTINUATION_2026-09-09.csv e continuation_receipts/.'
               item.update(status='sent', message_id=e['message_id'], thread_id=e['thread_id'], sent_at=e['sent_at_utc'], draft_consumed=True, dedup_checked_on=e['dedup_checked_on'])
           sent = sum(r.get('status') == 'sent' for r in campaign['leads'])
           remaining = len(campaign['leads']) - sent
