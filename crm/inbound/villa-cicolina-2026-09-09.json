@@ -1,0 +1,16 @@
+{
+  "property_name": "Villa Cicolina",
+  "email": "info@villacicolina.it",
+  "location": "Montepulciano, Italy",
+  "source": "Gmail inbound reply",
+  "inbound_message_id": "1a0850ff3cd42e21",
+  "thread_id": "1a0828e8b021bda3",
+  "reply_received_at": "2026-09-09T09:26:48+02:00",
+  "interest_periods": ["March", "April", "second half of October", "November"],
+  "status": "warm_lead",
+  "stage": "free_3_observations_then_15min_call",
+  "outbound_followup_message_id": "1a0865a190a9d851",
+  "outbound_followup_sent_at": "2026-09-09",
+  "next_action": "Prepare 3 specific observations for Villa Cicolina, then propose implementation call and paid LowSeasonGrowth offer",
+  "owner": "Vincenzo"
+}
