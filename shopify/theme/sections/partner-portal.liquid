@@ -1,0 +1,103 @@
+{% comment %}
+  LowSeasonGrowth Partner Portal
+  Requires logged-in Shopify customer tagged "lsg-partner".
+  Partner data is read from customer metafields namespace partner:
+  partner_id, role, commission_rate, pending_balance, available_balance,
+  paid_balance, total_sales, payout_status, next_payout_at, academy_progress.
+{% endcomment %}
+
+<section class="lsg-partner-portal" id="lsg-partner-portal">
+  {% if customer == blank %}
+    <div class="lsg-gate">
+      <h1 data-it="Area Partner" data-en="Partner Area">Area Partner</h1>
+      <p data-it="Accedi con il tuo account partner per vedere commissioni, link affiliato e formazione." data-en="Sign in with your partner account to view commissions, your affiliate link and training.">Accedi con il tuo account partner per vedere commissioni, link affiliato e formazione.</p>
+      <a class="lsg-btn" href="{{ routes.account_login_url }}" data-it="Accedi" data-en="Sign in">Accedi</a>
+    </div>
+  {% elsif customer.tags contains 'lsg-partner' %}
+    {% assign partner_id = customer.metafields.partner.partner_id.value | default: customer.id %}
+    {% assign role = customer.metafields.partner.role.value | default: 'Partner' %}
+    {% assign rate = customer.metafields.partner.commission_rate.value | default: 0 %}
+    {% assign pending = customer.metafields.partner.pending_balance.value | default: 0 %}
+    {% assign available = customer.metafields.partner.available_balance.value | default: 0 %}
+    {% assign paid = customer.metafields.partner.paid_balance.value | default: 0 %}
+    {% assign total_sales = customer.metafields.partner.total_sales.value | default: 0 %}
+    {% assign payout_status = customer.metafields.partner.payout_status.value | default: 'setup_required' %}
+    {% assign next_payout = customer.metafields.partner.next_payout_at.value %}
+    {% assign academy_progress = customer.metafields.partner.academy_progress.value | default: 0 %}
+    {% assign affiliate_url = shop.url | append: '/?ref=' | append: partner_id %}
+
+    <div class="lsg-shell">
+      <header class="lsg-topbar">
+        <div>
+          <p class="lsg-eyebrow" data-it="Partner Portal" data-en="Partner Portal">Partner Portal</p>
+          <h1><span data-it="Ciao" data-en="Hi">Ciao</span> {{ customer.first_name | default: customer.email }}</h1>
+          <p class="lsg-muted">{{ role }} · {{ rate }}%</p>
+        </div>
+        <div class="lsg-lang"><button type="button" data-lang="it">IT</button><button type="button" data-lang="en">EN</button></div>
+      </header>
+
+      <div class="lsg-grid lsg-stats">
+        <article class="lsg-card"><span data-it="In attesa" data-en="Pending">In attesa</span><strong>€{{ pending }}</strong><small data-it="In hold fino a 30 giorni" data-en="Held for up to 30 days">In hold fino a 30 giorni</small></article>
+        <article class="lsg-card lsg-card-accent"><span data-it="Disponibile" data-en="Available">Disponibile</span><strong>€{{ available }}</strong><small data-it="Idoneo al prossimo payout" data-en="Eligible for next payout">Idoneo al prossimo payout</small></article>
+        <article class="lsg-card"><span data-it="Pagato" data-en="Paid">Pagato</span><strong>€{{ paid }}</strong><small data-it="Commissioni già liquidate" data-en="Commissions already paid">Commissioni già liquidate</small></article>
+        <article class="lsg-card"><span data-it="Vendite generate" data-en="Sales generated">Vendite generate</span><strong>{{ total_sales }}</strong><small data-it="Ordini attribuiti al tuo link" data-en="Orders attributed to your link">Ordini attribuiti al tuo link</small></article>
+      </div>
+
+      <div class="lsg-grid lsg-main-grid">
+        <article class="lsg-panel">
+          <div class="lsg-panel-head"><div><p class="lsg-eyebrow" data-it="Il tuo link" data-en="Your link">Il tuo link</p><h2 data-it="Affiliate Link" data-en="Affiliate Link">Affiliate Link</h2></div><span class="lsg-pill">{{ partner_id }}</span></div>
+          <p data-it="Condividi questo link. Le vendite vengono associate al tuo account." data-en="Share this link. Sales are attributed to your account.">Condividi questo link. Le vendite vengono associate al tuo account.</p>
+          <div class="lsg-linkbox"><input id="lsg-affiliate-url" readonly value="{{ affiliate_url }}"><button type="button" id="lsg-copy-link" data-it="Copia" data-en="Copy">Copia</button></div>
+        </article>
+
+        <article class="lsg-panel">
+          <p class="lsg-eyebrow" data-it="Payout" data-en="Payout">Payout</p>
+          <h2 data-it="Stato pagamento" data-en="Payment status">Stato pagamento</h2>
+          {% if payout_status == 'active' %}
+            <div class="lsg-status lsg-status-ok" data-it="Account payout attivo" data-en="Payout account active">Account payout attivo</div>
+          {% else %}
+            <div class="lsg-status lsg-status-warn" data-it="Configurazione payout richiesta" data-en="Payout setup required">Configurazione payout richiesta</div>
+          {% endif %}
+          {% if next_payout != blank %}<p><strong data-it="Prossimo payout:" data-en="Next payout:">Prossimo payout:</strong> {{ next_payout }}</p>{% endif %}
+          <a class="lsg-btn lsg-btn-secondary" href="/pages/partner-payout-setup" data-it="Configura payout" data-en="Set up payout">Configura payout</a>
+        </article>
+      </div>
+
+      <article class="lsg-panel lsg-academy">
+        <div class="lsg-panel-head">
+          <div><p class="lsg-eyebrow" data-it="LSG Academy" data-en="LSG Academy">LSG Academy</p><h2 data-it="Formazione commerciale" data-en="Sales training">Formazione commerciale</h2></div>
+          <span class="lsg-pill">{{ academy_progress }}%</span>
+        </div>
+        <div class="lsg-progress"><span style="width: {{ academy_progress }}%"></span></div>
+        <div class="lsg-grid lsg-lessons">
+          <a class="lsg-lesson" href="/pages/academy-offer"><b>01</b><span><strong data-it="Capire l'offerta LSG" data-en="Understand the LSG offer">Capire l'offerta LSG</strong><small data-it="Pacchetti, risultati e posizionamento" data-en="Packages, outcomes and positioning">Pacchetti, risultati e posizionamento</small></span></a>
+          <a class="lsg-lesson" href="/pages/academy-prospecting"><b>02</b><span><strong data-it="Trovare strutture giuste" data-en="Find the right properties">Trovare strutture giuste</strong><small data-it="ICP, segnali e priorità" data-en="ICP, signals and priorities">ICP, segnali e priorità</small></span></a>
+          <a class="lsg-lesson" href="/pages/academy-outreach"><b>03</b><span><strong data-it="Outreach che converte" data-en="Outreach that converts">Outreach che converte</strong><small>Email · DM · WhatsApp</small></span></a>
+          <a class="lsg-lesson" href="/pages/academy-objections"><b>04</b><span><strong data-it="Gestire le obiezioni" data-en="Handle objections">Gestire le obiezioni</strong><small data-it="Prezzo, timing, fiducia" data-en="Price, timing, trust">Prezzo, timing, fiducia</small></span></a>
+          <a class="lsg-lesson" href="/pages/academy-closing"><b>05</b><span><strong data-it="Closing" data-en="Closing">Closing</strong><small data-it="Dalla call al pagamento" data-en="From call to payment">Dalla call al pagamento</small></span></a>
+          <a class="lsg-lesson" href="/pages/academy-resources"><b>06</b><span><strong data-it="Script e risorse" data-en="Scripts & resources">Script e risorse</strong><small data-it="Template pronti da usare" data-en="Ready-to-use templates">Template pronti da usare</small></span></a>
+        </div>
+      </article>
+    </div>
+  {% else %}
+    <div class="lsg-gate"><h1 data-it="Account non abilitato" data-en="Account not enabled">Account non abilitato</h1><p data-it="Questo account non è ancora approvato come partner LSG." data-en="This account has not yet been approved as an LSG partner.">Questo account non è ancora approvato come partner LSG.</p></div>
+  {% endif %}
+</section>
+
+<style>
+.lsg-partner-portal{--bg:#f6f5f1;--ink:#17221d;--muted:#6d746f;--card:#fff;--accent:#1f6f50;--line:#e2e5e1;background:var(--bg);color:var(--ink);padding:48px 20px}.lsg-shell{max-width:1180px;margin:auto}.lsg-topbar,.lsg-panel-head{display:flex;justify-content:space-between;gap:24px;align-items:center}.lsg-topbar{margin-bottom:28px}.lsg-topbar h1{margin:4px 0;font-size:clamp(32px,4vw,54px)}.lsg-eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:700;color:var(--accent)}.lsg-muted,.lsg-card small,.lsg-lesson small{color:var(--muted)}.lsg-lang{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}.lsg-lang button{border:0;background:transparent;padding:8px 11px;border-radius:999px;cursor:pointer}.lsg-lang button.active{background:var(--ink);color:#fff}.lsg-grid{display:grid;gap:16px}.lsg-stats{grid-template-columns:repeat(4,1fr);margin-bottom:16px}.lsg-card,.lsg-panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px}.lsg-card{display:flex;flex-direction:column;gap:10px}.lsg-card strong{font-size:34px}.lsg-card-accent{background:var(--ink);color:white}.lsg-main-grid{grid-template-columns:1.35fr .65fr;margin-bottom:16px}.lsg-linkbox{display:flex;gap:8px;margin-top:16px}.lsg-linkbox input{flex:1;min-width:0;border:1px solid var(--line);border-radius:12px;padding:14px}.lsg-linkbox button,.lsg-btn{border:0;border-radius:12px;background:var(--accent);color:white;padding:13px 18px;font-weight:700;text-decoration:none;display:inline-block;cursor:pointer}.lsg-btn-secondary{background:var(--ink);margin-top:12px}.lsg-pill{background:#eef4f0;border-radius:999px;padding:7px 11px;font-size:12px;font-weight:700}.lsg-status{padding:12px 14px;border-radius:12px;margin:12px 0}.lsg-status-ok{background:#eaf6ef}.lsg-status-warn{background:#fff3d8}.lsg-progress{height:10px;background:#e7e9e6;border-radius:99px;overflow:hidden;margin:18px 0 22px}.lsg-progress span{display:block;height:100%;background:var(--accent)}.lsg-lessons{grid-template-columns:repeat(3,1fr)}.lsg-lesson{display:flex;gap:14px;padding:18px;border:1px solid var(--line);border-radius:16px;text-decoration:none;color:inherit;transition:.2s}.lsg-lesson:hover{transform:translateY(-2px);border-color:#b7c7bd}.lsg-lesson b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#eef4f0;color:var(--accent)}.lsg-lesson span{display:flex;flex-direction:column;gap:5px}.lsg-gate{max-width:620px;margin:80px auto;text-align:center}.lsg-gate h1{font-size:42px}.lsg-gate p{color:var(--muted);margin-bottom:22px}@media(max-width:900px){.lsg-stats{grid-template-columns:repeat(2,1fr)}.lsg-main-grid,.lsg-lessons{grid-template-columns:1fr}}@media(max-width:560px){.lsg-partner-portal{padding:28px 14px}.lsg-topbar{align-items:flex-start;flex-direction:column}.lsg-stats{grid-template-columns:1fr}.lsg-linkbox{flex-direction:column}}
+</style>
+
+<script>
+(function(){
+  var root=document.getElementById('lsg-partner-portal'); if(!root)return;
+  function setLang(lang){root.querySelectorAll('[data-it][data-en]').forEach(function(el){el.textContent=el.getAttribute('data-'+lang)});root.querySelectorAll('[data-lang]').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-lang')===lang)});try{localStorage.setItem('lsg_partner_lang',lang)}catch(e){}}
+  root.querySelectorAll('[data-lang]').forEach(function(btn){btn.addEventListener('click',function(){setLang(btn.getAttribute('data-lang'))})});
+  var preferred='it';try{preferred=localStorage.getItem('lsg_partner_lang')||((navigator.language||'').toLowerCase().indexOf('it')===0?'it':'en')}catch(e){}setLang(preferred);
+  var copy=document.getElementById('lsg-copy-link');if(copy){copy.addEventListener('click',function(){var input=document.getElementById('lsg-affiliate-url');if(!input)return;navigator.clipboard.writeText(input.value).then(function(){copy.textContent=preferred==='it'?'Copiato!':'Copied!';setTimeout(function(){copy.textContent=preferred==='it'?'Copia':'Copy'},1400)})})}
+})();
+</script>
+
+{% schema %}
+{"name":"LSG Partner Portal","settings":[],"presets":[{"name":"LSG Partner Portal"}]}
+{% endschema %}
