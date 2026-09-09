@@ -1,0 +1,105 @@
+name: Reconcile confirmed LSG continuation
+on:
+  push:
+    branches: [main]
+    paths:
+      - crm/OUTREACH_CONTINUATION_2026-09-09.csv
+      - .github/workflows/reconcile-lsg-continuation.yml
+permissions:
+  contents: write
+concurrency:
+  group: lsg-crm-continuation-reconciliation
+  cancel-in-progress: false
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Reconcile verified Gmail receipts without sending email
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import csv, json, re
+          from pathlib import Path
+          from datetime import datetime, timezone, timedelta
+          root = Path('crm')
+          log = root / 'OUTREACH_CONTINUATION_2026-09-09.csv'
+          leads_path = root / 'LEADS.csv'
+          campaign_path = root / 'campaigns/LSG-20260909-IG70.json'
+          with log.open(newline='', encoding='utf-8') as f:
+              events = list(csv.DictReader(f))
+          with leads_path.open(newline='', encoding='utf-8') as f:
+              reader = csv.DictReader(f)
+              fields = reader.fieldnames
+              leads = list(reader)
+          campaign = json.loads(campaign_path.read_text(encoding='utf-8'))
+          assert campaign['campaign_id'] == 'LSG-20260909-IG70'
+          assert len(campaign['leads']) == 70
+          crm = {r['email'].lower(): r for r in leads}
+          queued = {r['email'].lower(): r for r in campaign['leads']}
+          assert len(crm) == len(leads) and len(queued) == 70
+          assert len({e['email'] for e in events}) == len(events)
+          assert len({e['message_id'] for e in events}) == len(events)
+          times = [datetime.fromisoformat(e['sent_at_utc'].replace('Z', '+00:00')) for e in events]
+          assert all((b-a).total_seconds() >= 90 for a,b in zip(times, times[1:]))
+          for e in events:
+              assert e['campaign_id'] == campaign['campaign_id']
+              assert e['thread_sender'] == 'digital.vincenzoproto@gmail.com'
+              assert e['status'] == 'contacted'
+              assert re.fullmatch(r'[0-9a-f]+', e['message_id'])
+              assert re.fullmatch(r'[0-9a-f]+', e['thread_id'])
+              row, item = crm[e['email'].lower()], queued[e['email'].lower()]
+              assert item['draft_id'] == e['draft_id']
+              if item.get('status') == 'sent':
+                  assert item.get('message_id') == e['message_id']
+                  continue
+              day = e['sent_at_utc'][:10]
+              if row['status'] in ('lead', 'contacted') and row['opt_out'].lower() != 'true':
+                  row['status'] = 'contacted'
+                  row['next_follow_up'] = (datetime.fromisoformat(day) + timedelta(days=3)).date().isoformat()
+                  row['follow_up_mode'] = 'manual'
+              row['last_contact'] = day
+              row['thread_sender'] = e['thread_sender']
+              row['thread_id'] = e['thread_id']
+              row['notes'] = row['notes'].replace('bozza pronta, non inviata', 'bozza inviata')
+              row['notes'] = row['notes'].replace('Campagna sospesa dopo interruzione dell\'esecuzione; email ancora non inviata; nessun invio automatico attivo.', 'Invio ripreso su richiesta utente il 2026-09-09; nessun invio automatico attivo.')
+              if e['message_id'] not in row['notes']:
+                  row['notes'] += '; Invio confermato Gmail SENT ' + e['sent_at_utc'] + '; message ' + e['message_id'] + '; registro OUTREACH_CONTINUATION_2026-09-09.csv.'
+              item.update(status='sent', message_id=e['message_id'], thread_id=e['thread_id'], sent_at=e['sent_at_utc'], draft_consumed=True, dedup_checked_on=e['dedup_checked_on'])
+          sent = sum(r.get('status') == 'sent' for r in campaign['leads'])
+          remaining = len(campaign['leads']) - sent
+          assert sent <= campaign['authorized_total'] == 70
+          for key in ('sent_count', 'sent_total', 'total_sent'):
+              if key in campaign:
+                  campaign[key] = sent
+          for key in ('remaining_count', 'pending_count', 'unsent_count', 'ready_count'):
+              if key in campaign:
+                  campaign[key] = remaining
+          now = datetime.now(timezone.utc).isoformat()
+          result = {'campaign_id': campaign['campaign_id'], 'recorded_at': now, 'continuation_sends_verified': len(events), 'campaign_sent_total': sent, 'campaign_remaining': remaining, 'status': 'completed' if remaining == 0 else 'manual_session', 'automatic_email_continuation': False, 'minimum_seconds_between_verified_sends': min(((b-a).total_seconds() for a,b in zip(times,times[1:])), default=None), 'message_ids': [e['message_id'] for e in events]}
+          campaign['status'] = result['status']
+          campaign['sent_count'] = sent
+          campaign['remaining_count'] = remaining
+          campaign['last_sent_at'] = events[-1]['sent_at_utc']
+          campaign['last_execution'] = result
+          campaign['updated_at'] = now
+          with leads_path.open('w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
+              writer.writeheader()
+              writer.writerows(leads)
+          campaign_path.write_text(json.dumps(campaign, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          (root / 'campaigns/LSG-20260909-IG70-continuation-result.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          print(json.dumps(result, ensure_ascii=False, indent=2))
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add crm/LEADS.csv crm/campaigns/LSG-20260909-IG70.json crm/campaigns/LSG-20260909-IG70-continuation-result.json
+          if git diff --cached --quiet; then exit 0; fi
+          git diff --cached --check
+          git commit -m 'crm: reconcile verified LSG continuation sends'
+          git pull --rebase origin main
+          git push origin HEAD:main
