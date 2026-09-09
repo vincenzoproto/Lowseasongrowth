@@ -1,6 +1,6 @@
 # Low Season Growth — Sales Partner Program
 
-_Last updated: 5 September 2026_
+_Last updated: 9 September 2026_
 
 ## Purpose
 
@@ -29,6 +29,44 @@ A partner cannot stack roles on the same deal unless explicitly approved before 
 | Low-Season Growth Partner | €990 | €99.00 | €148.50 | €247.50 |
 
 Commission is earned only when payment has been received and the transaction remains valid after any refund, cancellation or chargeback window.
+
+## Affiliate-link attribution
+
+Every approved partner receives a unique partner ID and referral link in this format:
+
+`https://lowseasongrowth.com/?ref=PARTNERID`
+
+Example:
+
+`https://lowseasongrowth.com/?ref=maria01`
+
+The storefront referral tracker persists the most recent valid referral for 30 days and writes the following attributes into the Shopify cart/order:
+
+- `affiliate_ref`
+- `affiliate_landing`
+- `affiliate_attributed_at`
+
+These order attributes are the primary evidence for affiliate-link attribution.
+
+Rules:
+
+- Partner IDs must be unique, lowercase and 3–40 characters using letters, numbers, hyphens or underscores.
+- Affiliate attribution lasts 30 days from the most recent valid referral click.
+- Last valid referral wins when a customer uses more than one partner link before purchase.
+- A tracked referral does not by itself guarantee a commission: the partner must be approved and the sale must remain eligible under the programme rules.
+- Refunds, cancellations, chargebacks and invalid/self-referrals do not earn commission.
+- If no affiliate referral is present, CRM lead ownership and earliest verifiable timestamp remain the fallback attribution method.
+
+Recommended onboarding flow:
+
+1. Partner applies through Become a Sales Partner.
+2. Application is reviewed.
+3. Partner receives a unique partner ID.
+4. Referral link is generated as `https://lowseasongrowth.com/?ref=PARTNERID`.
+5. Partner shares the referral link with prospects.
+6. Shopify records the referral on the order.
+7. CRM records the sale and calculated commission.
+8. Commission moves from pending to payable after the validation period.
 
 ## Ideal partner profile
 
@@ -71,7 +109,7 @@ Required data:
 
 Lead ownership lasts 30 days from the last documented commercial activity. If there is no activity for 30 days, the lead can be reassigned.
 
-Duplicate claims are resolved using the earliest verifiable CRM timestamp.
+Duplicate claims are resolved using the earliest verifiable CRM timestamp unless a valid Shopify affiliate attribution exists for the eligible sale.
 
 ## Qualified lead definition
 
@@ -115,10 +153,11 @@ Recommended daily approach for a new partner:
 4. Prospect qualified.
 5. Qualified call booked or handled by full-cycle partner.
 6. Correct offer proposed.
-7. Payment completed.
-8. Commission marked as pending.
-9. Commission released after validation period.
-10. Customer moves to onboarding/delivery.
+7. Payment completed through Low Season Growth.
+8. Shopify affiliate/order attribution and CRM ownership are checked.
+9. Commission marked as pending.
+10. Commission released after validation period.
+11. Customer moves to onboarding/delivery.
 
 ## Sales rules
 
@@ -145,6 +184,7 @@ Target payment timing: within 30 days after the sale is confirmed as valid.
 Before outreach starts, each partner receives:
 
 - partner ID
+- personal affiliate link
 - assigned role and commission rate
 - approved outreach script
 - qualification checklist
@@ -163,7 +203,9 @@ I’m building a small independent sales network for Low Season Growth, a servic
 
 This is a commission-based role. Depending on the commercial role, commission ranges from 10% to 25% of revenue actually collected from eligible sales.
 
-We provide the offer, sales materials, qualification framework and support on qualified opportunities. I’m currently selecting the first 10 commercial partners.
+We provide the offer, sales materials, qualification framework and support on qualified opportunities. Approved partners also receive a personal referral link so eligible purchases can be attributed automatically.
+
+I’m currently selecting the first 10 commercial partners.
 
 If you already work in B2B sales, hospitality, appointment setting or business development, I’d be happy to explain the model in a short call.
 
