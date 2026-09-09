@@ -1,10 +1,10 @@
 {
   "campaign_id": "LSG-20260909-IG70",
-  "recorded_at": "2026-09-09T05:55:53.801392+00:00",
+  "recorded_at": "2026-09-09T05:59:19.101435+00:00",
   "continuation_sends_verified": 17,
   "campaign_sent_total": 42,
   "campaign_remaining": 28,
-  "status": "manual_session",
+  "status": "paused",
   "automatic_email_continuation": false,
   "minimum_seconds_between_verified_sends": 95.0,
   "message_ids": [
@@ -25,5 +25,11 @@
     "1a084b8d41cb1eb1",
     "1a084ba6f3d670f7",
     "1a084bc33068a6b6"
-  ]
+  ],
+  "blocked_on": "2026-09-09",
+  "reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
+  "blocked_recipient": "info@villaparri.it",
+  "blocked_draft_id": "r7822140613317732775",
+  "blocked_draft_message_id": "1a0828ed3eb82441",
+  "blocked_draft_verified_as": "DRAFT"
 }
