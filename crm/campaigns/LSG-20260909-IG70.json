@@ -1148,23 +1148,24 @@
     {
       "city": "San Vito Lo Capo",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r-8943225075238249849",
       "draft_message_id": "1a0828edd895a3fa",
       "email": "info@bagliolaporta.it",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra dimora vicino a San Vito Lo Capo. Potrebbe essere un buon punto di partenza per proporre una pausa tra natura e paesaggio costiero anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0066",
-      "message_id": null,
+      "message_id": "1a084b40542863e9",
       "personalization_fact": "la vostra dimora vicino a San Vito Lo Capo",
       "property_name": "Baglio La Porta",
       "region": "Sicilia",
-      "sent_at": null,
+      "sent_at": "2026-09-09T05:46:25Z",
       "source_url": "https://www.bagliolaporta.com/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Baglio La Porta",
       "text_body": "Buongiorno,\n\nho visto la vostra dimora vicino a San Vito Lo Capo. Potrebbe essere un buon punto di partenza per proporre una pausa tra natura e paesaggio costiero anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828edd895a3fa",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "Ostuni",
@@ -1522,7 +1523,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 36,
+  "sent_count": 37,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1539,14 +1540,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "Execution interrupted by user during cadence wait; remaining emails left unsent. Tomorrow's automation remains disabled.",
-  "remaining_count": 34,
-  "last_sent_at": "2026-09-09T05:44:34Z",
+  "remaining_count": 33,
+  "last_sent_at": "2026-09-09T05:46:25Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T05:45:44.375256+00:00",
-    "continuation_sends_verified": 11,
-    "campaign_sent_total": 36,
-    "campaign_remaining": 34,
+    "recorded_at": "2026-09-09T05:46:56.574241+00:00",
+    "continuation_sends_verified": 12,
+    "campaign_sent_total": 37,
+    "campaign_remaining": 33,
     "status": "manual_session",
     "automatic_email_continuation": false,
     "minimum_seconds_between_verified_sends": 95.0,
@@ -1561,8 +1562,9 @@
       "1a084ad631ab57c8",
       "1a084aef99b9f75b",
       "1a084b07f39cc17a",
-      "1a084b255718adfb"
+      "1a084b255718adfb",
+      "1a084b40542863e9"
     ]
   },
-  "updated_at": "2026-09-09T05:45:44.375256+00:00"
+  "updated_at": "2026-09-09T05:46:56.574241+00:00"
 }
