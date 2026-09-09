@@ -1,0 +1,52 @@
+{
+  "program": "LowSeasonGrowth Affiliate Program",
+  "currency": "EUR",
+  "attribution": {
+    "method": "referral_link",
+    "query_parameter": "ref",
+    "cookie_window_days": 30,
+    "model": "last_valid_referral_wins"
+  },
+  "commission_tiers": {
+    "setter": 0.10,
+    "closer": 0.15,
+    "full_cycle": 0.25
+  },
+  "eligibility": {
+    "hold_days": 30,
+    "require_paid_order": true,
+    "exclude_refunded_orders": true,
+    "exclude_partially_refunded_amount": true,
+    "exclude_disputed_orders": true,
+    "exclude_chargebacks": true,
+    "exclude_cancelled_orders": true
+  },
+  "payouts": {
+    "frequency": "monthly",
+    "cutoff_day": 1,
+    "payment_window_days": 7,
+    "minimum_payout_eur": 25,
+    "carry_forward_below_minimum": true,
+    "status_flow": [
+      "pending",
+      "eligible",
+      "approved",
+      "paid"
+    ]
+  },
+  "calculation": {
+    "commission_base": "net_order_amount_after_discounts_and_refunds_excluding_taxes_and_shipping",
+    "rounding": "round_to_2_decimal_places_per_order"
+  },
+  "partner_payout_details": {
+    "required_before_first_payout": [
+      "legal_name",
+      "email",
+      "country",
+      "tax_or_invoice_information_as_applicable",
+      "payout_method"
+    ],
+    "preferred_automated_method": "stripe_connect",
+    "manual_fallback": "sepa_bank_transfer"
+  }
+}
