@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - crm/campaigns/LSG-20260909-BNB80.csv
+      - crm/campaigns/LSG-20260909-BNB80/*.json
       - .github/workflows/lsg-bnb-crm-sync.yml
 permissions:
   contents: write
@@ -29,7 +30,7 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             python3 - <<'PY'
-          import csv, hashlib
+          import csv, hashlib, json
           from pathlib import Path
           target = Path('crm/LEADS.csv')
           source = Path('crm/campaigns/LSG-20260909-BNB80.csv')
@@ -38,9 +39,18 @@ jobs:
               fields = reader.fieldnames
               rows = list(reader)
           with source.open(newline='', encoding='utf-8-sig') as f:
-              incoming = list(csv.DictReader(f))
+              reader = csv.DictReader(f)
+              receipt_fields = reader.fieldnames
+              incoming = {r['message_id']: r for r in reader}
+          defaults = {'campaign_id': 'LSG-20260909-BNB80', 'country': 'Italy', 'package': 'Low-Season Booking Sprint', 'price_eur': '479', 'status': 'contacted', 'last_contact': '2026-09-09', 'thread_sender': 'digital.vincenzoproto@gmail.com', 'next_follow_up': '2026-09-14', 'notes': 'Personalised email sent; Gmail SENT confirmed; Gmail and CRM deduplicated; public business contact verified; 479 EUR quoted; opt-out included; not paid'}
+          for path in sorted(Path('crm/campaigns/LSG-20260909-BNB80').glob('*.json')):
+              item = {**defaults, **json.loads(path.read_text())}
+              if not item.get('message_id') or not item.get('email'):
+                  raise ValueError('Invalid receipt: ' + str(path))
+              item.setdefault('thread_id', item['message_id'])
+              incoming[item['message_id']] = item
           by_email = {r['email'].strip().lower(): r for r in rows if r.get('email')}
-          for item in incoming:
+          for item in incoming.values():
               email = item['email'].strip().lower()
               if not email or not item.get('message_id') or item.get('status') != 'contacted':
                   continue
@@ -51,29 +61,20 @@ jobs:
                       existing['notes'] = (existing.get('notes', '') + '; ' + marker + '; campaign LSG-20260909-BNB80').strip('; ')
                   continue
               row = {field: '' for field in fields}
-              row.update({
-                  'lead_id': 'LSG-BNB-20260909-' + hashlib.sha256(email.encode()).hexdigest()[:10],
-                  'property_name': item['property_name'], 'email': email,
-                  'city': item['city'], 'country': item['country'],
-                  'website': item['source_url'], 'lead_source': 'public_website',
-                  'package': item['package'], 'deal_value_eur': item['price_eur'],
-                  'status': 'contacted', 'priority': 'medium',
-                  'last_contact': item['last_contact'], 'next_follow_up': item['next_follow_up'],
-                  'follow_up_mode': 'manual', 'thread_sender': item['thread_sender'],
-                  'thread_id': item['thread_id'], 'owner': 'Vincenzo', 'opt_out': 'false',
-                  'payment_status': 'none', 'amount_collected_eur': '0',
-                  'commission_rate': '0', 'commission_eur': '0', 'commission_status': 'none',
-                  'notes': item['notes'] + '; ' + marker + '; public source ' + item['source_url']
-              })
+              row.update({'lead_id': 'LSG-BNB-20260909-' + hashlib.sha256(email.encode()).hexdigest()[:10], 'property_name': item['property_name'], 'email': email, 'city': item['city'], 'country': item['country'], 'website': item['source_url'], 'lead_source': 'public_website', 'package': item['package'], 'deal_value_eur': item['price_eur'], 'status': 'contacted', 'priority': 'medium', 'last_contact': item['last_contact'], 'next_follow_up': item['next_follow_up'], 'follow_up_mode': 'manual', 'thread_sender': item['thread_sender'], 'thread_id': item['thread_id'], 'owner': 'Vincenzo', 'opt_out': 'false', 'payment_status': 'none', 'amount_collected_eur': '0', 'commission_rate': '0', 'commission_eur': '0', 'commission_status': 'none', 'notes': item['notes'] + '; ' + marker + '; public source ' + item['source_url']})
               rows.append(row)
               by_email[email] = row
           with target.open('w', newline='', encoding='utf-8') as f:
               writer = csv.DictWriter(f, fieldnames=fields, lineterminator='\n')
               writer.writeheader()
               writer.writerows(rows)
-          print('CRM rows:', len(rows), '| Receipt rows:', len(incoming))
+          with source.open('w', newline='', encoding='utf-8') as f:
+              writer = csv.DictWriter(f, fieldnames=receipt_fields, lineterminator='\n', extrasaction='ignore')
+              writer.writeheader()
+              writer.writerows(incoming.values())
+          print('CRM rows:', len(rows), '| Verified receipt rows:', len(incoming))
           PY
-            git add crm/LEADS.csv
+            git add crm/LEADS.csv crm/campaigns/LSG-20260909-BNB80.csv
             if git diff --cached --quiet; then exit 0; fi
             git commit -m 'crm: reconcile verified LSG BnB outreach receipts'
             if git push origin HEAD:main; then exit 0; fi
