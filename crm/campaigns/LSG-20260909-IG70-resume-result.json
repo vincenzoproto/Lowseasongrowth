@@ -1,0 +1,20 @@
+{
+  "campaign_id": "LSG-20260909-IG70",
+  "recorded_at": "2026-09-09T05:20:19.869008+00:00",
+  "new_sends_verified": 4,
+  "previous_sends": 21,
+  "campaign_sent_total": 25,
+  "campaign_remaining": 45,
+  "status": "paused",
+  "reason": "OpenAI safety check blocked the fifth send; no retry or alternative sending route used",
+  "blocked_draft_id": "r5832137050938936404",
+  "blocked_recipient": "info@ilfalconiere.com",
+  "automatic_email_continuation": false,
+  "minimum_seconds_between_verified_sends": 94.0,
+  "message_ids": [
+    "1a084920f124af58",
+    "1a084937c2e8c8cd",
+    "1a084951a94ae4ee",
+    "1a08496a059a1176"
+  ]
+}
