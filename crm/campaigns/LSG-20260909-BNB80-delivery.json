@@ -1,0 +1,1 @@
+{"failures":[{"email":"info@domusterramare.it","sent_message_id":"1a086a8583cf578a","failure_message_id":"1a086a85caa8f576","reported_at":"2026-09-09T14:52:55Z","reason":"Gmail DSN: MX lookup returned NXDOMAIN; domain does not exist","retry_allowed":false}]}
