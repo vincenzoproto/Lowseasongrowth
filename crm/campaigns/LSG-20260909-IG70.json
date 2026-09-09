@@ -854,23 +854,24 @@
     {
       "city": "Macchie, Amelia",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r902643286685496641",
       "draft_message_id": "1a0828ec4fe21e82",
       "email": "info@tenutadelgallo.com",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra tenuta sulle colline di Amelia. Potrebbe essere un buon punto di partenza per proporre un soggiorno tranquillo nella campagna umbra anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0052",
-      "message_id": null,
+      "message_id": "1a0863264f376dab",
       "personalization_fact": "la vostra tenuta sulle colline di Amelia",
       "property_name": "Relais Tenuta del Gallo",
       "region": "Umbria",
-      "sent_at": null,
+      "sent_at": "2026-09-09T12:58:00Z",
       "source_url": "https://tenutadelgallo.com/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Relais Tenuta del Gallo",
       "text_body": "Buongiorno,\n\nho visto la vostra tenuta sulle colline di Amelia. Potrebbe essere un buon punto di partenza per proporre un soggiorno tranquillo nella campagna umbra anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828ec4fe21e82",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "Montegabbione",
@@ -1539,7 +1540,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 51,
+  "sent_count": 52,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1556,14 +1557,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
-  "remaining_count": 19,
+  "remaining_count": 18,
   "last_sent_at": "2026-09-09T05:55:21Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T12:44:08.436464+00:00",
-    "campaign_sent_total": 51,
-    "campaign_remaining": 19,
+    "recorded_at": "2026-09-09T12:44:56.501206+00:00",
+    "campaign_sent_total": 52,
+    "campaign_remaining": 18,
     "automatic_email_continuation": false
   },
-  "updated_at": "2026-09-09T12:44:08.436464+00:00"
+  "updated_at": "2026-09-09T12:44:56.501206+00:00"
 }
