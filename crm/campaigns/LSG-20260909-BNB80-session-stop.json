@@ -1,0 +1,31 @@
+{
+  "campaign_id": "LSG-20260909-BNB80",
+  "session_status": "paused_after_tool_safety_block",
+  "date": "2026-09-09",
+  "sender": "digital.vincenzoproto@gmail.com",
+  "requested_new_emails": 80,
+  "original_target_list_size": 80,
+  "confirmed_sends_executed_in_this_session": 16,
+  "hard_bounces_among_these_sends": 1,
+  "original_targets_not_sent": 64,
+  "mailbox_sends_before_this_session": 50,
+  "other_concurrent_sends_verified_at_checkpoint": 8,
+  "mailbox_daily_sent_total_at_checkpoint": 74,
+  "checkpoint_utc": "2026-09-09T15:17:00Z",
+  "blocked_attempt": {
+    "property_name": "Badia il Vingone",
+    "email": "info@badiailvingone.it",
+    "attempted_at_utc": "2026-09-09T15:16:35Z",
+    "outcome": "not_sent",
+    "message_id": null,
+    "reason": "OpenAI tool safety check could not determine the safety status and blocked the call.",
+    "retry_attempted": false,
+    "canonical_crm_status": "lead",
+    "follow_up_mode": "paused"
+  },
+  "confirmed_message_ids": ["1a086971086ee0a9", "1a08698eef902e47", "1a0869a491876b72", "1a0869f1e641e0c4", "1a086a074ab65327", "1a086a1e61a76460", "1a086a32a362496f", "1a086a4d06ee1149", "1a086a6918282498", "1a086a8583cf578a", "1a086ab828ef4f98", "1a086acef6f44182", "1a086afaa08c3ff9", "1a086b1d9164e2d6", "1a086b435724b897", "1a086b65dcecdb9a"],
+  "delivery_failure_message_ids": ["1a086a85caa8f576"],
+  "automatic_email_sending_started_by_this_session": false,
+  "follow_ups_are_manual_only": true,
+  "notes": "Gmail SENT is evidence of submission, not of delivery, reading, bookings or payment. All 80 selected prospects are registered in the canonical CRM. Unsent leads retain lead/paused with no sent-message ID. The hard-bounced address is lost/paused and must not be retried. Concurrent sends are preserved in the campaign ledger and are not attributed to this session."
+}
