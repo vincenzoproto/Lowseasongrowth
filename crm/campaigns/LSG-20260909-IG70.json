@@ -539,23 +539,24 @@
     {
       "city": "Castel del Piano",
       "country": "Italy",
-      "dedup_checked_on": "2026-09-08",
+      "dedup_checked_on": "2026-09-09",
       "draft_id": "r-825940102376438546",
       "draft_message_id": "1a0828e9207d41e5",
       "email": "info@borgotepolini.it",
       "html_body": "<html><body style=\"font-family:Arial,sans-serif;font-size:14px;color:#222\"><p>Buongiorno,</p><p>ho visto la vostra ospitalità a Castel del Piano, tra Amiata e Val d'Orcia. Potrebbe essere un buon punto di partenza per proporre un soggiorno dedicato al paesaggio e ai borghi anche nei periodi meno richiesti.</p><p>Con LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.</p><p>Posso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.</p><p>Un saluto,<br>Vincenzo Proto<br>LowSeasonGrowth<br><a href=\"https://www.lowseasongrowth.com\">www.lowseasongrowth.com</a><br>Instagram: <a href=\"https://www.instagram.com/lowseasongrowth/\">@lowseasongrowth</a></p><p>Se non è di interesse, ditemelo e non vi ricontatterò.</p></body></html>",
       "lead_id": "LSG-H-0037",
-      "message_id": null,
+      "message_id": "1a08635924d4584d",
       "personalization_fact": "la vostra ospitalità a Castel del Piano, tra Amiata e Val d'Orcia",
       "property_name": "Borgo Tepolini",
       "region": "Toscana",
-      "sent_at": null,
+      "sent_at": "2026-09-09T13:28:00Z",
       "source_url": "https://www.borgotepolini.it/",
-      "status": "draft_ready",
+      "status": "sent",
       "subject": "Un'idea per la bassa stagione di Borgo Tepolini",
       "text_body": "Buongiorno,\n\nho visto la vostra ospitalità a Castel del Piano, tra Amiata e Val d'Orcia. Potrebbe essere un buon punto di partenza per proporre un soggiorno dedicato al paesaggio e ai borghi anche nei periodi meno richiesti.\n\nCon LowSeasonGrowth lavoro su offerte e percorso di prenotazione diretta per la bassa stagione.\n\nPosso inviarvi gratuitamente 3 osservazioni specifiche sulla vostra struttura? Mi basta sapere quale periodo vorreste valorizzare.\n\nUn saluto,\nVincenzo Proto\nLowSeasonGrowth\nhttps://www.lowseasongrowth.com\nInstagram: @lowseasongrowth\nhttps://www.instagram.com/lowseasongrowth/\n\nSe non è di interesse, ditemelo e non vi ricontatterò.",
-      "thread_id": null,
-      "verified_on": "2026-09-08"
+      "thread_id": "1a0828e9207d41e5",
+      "verified_on": "2026-09-08",
+      "draft_consumed": true
     },
     {
       "city": "Montepulciano",
@@ -1554,7 +1555,7 @@
   "reason_for_deferral": "170 messaggi già inviati dalla casella il 2026-09-08; rispettare il limite di 80/giorno concordato.",
   "scheduled_date": null,
   "sender": "digital.vincenzoproto@gmail.com",
-  "sent_count": 66,
+  "sent_count": 67,
   "status": "manual_session",
   "timezone": "Europe/Rome",
   "schedule": null,
@@ -1571,14 +1572,14 @@
   },
   "paused_at": "2026-09-08T20:28:53.995Z",
   "pause_reason": "OpenAI tool safety check could not determine the request safety and blocked the send. No alternative sending route used.",
-  "remaining_count": 4,
+  "remaining_count": 3,
   "last_sent_at": "2026-09-09T05:55:21Z",
   "last_execution": {
     "campaign_id": "LSG-20260909-IG70",
-    "recorded_at": "2026-09-09T12:47:28.769521+00:00",
-    "campaign_sent_total": 66,
-    "campaign_remaining": 4,
+    "recorded_at": "2026-09-09T12:47:48.416390+00:00",
+    "campaign_sent_total": 67,
+    "campaign_remaining": 3,
     "automatic_email_continuation": false
   },
-  "updated_at": "2026-09-09T12:47:28.769521+00:00"
+  "updated_at": "2026-09-09T12:47:48.416390+00:00"
 }
