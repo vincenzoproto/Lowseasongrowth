@@ -1,0 +1,50 @@
+{
+  "name": "Low Season Growth Research DOI Registry",
+  "publisher": "Low Season Growth",
+  "author": "Vincenzo Proto",
+  "website": "https://lowseasongrowth.com",
+  "updated": "2026-09-24",
+  "note": "These DOI records identify archived research datasets and supporting materials. Low Season Growth research notes are descriptive research outputs, not peer-reviewed journal articles or forecasts.",
+  "records": [
+    {
+      "id": "lsg-rn-01",
+      "title": "European Tourism Seasonality 2026 — LSG Research Note 01",
+      "focus": "European tourism seasonality and peak-to-trough concentration",
+      "source": "Eurostat",
+      "doi": "10.5281/zenodo.22937580",
+      "doi_url": "https://doi.org/10.5281/zenodo.22937580",
+      "article": "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+      "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-01-seasonality-gap.csv"
+    },
+    {
+      "id": "lsg-rn-02",
+      "title": "International Tourism Demand in Europe 2026 — LSG Research Note 02",
+      "focus": "International versus domestic tourist-accommodation demand growth in Europe",
+      "source": "Eurostat",
+      "doi": "10.5281/zenodo.22938213",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938213",
+      "article": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+      "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-02-international-demand.csv"
+    },
+    {
+      "id": "lsg-rn-03",
+      "title": "Caribbean Low Season 2026 — LSG Research Note 03",
+      "focus": "Caribbean low-season RevPAR and source-market diversification",
+      "source": "Caribbean Hotel and Tourism Association (CHTA) and Amadeus",
+      "doi": "10.5281/zenodo.22938535",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938535",
+      "article": "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
+      "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-03-caribbean-low-season.csv"
+    },
+    {
+      "id": "lsg-rn-04",
+      "title": "Japan Tourism 2026 — LSG Research Note 04",
+      "focus": "Japan inbound tourism, source-market divergence and accommodation demand",
+      "source": "Japan National Tourism Organization (JNTO) and Japan Tourism Agency",
+      "doi": "10.5281/zenodo.22938971",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938971",
+      "article": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
+      "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-04-japan-demand.csv"
+    }
+  ]
+}

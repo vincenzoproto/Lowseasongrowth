@@ -1,0 +1,74 @@
+{
+  "brand": "Low Season Growth",
+  "alternate_names": [
+    "LowSeasonGrowth",
+    "LSG"
+  ],
+  "slogan": "Hospitality for a brighter tomorrow.",
+  "canonical_website": "https://lowseasongrowth.com/",
+  "official_profiles": {
+    "linkedin": "https://www.linkedin.com/company/lowseasongrowth",
+    "instagram": "https://www.instagram.com/lowseasongrowth/",
+    "github": "https://github.com/vincenzoproto/Lowseasongrowth"
+  },
+  "founder": {
+    "name": "Vincenzo Proto",
+    "role": "Founder",
+    "about": "https://lowseasongrowth.com/pages/about",
+    "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+  },
+  "public_website_languages": [
+    "en",
+    "it"
+  ],
+  "international_expansion_focus": [
+    "Europe",
+    "North America",
+    "Japan",
+    "South Korea",
+    "China",
+    "India and South Asia",
+    "Southeast Asia and Asia-Pacific",
+    "Australia and New Zealand",
+    "Gulf and Middle East",
+    "Brazil and Latin America"
+  ],
+  "localization_in_preparation": [
+    "ja",
+    "ko",
+    "zh-CN",
+    "ar",
+    "de",
+    "fr",
+    "es",
+    "pt"
+  ],
+  "official_resources": {
+    "research": "https://lowseasongrowth.com/pages/research",
+    "research_media": "https://lowseasongrowth.com/pages/research-media",
+    "methodology": "https://lowseasongrowth.com/pages/research-methodology",
+    "press_kit": "https://lowseasongrowth.com/pages/press-kit",
+    "resources": "https://lowseasongrowth.com/pages/hotel-low-season-resources",
+    "calculator": "https://lowseasongrowth.com/pages/hotel-low-season-revenue-gap-calculator",
+    "insights_feed": "https://lowseasongrowth.com/blogs/news.atom"
+  },
+  "press_releases": {
+    "international_expansion_en": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-en.md",
+    "international_expansion_ja": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-ja.md"
+  },
+  "machine_readable": {
+    "organization_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/organization.jsonld",
+    "press_kit_json": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/press-kit.json",
+    "research_index": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/index.json",
+    "research_datapackage": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/datapackage.json",
+    "publications_json": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.json",
+    "publications_bib": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.bib"
+  },
+  "updated": "2026-09-24",
+  "research_dois": {
+    "research_note_01": "https://doi.org/10.5281/zenodo.22937580",
+    "research_note_02": "https://doi.org/10.5281/zenodo.22938213",
+    "research_note_03": "https://doi.org/10.5281/zenodo.22938535",
+    "research_note_04": "https://doi.org/10.5281/zenodo.22938971"
+  }
+}

@@ -1,0 +1,112 @@
+# Low Season Growth
+
+> Low Season Growth (LSG) is a hospitality commercial-strategy and research initiative focused on weak-demand periods for independent hotels, boutique hotels, B&Bs and guesthouses.
+
+Official website: https://lowseasongrowth.com
+Founder: Vincenzo Proto
+Public website languages: English, Italian
+International research/media focus: Europe, North America, Japan, South Korea, China, India and South Asia, Southeast Asia and Asia-Pacific, Australia and New Zealand, Gulf and Middle East, Brazil and Latin America.
+
+## Canonical brand pages
+
+- About: https://lowseasongrowth.com/pages/about
+- How it works: https://lowseasongrowth.com/pages/how-it-works
+- FAQ: https://lowseasongrowth.com/pages/faq
+- Research hub: https://lowseasongrowth.com/pages/research
+- Research & Media: https://lowseasongrowth.com/pages/research-media
+- Press Kit: https://lowseasongrowth.com/pages/press-kit
+- Citation guidance: https://lowseasongrowth.com/pages/cite-low-season-growth
+- International research summaries: https://lowseasongrowth.com/pages/low-season-growth-international-research
+- Hotel low-season resources: https://lowseasongrowth.com/pages/hotel-low-season-resources
+- Global Low-Season Evidence Map 2026: https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026
+- Media Data Pack 2026: https://lowseasongrowth.com/pages/media-data-pack-2026
+
+## Core topics
+
+- hotel low-season strategy
+- direct bookings
+- hotel sales
+- B2B demand generation
+- hotel seasonality
+- tourism demand
+- source-market analysis
+- independent and boutique hotels
+- B&Bs and guesthouses
+
+## Public research
+
+Low Season Growth publishes source-backed descriptive research using public sources such as Eurostat. Official source data, LSG-derived calculations and commercial interpretation are explicitly separated.
+
+- Research Note 01 — European Tourism Seasonality 2026:
+  https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note
+  DOI: https://doi.org/10.5281/zenodo.22937580
+- Research Note 02 — International Tourism Demand in Europe 2026:
+  https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note
+  DOI: https://doi.org/10.5281/zenodo.22938213
+- Research Note 03 — Caribbean Low Season 2026: RevPAR Gap and South American Demand:
+  https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand
+  DOI: https://doi.org/10.5281/zenodo.22938535
+- Research Note 04 — Japan Tourism 2026: Aggregate Cooling, Source-Market Divergence:
+  https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04
+  DOI: https://doi.org/10.5281/zenodo.22938971
+- 100-Property Low Season Benchmark 2026:
+  https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026
+- Research methodology:
+  https://lowseasongrowth.com/pages/research-methodology
+
+## Persistent DOI registry
+
+- DOI registry JSON:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/doi-registry.json
+- DOI registry human-readable:
+  https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/DOI-REGISTRY.md
+
+## Machine-readable research assets
+
+- Canonical research JSON endpoint: https://lowseasongrowth.com/research.json
+- Canonical organization JSON-LD: https://lowseasongrowth.com/organization.jsonld
+- Canonical evidence map JSON endpoint: https://lowseasongrowth.com/evidence-map.json
+- Canonical media pack JSON endpoint: https://lowseasongrowth.com/media-pack.json
+
+- Research index JSON:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/index.json
+- Research catalogue JSON:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/catalog.json
+- Frictionless Data Package:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/datapackage.json
+- DCAT JSON-LD:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/dcat.jsonld
+- Schema.org Dataset JSON-LD:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/datasets.jsonld
+- Data dictionary:
+  https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/data/README.md
+- Citation metadata:
+  https://github.com/vincenzoproto/Lowseasongrowth/blob/main/CITATION.cff
+- RIS citation export:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.ris
+
+## Datasets
+
+- Research Note 01 CSV:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-01-seasonality-gap.csv
+- Research Note 02 CSV:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-02-international-demand.csv
+- Research Note 03 CSV:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-03-caribbean-low-season.csv
+- Research Note 04 CSV:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-04-japan-demand.csv
+
+## Important interpretation rules
+
+- LSG-created metrics are descriptive calculations and are not official indicators of the source institution.
+- National tourism statistics do not represent the performance of every individual hotel.
+- LSG public research notes are not forecasts.
+- Low Season Growth does not guarantee bookings, occupancy or revenue outcomes.
+- Commercial services and research should not be conflated: research pages are public informational resources.
+
+## Official external channels
+
+- LinkedIn company: https://www.linkedin.com/company/lowseasongrowth
+- Instagram: https://www.instagram.com/lowseasongrowth/
+- GitHub research repository: https://github.com/vincenzoproto/Lowseasongrowth
+- Founder LinkedIn: https://www.linkedin.com/in/vincenzoproto

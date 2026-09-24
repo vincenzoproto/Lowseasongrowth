@@ -1,0 +1,148 @@
+{
+  "profile": "tabular-data-package",
+  "name": "low-season-growth-research-2026",
+  "title": "Low Season Growth Research 2026",
+  "description": "Open CSV datasets supporting Low Season Growth Research Notes on hotel seasonality, tourism demand and low-season commercial planning across Europe and the Caribbean.",
+  "homepage": "https://lowseasongrowth.com/pages/research",
+  "contributors": [
+    {
+      "title": "Vincenzo Proto",
+      "role": "author",
+      "organization": "Low Season Growth"
+    }
+  ],
+  "resources": [
+    {
+      "name": "research-note-01-seasonality-gap",
+      "path": "data/research-note-01-seasonality-gap.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "name": "two_busiest_months_share_pct",
+            "type": "number"
+          },
+          {
+            "name": "two_slowest_months_share_pct",
+            "type": "number"
+          },
+          {
+            "name": "lsg_peak_to_trough_gap_pp",
+            "type": "number"
+          },
+          {
+            "name": "source_year",
+            "type": "integer"
+          },
+          {
+            "name": "source",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "research-note-02-international-demand",
+      "path": "data/research-note-02-international-demand.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "metric",
+            "type": "string"
+          },
+          {
+            "name": "period",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "unit",
+            "type": "string"
+          },
+          {
+            "name": "source",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "research-note-03-caribbean-low-season",
+      "path": "data/research-note-03-caribbean-low-season.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "metric",
+            "type": "string"
+          },
+          {
+            "name": "period",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "unit",
+            "type": "string"
+          },
+          {
+            "name": "source",
+            "type": "string"
+          },
+          {
+            "name": "classification",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "research-note-04-japan-demand",
+      "path": "data/research-note-04-japan-demand.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "metric",
+            "type": "string"
+          },
+          {
+            "name": "period",
+            "type": "string"
+          },
+          {
+            "name": "value",
+            "type": "number"
+          },
+          {
+            "name": "unit",
+            "type": "string"
+          },
+          {
+            "name": "source",
+            "type": "string"
+          },
+          {
+            "name": "classification",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

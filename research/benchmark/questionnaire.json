@@ -1,0 +1,58 @@
+{
+  "benchmark": "100-Property Low Season Benchmark 2026",
+  "version": "1.0",
+  "publisher": "Low Season Growth",
+  "questions": [
+    {
+      "id": "weak_period",
+      "question": "Which months or weeks are hardest to fill?",
+      "type": "text",
+      "required": true
+    },
+    {
+      "id": "working_channel",
+      "question": "Which channel still produces bookings in those periods?",
+      "type": "single_or_multi_category",
+      "categories": [
+        "direct",
+        "OTA",
+        "repeat_guest",
+        "agency_or_partner",
+        "corporate_or_group",
+        "social",
+        "other"
+      ],
+      "required": true
+    },
+    {
+      "id": "working_action",
+      "question": "Is there one offer or action that has actually worked before?",
+      "type": "text",
+      "required": false
+    },
+    {
+      "id": "booking_loss",
+      "question": "Where do you feel the biggest booking loss happens?",
+      "type": "single_or_multi_category",
+      "categories": [
+        "visibility",
+        "positioning_or_offer",
+        "price",
+        "website_or_booking_conversion",
+        "follow_up",
+        "availability_or_product_fit",
+        "other"
+      ],
+      "required": true
+    }
+  ],
+  "optional_metadata": [
+    "country",
+    "property_type",
+    "room_or_unit_band",
+    "attribution_preference",
+    "public_quote"
+  ],
+  "methodology_url": "https://github.com/vincenzoproto/Lowseasongrowth/tree/main/research/benchmark",
+  "open_call_url": "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026"
+}

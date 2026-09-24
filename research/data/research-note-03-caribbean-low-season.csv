@@ -1,0 +1,17 @@
+metric,period,value,unit,source,classification
+Overseas demand growth,Apr 2025-Mar 2026,1,percent YoY,CHTA and Amadeus,official source figure
+Latin American source-market demand growth,Apr 2025-Mar 2026,24,percent YoY,CHTA and Amadeus,official source figure
+Premium travel growth from South America,Apr 2025-Mar 2026,117,percent YoY,CHTA and Amadeus,official source figure
+High-season hotel RevPAR,report period,183,USD,CHTA and Amadeus,official source figure
+High-season RevPAR growth,report period,5.2,percent YoY,CHTA and Amadeus,official source figure
+End-of-year holiday RevPAR,report period,283,USD,CHTA and Amadeus,official source figure
+Low-season hotel RevPAR,report period,125,USD,CHTA and Amadeus,official source figure
+High-season minus low-season RevPAR gap,report period,58,USD,LSG calculation from CHTA and Amadeus,LSG descriptive calculation
+Low-season RevPAR below high-season level,report period,31.7,percent,LSG calculation from CHTA and Amadeus,LSG descriptive calculation
+Holiday minus low-season RevPAR gap,report period,158,USD,LSG calculation from CHTA and Amadeus,LSG descriptive calculation
+Low-season RevPAR below holiday level,report period,55.8,percent,LSG calculation from CHTA and Amadeus,LSG descriptive calculation
+Brazil low-season arrivals growth,report period,60,percent,CHTA and Amadeus,official source figure
+Colombia low-season arrivals growth,report period,26,percent,CHTA and Amadeus,official source figure
+CARIFESTA XV arrivals growth,2025 festival period,23,percent,CHTA and Amadeus,official source figure
+Intra-Caribbean share during CARIFESTA XV,2025 festival period,23.3,percent,CHTA and Amadeus,official source figure
+Intra-Caribbean share increase during CARIFESTA XV,2025 festival period,3.3,percentage points,CHTA and Amadeus,official source figure

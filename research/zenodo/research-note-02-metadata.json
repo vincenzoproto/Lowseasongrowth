@@ -1,0 +1,40 @@
+{
+  "title": "International Tourism Demand in Europe 2026 — LSG Research Note 02",
+  "resource_type": "dataset",
+  "publication_date": "2026-09-23",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Proto, Vincenzo",
+      "affiliation": "Low Season Growth"
+    }
+  ],
+  "description": "Source-backed descriptive comparison of international and domestic tourist-accommodation demand growth in the European Union during the first half of 2026. Includes explicit Low Season Growth calculations derived from published Eurostat figures. This is descriptive analysis, not a forecast or an individual-hotel performance benchmark.",
+  "keywords": [
+    "international tourism",
+    "domestic tourism",
+    "hotel demand",
+    "European tourism",
+    "hospitality research",
+    "Eurostat",
+    "source markets"
+  ],
+  "files": [
+    "research/international-tourism-demand-europe-2026.md",
+    "research/data/research-note-02-international-demand.csv"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://github.com/vincenzoproto/Lowseasongrowth",
+      "relation": "isPartOf"
+    }
+  ],
+  "notes": "Prepared for a standalone Zenodo dataset deposit. License intentionally not preselected.",
+  "doi": "10.5281/zenodo.22938213",
+  "doi_url": "https://doi.org/10.5281/zenodo.22938213",
+  "status": "published"
+}

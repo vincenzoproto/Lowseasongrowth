@@ -1,0 +1,45 @@
+{
+  "title": "Caribbean Low Season 2026 — LSG Research Note 03",
+  "resource_type": "dataset",
+  "publication_date": "2026-09-24",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Proto, Vincenzo",
+      "affiliation": "Low Season Growth"
+    }
+  ],
+  "description": "Source-backed descriptive analysis of Caribbean low-season hotel performance and source-market diversification using published 2026 Caribbean Travel Trends figures from the Caribbean Hotel and Tourism Association (CHTA) and Amadeus. Includes explicit Low Season Growth calculations derived from reported RevPAR values. This is descriptive analysis, not a forecast or an individual-hotel performance benchmark.",
+  "keywords": [
+    "Caribbean tourism",
+    "hotel seasonality",
+    "low season",
+    "RevPAR",
+    "Latin American tourism demand",
+    "hospitality research",
+    "CHTA",
+    "Amadeus"
+  ],
+  "files": [
+    "research/caribbean-low-season-demand-2026.md",
+    "research/data/research-note-03-caribbean-low-season.csv"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://github.com/vincenzoproto/Lowseasongrowth",
+      "relation": "isPartOf"
+    },
+    {
+      "identifier": "https://www.amadeus-hospitality.com/resources/caribbean-travel-trends-2026/",
+      "relation": "isDerivedFrom"
+    }
+  ],
+  "notes": "Prepared for a standalone Zenodo dataset deposit. License intentionally not preselected.",
+  "doi": "10.5281/zenodo.22938535",
+  "doi_url": "https://doi.org/10.5281/zenodo.22938535",
+  "status": "published"
+}

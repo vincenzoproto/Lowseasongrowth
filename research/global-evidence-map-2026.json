@@ -1,0 +1,181 @@
+{
+  "name": "LSG Global Low-Season Evidence Map 2026",
+  "publisher": "Low Season Growth",
+  "updated": "2026-09-24",
+  "canonicalUrl": "https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026",
+  "comparabilityNote": "Regions use different source institutions, periods and metrics. This resource is an evidence index, not a cross-region ranking.",
+  "regions": [
+    {
+      "region": "Europe",
+      "evidence": [
+        {
+          "researchNote": "lsg-research-note-01",
+          "topic": "tourism seasonality concentration",
+          "source": "Eurostat",
+          "sourcePeriod": "2025",
+          "headlineEvidence": [
+            {
+              "market": "Croatia",
+              "metric": "LSG Peak-to-Trough Concentration Gap",
+              "value": 53.1,
+              "unit": "percentage points",
+              "classification": "LSG descriptive calculation"
+            },
+            {
+              "market": "France",
+              "metric": "LSG Peak-to-Trough Concentration Gap",
+              "value": 27.7,
+              "unit": "percentage points",
+              "classification": "LSG descriptive calculation"
+            },
+            {
+              "market": "Italy",
+              "metric": "LSG Peak-to-Trough Concentration Gap",
+              "value": 26.8,
+              "unit": "percentage points",
+              "classification": "LSG descriptive calculation"
+            },
+            {
+              "market": "Lithuania",
+              "metric": "LSG Peak-to-Trough Concentration Gap",
+              "value": 11.3,
+              "unit": "percentage points",
+              "classification": "LSG descriptive calculation"
+            }
+          ],
+          "article": "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+          "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-01-seasonality-gap.csv",
+          "doi": "https://doi.org/10.5281/zenodo.22937580"
+        },
+        {
+          "researchNote": "lsg-research-note-02",
+          "topic": "international vs domestic tourism demand",
+          "source": "Eurostat",
+          "sourcePeriod": "H1 2026 and Q1 2026",
+          "headlineEvidence": [
+            {
+              "metric": "Foreign guest-night growth",
+              "value": 2.5,
+              "unit": "percent YoY",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Domestic guest-night growth",
+              "value": 0.9,
+              "unit": "percent YoY",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Foreign share of EU accommodation nights",
+              "value": 48.9,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "LSG international-to-domestic growth ratio",
+              "value": 2.78,
+              "unit": "ratio",
+              "classification": "LSG descriptive calculation"
+            }
+          ],
+          "article": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+          "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-02-international-demand.csv"
+        }
+      ]
+    },
+    {
+      "region": "Caribbean",
+      "evidence": [
+        {
+          "researchNote": "lsg-research-note-03",
+          "topic": "low-season RevPAR and source-market diversification",
+          "source": "Caribbean Hotel and Tourism Association (CHTA) and Amadeus",
+          "sourcePeriod": "Apr 2025-Mar 2026",
+          "headlineEvidence": [
+            {
+              "metric": "High-season hotel RevPAR",
+              "value": 183,
+              "unit": "USD",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Low-season hotel RevPAR",
+              "value": 125,
+              "unit": "USD",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "LSG low-season gap vs high season",
+              "value": 31.7,
+              "unit": "percent below high-season level",
+              "classification": "LSG descriptive calculation"
+            },
+            {
+              "metric": "Brazil low-season arrivals growth",
+              "value": 60,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Colombia low-season arrivals growth",
+              "value": 26,
+              "unit": "percent",
+              "classification": "official source figure"
+            }
+          ],
+          "article": "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
+          "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-03-caribbean-low-season.csv"
+        }
+      ]
+    },
+    {
+      "region": "Japan",
+      "evidence": [
+        {
+          "researchNote": "lsg-research-note-04",
+          "topic": "aggregate inbound cooling and source-market divergence",
+          "source": "Japan National Tourism Organization (JNTO) and Japan Tourism Agency",
+          "sourcePeriod": "Jun-Aug 2026",
+          "headlineEvidence": [
+            {
+              "metric": "August visitor arrivals",
+              "value": 3098900,
+              "unit": "visitors",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "August visitor arrivals YoY",
+              "value": -9.6,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Source markets with record August arrivals",
+              "value": 14,
+              "unit": "markets",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "July room occupancy",
+              "value": 60.8,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "June room occupancy",
+              "value": 57.2,
+              "unit": "percent",
+              "classification": "official source figure"
+            }
+          ],
+          "article": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
+          "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-04-japan-demand.csv"
+        }
+      ]
+    }
+  ],
+  "methodology": "https://lowseasongrowth.com/pages/research-methodology",
+  "citationGuidance": "https://lowseasongrowth.com/pages/cite-low-season-growth",
+  "schemaVersion": "1.1",
+  "machineReadableEndpoint": "https://lowseasongrowth.com/evidence-map.json"
+}

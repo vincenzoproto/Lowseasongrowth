@@ -1,0 +1,44 @@
+{
+  "title": "Japan Tourism 2026 — LSG Research Note 04",
+  "resource_type": "dataset",
+  "publication_date": "2026-09-24",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Proto, Vincenzo",
+      "affiliation": "Low Season Growth"
+    }
+  ],
+  "description": "Source-backed descriptive analysis of Japan's August 2026 inbound slowdown alongside record performance in selected source markets, using official Japan National Tourism Organization (JNTO) and Japan Tourism Agency statistics. Includes explicit Low Season Growth calculations and a methodology caveat for the 2026 accommodation survey redesign.",
+  "keywords": [
+    "Japan tourism",
+    "inbound tourism",
+    "source markets",
+    "hotel demand",
+    "tourism seasonality",
+    "JNTO",
+    "hospitality research"
+  ],
+  "files": [
+    "research/japan-tourism-demand-2026.md",
+    "research/data/research-note-04-japan-demand.csv"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://github.com/vincenzoproto/Lowseasongrowth",
+      "relation": "isPartOf"
+    },
+    {
+      "identifier": "https://www.jnto.go.jp/news/press/20260916_montly.html",
+      "relation": "isDerivedFrom"
+    }
+  ],
+  "notes": "Prepared for a standalone Zenodo dataset deposit. License intentionally not preselected.",
+  "doi": "10.5281/zenodo.22938971",
+  "doi_url": "https://doi.org/10.5281/zenodo.22938971",
+  "status": "published"
+}

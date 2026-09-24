@@ -1,0 +1,40 @@
+{
+  "title": "European Tourism Seasonality 2026 — LSG Research Note 01",
+  "resource_type": "dataset",
+  "publication_date": "2026-09-23",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Proto, Vincenzo",
+      "affiliation": "Low Season Growth"
+    }
+  ],
+  "description": "Source-backed descriptive analysis of peak-versus-quiet-month tourism concentration across selected European markets using Eurostat tourist-accommodation statistics. Includes the Low Season Growth Peak-to-Trough Concentration Gap, a descriptive percentage-point calculation from published source data. The metric is not an official Eurostat indicator and does not represent property-level hotel performance.",
+  "keywords": [
+    "hotel seasonality",
+    "tourism seasonality",
+    "low season",
+    "European tourism",
+    "hospitality research",
+    "Eurostat",
+    "independent hotels"
+  ],
+  "files": [
+    "research/european-tourism-seasonality-2026.md",
+    "research/data/research-note-01-seasonality-gap.csv"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "https://github.com/vincenzoproto/Lowseasongrowth",
+      "relation": "isPartOf"
+    }
+  ],
+  "notes": "Prepared for a standalone Zenodo dataset deposit. License intentionally not preselected.",
+  "doi": "10.5281/zenodo.22937580",
+  "doi_url": "https://doi.org/10.5281/zenodo.22937580",
+  "status": "published"
+}

@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use Low Season Growth research or datasets, please cite the relevant Research Note and Low Season Growth."
+title: "Low Season Growth Research"
+type: dataset
+authors:
+  - family-names: "Proto"
+    given-names: "Vincenzo"
+    affiliation: "Low Season Growth"
+url: "https://lowseasongrowth.com/pages/research"
+repository-code: "https://github.com/vincenzoproto/Lowseasongrowth"
+date-released: 2026-09-24
+keywords:
+  - hotel seasonality
+  - low season
+  - hospitality
+  - tourism demand
+  - direct bookings
+  - hotel sales
+  - source markets
+  - hotel demand
+  - hospitality research

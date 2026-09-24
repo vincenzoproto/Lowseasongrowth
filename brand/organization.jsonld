@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://lowseasongrowth.com/#organization",
+  "name": "Low Season Growth",
+  "alternateName": [
+    "LowSeasonGrowth",
+    "LSG"
+  ],
+  "url": "https://lowseasongrowth.com/",
+  "slogan": "Hospitality for a brighter tomorrow.",
+  "description": "Hospitality commercial-strategy and research business focused on independent hotels, B&Bs and guesthouses with quieter periods, direct-booking opportunities, structured hotel sales and low-season demand.",
+  "founder": {
+    "@type": "Person",
+    "@id": "https://lowseasongrowth.com/pages/about#founder-person",
+    "name": "Vincenzo Proto",
+    "url": "https://lowseasongrowth.com/pages/about",
+    "sameAs": [
+      "https://www.linkedin.com/in/vincenzoproto"
+    ]
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/lowseasongrowth",
+    "https://www.instagram.com/lowseasongrowth/",
+    "https://github.com/vincenzoproto/Lowseasongrowth"
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "media inquiries",
+      "email": "digital.vincenzoproto@gmail.com",
+      "url": "https://lowseasongrowth.com/pages/press-kit"
+    }
+  ],
+  "areaServed": [
+    "Europe",
+    "North America",
+    "Japan",
+    "South Korea",
+    "China",
+    "India",
+    "South Asia",
+    "Southeast Asia",
+    "Asia-Pacific",
+    "Australia",
+    "New Zealand",
+    "Gulf Cooperation Council",
+    "Middle East",
+    "Brazil",
+    "Latin America"
+  ],
+  "knowsAbout": [
+    "hotel low-season marketing",
+    "hotel sales",
+    "direct bookings",
+    "hospitality business development",
+    "hotel seasonality",
+    "B2B hospitality sales",
+    "tourism demand analysis",
+    "source-market analysis",
+    "independent hotels",
+    "boutique hotels",
+    "B&Bs and guesthouses"
+  ]
+}

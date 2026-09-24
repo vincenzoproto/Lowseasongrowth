@@ -1,0 +1,78 @@
+{
+  "name": "low-season-growth-research",
+  "title": "Low Season Growth Research",
+  "publisher": "Low Season Growth",
+  "author": "Vincenzo Proto",
+  "homepage": "https://lowseasongrowth.com/pages/research",
+  "methodology": "https://lowseasongrowth.com/pages/research-methodology",
+  "citation_guidance": "https://lowseasongrowth.com/pages/cite-low-season-growth",
+  "repository": "https://github.com/vincenzoproto/Lowseasongrowth/tree/main/research",
+  "updated": "2026-09-24",
+  "machine_readable": {
+    "catalog": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/catalog.json",
+    "datapackage": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/datapackage.json",
+    "dcat": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/dcat.jsonld",
+    "data_dictionary": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/data/README.md",
+    "schema_org_datasets": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/datasets.jsonld",
+    "evidence_map": "https://lowseasongrowth.com/evidence-map.json",
+    "media_pack": "https://lowseasongrowth.com/media-pack.json"
+  },
+  "research_notes": [
+    {
+      "id": "lsg-research-note-01",
+      "title": "European Tourism Seasonality 2026: LSG Research Note on Peak vs Quiet Months",
+      "article_url": "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+      "data_url": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-01-seasonality-gap.csv",
+      "documentation_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/european-tourism-seasonality-2026.md",
+      "source": "Eurostat",
+      "doi": "10.5281/zenodo.22937580",
+      "doi_url": "https://doi.org/10.5281/zenodo.22937580"
+    },
+    {
+      "id": "lsg-research-note-02",
+      "title": "International Tourism Is Growing Faster Than Domestic Demand in Europe: LSG Research Note 02",
+      "article_url": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+      "data_url": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-02-international-demand.csv",
+      "documentation_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/international-tourism-demand-europe-2026.md",
+      "source": "Eurostat",
+      "doi": "10.5281/zenodo.22938213",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938213"
+    },
+    {
+      "id": "lsg-research-note-03",
+      "title": "Caribbean Low Season 2026: RevPAR Gap and South American Demand",
+      "article_url": "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
+      "data_url": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-03-caribbean-low-season.csv",
+      "documentation_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/caribbean-low-season-demand-2026.md",
+      "source": "Caribbean Hotel and Tourism Association (CHTA) and Amadeus",
+      "doi": "10.5281/zenodo.22938535",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938535"
+    },
+    {
+      "id": "lsg-research-note-04",
+      "title": "Japan Tourism 2026: Aggregate Cooling, Source-Market Divergence",
+      "article_url": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
+      "data_url": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-04-japan-demand.csv",
+      "documentation_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/japan-tourism-demand-2026.md",
+      "source": "Japan National Tourism Organization (JNTO) and Japan Tourism Agency",
+      "doi": "10.5281/zenodo.22938971",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938971"
+    }
+  ],
+  "active_projects": [
+    {
+      "id": "100-property-low-season-benchmark-2026",
+      "title": "100-Property Low Season Benchmark 2026",
+      "status": "recruiting",
+      "target_participants": 100,
+      "article_url": "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026",
+      "methodology_url": "https://lowseasongrowth.com/pages/research-methodology"
+    }
+  ],
+  "stable_snapshot": {
+    "version": "1.1",
+    "branch": "research-v1.1",
+    "url": "https://github.com/vincenzoproto/Lowseasongrowth/tree/research-v1.1/research",
+    "checksums": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/research-v1.1/research/CHECKSUMS.sha256"
+  }
+}

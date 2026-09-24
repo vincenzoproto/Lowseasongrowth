@@ -1,0 +1,19 @@
+metric,period,value,unit,source,classification
+Visitor arrivals,July 2026,3442100,visitors,JNTO,official source figure
+Visitor arrivals YoY growth,July 2026,0.1,percent,JNTO,official source figure
+Visitor arrivals,August 2026,3098900,visitors,JNTO,official source figure
+Visitor arrivals YoY growth,August 2026,-9.6,percent,JNTO,official source figure
+Source markets with record August arrivals,August 2026,14,markets,JNTO,official source figure
+July-to-August visitor change,Jul-Aug 2026,-343200,visitors,LSG calculation from JNTO,LSG descriptive calculation
+July-to-August visitor change,Jul-Aug 2026,-9.97,percent,LSG calculation from JNTO,LSG descriptive calculation
+Total guest nights,July 2026,54.67,million nights,Japan Tourism Agency,official source figure
+Japanese guest nights,July 2026,41.10,million nights,Japan Tourism Agency,official source figure
+Foreign guest nights,July 2026,13.58,million nights,Japan Tourism Agency,official source figure
+Foreign share of total guest nights,July 2026,24.84,percent,LSG calculation from Japan Tourism Agency,LSG descriptive calculation
+Room occupancy rate,July 2026,60.8,percent,Japan Tourism Agency,official source figure
+Total guest nights,June 2026,45.82,million nights,Japan Tourism Agency,official source figure
+Japanese guest nights,June 2026,33.60,million nights,Japan Tourism Agency,official source figure
+Foreign guest nights,June 2026,12.22,million nights,Japan Tourism Agency,official source figure
+Foreign share of total guest nights,June 2026,26.67,percent,LSG calculation from Japan Tourism Agency,LSG descriptive calculation
+Room occupancy rate,June 2026,57.2,percent,Japan Tourism Agency,official source figure
+Occupancy change June to July,Jun-Jul 2026,3.6,percentage points,LSG calculation from Japan Tourism Agency,LSG descriptive calculation

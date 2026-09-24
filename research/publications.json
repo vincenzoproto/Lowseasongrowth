@@ -1,0 +1,47 @@
+{
+  "publisher": "Low Season Growth",
+  "author": "Vincenzo Proto",
+  "updated": "2026-09-24",
+  "publications": [
+    {
+      "id": "lsg-rn-01",
+      "title": "European Tourism Seasonality 2026: LSG Research Note on Peak vs Quiet Months",
+      "published": "2026-09-23",
+      "url": "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+      "dataset": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-01-seasonality-gap.csv",
+      "methodology": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/european-tourism-seasonality-2026.md",
+      "doi": "10.5281/zenodo.22937580",
+      "doi_url": "https://doi.org/10.5281/zenodo.22937580"
+    },
+    {
+      "id": "lsg-rn-02",
+      "title": "International Tourism Is Growing Faster Than Domestic Demand in Europe: LSG Research Note 02",
+      "published": "2026-09-23",
+      "url": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+      "dataset": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-02-international-demand.csv",
+      "methodology": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/international-tourism-demand-europe-2026.md",
+      "doi": "10.5281/zenodo.22938213",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938213"
+    },
+    {
+      "id": "lsg-rn-03",
+      "title": "Caribbean Low Season 2026: RevPAR Gap and South American Demand — LSG Research Note 03",
+      "published": "2026-09-24",
+      "url": "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
+      "dataset": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-03-caribbean-low-season.csv",
+      "methodology": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/caribbean-low-season-demand-2026.md",
+      "doi": "10.5281/zenodo.22938535",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938535"
+    },
+    {
+      "id": "lsg-rn-04",
+      "title": "Japan Tourism 2026: Aggregate Cooling, Source-Market Divergence — LSG Research Note 04",
+      "published": "2026-09-24",
+      "url": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
+      "dataset": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-04-japan-demand.csv",
+      "methodology": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/research/japan-tourism-demand-2026.md",
+      "doi": "10.5281/zenodo.22938971",
+      "doi_url": "https://doi.org/10.5281/zenodo.22938971"
+    }
+  ]
+}

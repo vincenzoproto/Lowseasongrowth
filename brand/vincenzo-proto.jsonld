@@ -1,0 +1,23 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://lowseasongrowth.com/pages/about#founder-person",
+  "name": "Vincenzo Proto",
+  "jobTitle": "Founder",
+  "url": "https://lowseasongrowth.com/pages/about",
+  "image": "https://cdn.shopify.com/s/files/1/1059/8488/5078/files/vincenzo-proto-low-season-growth-founder.png?v=1789858458",
+  "sameAs": [
+    "https://www.linkedin.com/in/vincenzoproto",
+    "https://github.com/vincenzoproto"
+  ],
+  "worksFor": {
+    "@id": "https://lowseasongrowth.com/#organization"
+  },
+  "knowsAbout": [
+    "B2B sales",
+    "hotel low-season strategy",
+    "direct bookings",
+    "hospitality business development",
+    "hotel seasonality"
+  ]
+}

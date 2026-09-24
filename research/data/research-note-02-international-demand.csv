@@ -1,0 +1,16 @@
+metric,period,value,unit,source
+EU tourist accommodation nights,H1 2026,1.321,billion nights,Eurostat
+Total year-on-year growth,H1 2026,1.7,percent,Eurostat
+Foreign visitor share of nights,H1 2026,48.9,percent,Eurostat
+Foreign guest-night growth,H1 2026,2.5,percent,Eurostat
+Domestic guest-night growth,H1 2026,0.9,percent,Eurostat
+International-to-domestic growth ratio,H1 2026,2.78,ratio,LSG calculation from Eurostat
+Additional international nights,Q1 2026,11.4,million nights,Eurostat
+Additional domestic nights,Q1 2026,4.2,million nights,Eurostat
+International share of additional nights,Q1 2026,73.1,percent,LSG calculation from Eurostat
+Malta foreign share,H1 2026,95.2,percent,Eurostat
+Cyprus foreign share,H1 2026,92.6,percent,Eurostat
+Luxembourg foreign share,H1 2026,87.7,percent,Eurostat
+Germany foreign share,H1 2026,18.5,percent,Eurostat
+Poland foreign share,H1 2026,19.8,percent,Eurostat
+Romania foreign share,H1 2026,23.0,percent,Eurostat

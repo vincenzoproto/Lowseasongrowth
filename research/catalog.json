@@ -1,0 +1,118 @@
+{
+  "name": "Low Season Growth Research Catalogue",
+  "publisher": {
+    "name": "Low Season Growth",
+    "url": "https://lowseasongrowth.com",
+    "researchHub": "https://lowseasongrowth.com/pages/research"
+  },
+  "updated": "2026-09-24",
+  "methodology": "https://lowseasongrowth.com/pages/research-methodology",
+  "citationGuidance": "https://lowseasongrowth.com/pages/cite-low-season-growth",
+  "datasets": [
+    {
+      "id": "lsg-research-note-01",
+      "title": "European Tourism Seasonality 2026",
+      "topic": [
+        "hotel seasonality",
+        "tourism seasonality",
+        "Europe",
+        "accommodation nights"
+      ],
+      "sourceInstitution": "Eurostat",
+      "sourceYear": 2025,
+      "derivedMetric": "LSG Peak-to-Trough Concentration Gap",
+      "article": "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+      "documentation": "research/european-tourism-seasonality-2026.md",
+      "data": "research/data/research-note-01-seasonality-gap.csv",
+      "doi": "10.5281/zenodo.22937580",
+      "doiUrl": "https://doi.org/10.5281/zenodo.22937580"
+    },
+    {
+      "id": "lsg-research-note-02",
+      "title": "International Tourism Demand in Europe 2026",
+      "topic": [
+        "international tourism",
+        "domestic tourism",
+        "Europe",
+        "accommodation nights"
+      ],
+      "sourceInstitution": "Eurostat",
+      "sourcePeriod": "H1 2026 and Q1 2026",
+      "article": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+      "documentation": "research/international-tourism-demand-europe-2026.md",
+      "data": "research/data/research-note-02-international-demand.csv",
+      "doi": "10.5281/zenodo.22938213",
+      "doiUrl": "https://doi.org/10.5281/zenodo.22938213"
+    },
+    {
+      "id": "lsg-research-note-03",
+      "title": "Caribbean Low Season 2026",
+      "topic": [
+        "hotel seasonality",
+        "Caribbean",
+        "RevPAR",
+        "low season",
+        "Latin American tourism demand"
+      ],
+      "sourceInstitution": "Caribbean Hotel and Tourism Association (CHTA) and Amadeus",
+      "sourcePeriod": "Apr 2025-Mar 2026",
+      "derivedMetrics": [
+        "high-season vs low-season RevPAR gap",
+        "holiday vs low-season RevPAR gap"
+      ],
+      "article": "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
+      "documentation": "research/caribbean-low-season-demand-2026.md",
+      "data": "research/data/research-note-03-caribbean-low-season.csv",
+      "doi": "10.5281/zenodo.22938535",
+      "doiUrl": "https://doi.org/10.5281/zenodo.22938535"
+    },
+    {
+      "id": "lsg-research-note-04",
+      "title": "Japan Tourism 2026",
+      "topic": [
+        "Japan tourism",
+        "inbound tourism",
+        "source markets",
+        "hotel demand",
+        "tourism seasonality"
+      ],
+      "sourceInstitution": "Japan National Tourism Organization (JNTO) and Japan Tourism Agency",
+      "sourcePeriod": "June-August 2026",
+      "derivedMetrics": [
+        "July-to-August inbound change",
+        "foreign share of guest nights",
+        "June-to-July occupancy change"
+      ],
+      "article": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
+      "documentation": "research/japan-tourism-demand-2026.md",
+      "data": "research/data/research-note-04-japan-demand.csv",
+      "doi": "10.5281/zenodo.22938971",
+      "doiUrl": "https://doi.org/10.5281/zenodo.22938971"
+    }
+  ],
+  "canonicalEndpoints": {
+    "researchIndex": "https://lowseasongrowth.com/research.json",
+    "organization": "https://lowseasongrowth.com/organization.jsonld",
+    "llms": "https://lowseasongrowth.com/llms.txt",
+    "evidenceMap": "https://lowseasongrowth.com/evidence-map.json",
+    "mediaPack": "https://lowseasongrowth.com/media-pack.json"
+  },
+  "internationalSummaries": {
+    "website": "https://lowseasongrowth.com/pages/low-season-growth-international-research",
+    "index": "research/translations/README.md",
+    "japanese": "research/translations/ja.md",
+    "spanish": "research/translations/es.md",
+    "french": "research/translations/fr.md",
+    "german": "research/translations/de.md",
+    "portuguese": "research/translations/pt.md",
+    "chinese": "research/translations/zh.md",
+    "arabic": "research/translations/ar.md",
+    "hindi": "research/translations/hi.md",
+    "korean": "research/translations/ko.md"
+  },
+  "stableSnapshot": {
+    "version": "1.1",
+    "branch": "research-v1.1",
+    "url": "https://github.com/vincenzoproto/Lowseasongrowth/tree/research-v1.1/research"
+  }
+}

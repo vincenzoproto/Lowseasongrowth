@@ -1,0 +1,71 @@
+{
+  "title": "100-Property Low Season Benchmark 2026 response schema",
+  "type": "object",
+  "required": [
+    "weak_period",
+    "working_channel",
+    "booking_loss"
+  ],
+  "properties": {
+    "response_id": {
+      "type": "string",
+      "description": "Internal non-identifying response key."
+    },
+    "country": {
+      "type": "string"
+    },
+    "property_type": {
+      "type": "string"
+    },
+    "room_or_unit_band": {
+      "type": "string"
+    },
+    "weak_period": {
+      "type": "string"
+    },
+    "working_channel": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "direct",
+          "OTA",
+          "repeat_guest",
+          "agency_or_partner",
+          "corporate_or_group",
+          "social",
+          "other"
+        ]
+      }
+    },
+    "working_action": {
+      "type": "string"
+    },
+    "booking_loss": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "visibility",
+          "positioning_or_offer",
+          "price",
+          "website_or_booking_conversion",
+          "follow_up",
+          "availability_or_product_fit",
+          "other"
+        ]
+      }
+    },
+    "attribution_preference": {
+      "enum": [
+        "anonymous",
+        "credited",
+        "credited_with_quote"
+      ]
+    },
+    "public_contributor_name": {
+      "type": "string"
+    },
+    "public_quote": {
+      "type": "string"
+    }
+  }
+}

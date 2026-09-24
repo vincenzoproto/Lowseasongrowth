@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://lowseasongrowth.com/#organization",
+  "name": "Low Season Growth",
+  "alternateName": "LSG",
+  "url": "https://lowseasongrowth.com",
+  "description": "Hospitality commercial-strategy brand focused on helping independent hotels, B&Bs and guesthouses improve weaker dates and recurring low-season periods through offer design, direct-booking strategy, proactive sales and structured commercial planning.",
+  "founder": {
+    "@type": "Person",
+    "name": "Vincenzo Proto",
+    "url": "https://lowseasongrowth.com/pages/about",
+    "sameAs": "https://www.linkedin.com/in/vincenzoproto"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/lowseasongrowth/",
+    "https://www.instagram.com/lowseasongrowth/",
+    "https://github.com/vincenzoproto/Lowseasongrowth"
+  ],
+  "knowsAbout": [
+    "hotel seasonality",
+    "low-season hospitality",
+    "direct bookings",
+    "hotel sales",
+    "hospitality commercial strategy",
+    "tourism demand"
+  ],
+  "publishingPrinciples": "https://lowseasongrowth.com/pages/research-methodology",
+  "subjectOf": [
+    "https://lowseasongrowth.com/pages/research",
+    "https://lowseasongrowth.com/pages/press-kit",
+    "https://lowseasongrowth.com/pages/cite-low-season-growth"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "brand": "Low Season Growth",
+  "short_name": "LSG",
+  "slogan": "Hospitality for a brighter tomorrow.",
+  "website": "https://lowseasongrowth.com/",
+  "founder": {
+    "name": "Vincenzo Proto",
+    "title": "Founder",
+    "profile": "https://lowseasongrowth.com/pages/about",
+    "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+  },
+  "boilerplate": "Low Season Growth is a hospitality commercial-strategy business focused on independent hotels, B&Bs and guesthouses with recurring quiet periods. Its work centres on low-season marketing, direct-booking strategy, offer design, proactive hotel sales, hospitality research and structured commercial planning.",
+  "focus_topics": [
+    "hotel low-season strategy",
+    "direct bookings",
+    "hotel sales",
+    "B2B demand generation",
+    "seasonality",
+    "source-market analysis",
+    "independent hotels",
+    "boutique hotels",
+    "B&Bs and guesthouses"
+  ],
+  "international_expansion_focus": [
+    "Europe",
+    "North America",
+    "Japan",
+    "South Korea",
+    "China",
+    "India and South Asia",
+    "Southeast Asia and Asia-Pacific",
+    "Australia and New Zealand",
+    "Gulf and Middle East",
+    "Brazil and Latin America"
+  ],
+  "public_website_languages": [
+    "English",
+    "Italian"
+  ],
+  "localization_in_preparation": [
+    "Japanese",
+    "Korean",
+    "Simplified Chinese",
+    "Arabic",
+    "German",
+    "French",
+    "Spanish",
+    "Portuguese"
+  ],
+  "press_kit": "https://lowseasongrowth.com/pages/press-kit",
+  "research": "https://lowseasongrowth.com/pages/research",
+  "media_contact": "digital.vincenzoproto@gmail.com",
+  "official_profiles": [
+    "https://www.linkedin.com/company/lowseasongrowth",
+    "https://www.instagram.com/lowseasongrowth/",
+    "https://github.com/vincenzoproto/Lowseasongrowth"
+  ],
+  "press_releases": [
+    {
+      "date": "2026-09-24",
+      "language": "en",
+      "title": "Low Season Growth Expands International Hospitality Outreach",
+      "url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/press/2026-09-24-global-expansion-en.md"
+    },
+    {
+      "date": "2026-09-24",
+      "language": "ja",
+      "title": "Low Season Growth、独立系宿泊施設向けの国際展開を拡大",
+      "url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/press/2026-09-24-global-expansion-ja.md"
+    },
+    {
+      "date": "2026-09-24",
+      "language": "en",
+      "title": "Low Season Growth publishes four hospitality research datasets with persistent DOI records",
+      "url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/press/2026-09-24-doi-research-series-en.md"
+    }
+  ],
+  "research_assets": [
+    "https://lowseasongrowth.com/blogs/news/european-tourism-seasonality-2026-lsg-research-note",
+    "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note",
+    "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026"
+  ],
+  "research_dois": {
+    "research_note_01": {
+      "doi": "10.5281/zenodo.22937580",
+      "url": "https://doi.org/10.5281/zenodo.22937580"
+    },
+    "research_note_02": {
+      "doi": "10.5281/zenodo.22938213",
+      "url": "https://doi.org/10.5281/zenodo.22938213"
+    },
+    "research_note_03": {
+      "doi": "10.5281/zenodo.22938535",
+      "url": "https://doi.org/10.5281/zenodo.22938535"
+    },
+    "research_note_04": {
+      "doi": "10.5281/zenodo.22938971",
+      "url": "https://doi.org/10.5281/zenodo.22938971"
+    }
+  },
+  "citation_formats": {
+    "ris": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.ris"
+  }
+}
