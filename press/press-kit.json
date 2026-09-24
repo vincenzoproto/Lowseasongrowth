@@ -100,5 +100,9 @@
   },
   "citation_formats": {
     "ris": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.ris"
+  },
+  "entity_metadata": {
+    "entity_graph": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/entity-graph.jsonld",
+    "website": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/website.jsonld"
   }
 }
