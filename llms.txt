@@ -65,6 +65,10 @@ Low Season Growth publishes source-backed descriptive research using public sour
 
 - Canonical research JSON endpoint: https://lowseasongrowth.com/research.json
 - Canonical organization JSON-LD: https://lowseasongrowth.com/organization.jsonld
+- Unified entity graph JSON-LD:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/entity-graph.jsonld
+- WebSite JSON-LD:
+  https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/website.jsonld
 - Canonical evidence map JSON endpoint: https://lowseasongrowth.com/evidence-map.json
 - Canonical media pack JSON endpoint: https://lowseasongrowth.com/media-pack.json
 
