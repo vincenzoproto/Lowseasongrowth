@@ -1,0 +1,118 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lowseasongrowth.com/#organization",
+      "name": "Low Season Growth",
+      "alternateName": [
+        "LowSeasonGrowth",
+        "LSG"
+      ],
+      "url": "https://lowseasongrowth.com/",
+      "slogan": "Hospitality for a brighter tomorrow.",
+      "description": "Hospitality commercial-strategy and research business focused on independent hotels, B&Bs and guesthouses with quieter periods, direct-booking opportunities, structured hotel sales and low-season demand.",
+      "founder": {
+        "@id": "https://lowseasongrowth.com/pages/about#founder-person"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/lowseasongrowth",
+        "https://www.instagram.com/lowseasongrowth/",
+        "https://github.com/vincenzoproto/Lowseasongrowth"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "media inquiries",
+          "email": "digital.vincenzoproto@gmail.com",
+          "url": "https://lowseasongrowth.com/pages/research-media"
+        }
+      ],
+      "publishingPrinciples": "https://lowseasongrowth.com/pages/editorial-standards",
+      "subjectOf": [
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/research"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/research-doi-registry"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth"
+        }
+      ],
+      "knowsAbout": [
+        "hotel low-season strategy",
+        "hotel seasonality",
+        "direct bookings",
+        "hotel sales",
+        "hospitality business development",
+        "tourism demand analysis",
+        "source-market analysis",
+        "independent hotels",
+        "B&Bs and guesthouses"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://lowseasongrowth.com/pages/about#founder-person",
+      "name": "Vincenzo Proto",
+      "jobTitle": "Founder",
+      "url": "https://lowseasongrowth.com/pages/about",
+      "image": "https://cdn.shopify.com/s/files/1/1059/8488/5078/files/vincenzo-proto-low-season-growth-founder.png?v=1789858458",
+      "sameAs": [
+        "https://www.linkedin.com/in/vincenzoproto",
+        "https://github.com/vincenzoproto"
+      ],
+      "worksFor": {
+        "@id": "https://lowseasongrowth.com/#organization"
+      },
+      "subjectOf": [
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/research-media"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth"
+        }
+      ],
+      "knowsAbout": [
+        "B2B sales",
+        "hotel low-season strategy",
+        "direct bookings",
+        "hospitality business development",
+        "hotel seasonality",
+        "tourism demand analysis"
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://lowseasongrowth.com/#website",
+      "name": "Low Season Growth",
+      "alternateName": [
+        "LowSeasonGrowth",
+        "LSG"
+      ],
+      "url": "https://lowseasongrowth.com/",
+      "inLanguage": [
+        "en",
+        "it"
+      ],
+      "publisher": {
+        "@id": "https://lowseasongrowth.com/#organization"
+      },
+      "about": [
+        "hotel low-season strategy",
+        "hotel seasonality",
+        "direct bookings",
+        "hotel sales",
+        "hospitality research",
+        "tourism demand"
+      ]
+    }
+  ]
+}
