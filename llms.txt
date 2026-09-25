@@ -21,6 +21,21 @@ International research/media focus: Europe, North America, Japan, South Korea, C
 - Global Low-Season Evidence Map 2026: https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026
 - Media Data Pack 2026: https://lowseasongrowth.com/pages/media-data-pack-2026
 
+## Hospitality News Desk
+
+Low Season Growth operates a source-backed hospitality newsroom covering hotel performance, tourism demand, revenue management, distribution, investment, development, hotel technology, brand strategy and structural changes in accommodation markets.
+
+- Hospitality News Desk: https://lowseasongrowth.com/pages/hospitality-news-desk
+- Insights / news archive: https://lowseasongrowth.com/blogs/news
+- Atom feed: https://lowseasongrowth.com/blogs/news.atom
+- Editorial Standards & Corrections Policy: https://lowseasongrowth.com/pages/editorial-standards
+- Research methodology: https://lowseasongrowth.com/pages/research-methodology
+- Machine-readable news index: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/news/index.json
+- Signal Brief — 24 September 2026: https://lowseasongrowth.com/blogs/news/hospitality-signal-brief-24-september-2026
+- Signal Brief — 25 September 2026: https://lowseasongrowth.com/blogs/news/hospitality-signal-brief-25-september-2026
+
+Signal Briefs separate reported facts from LSG interpretation and link material claims to identifiable sources.
+
 ## Core topics
 
 - hotel low-season strategy
