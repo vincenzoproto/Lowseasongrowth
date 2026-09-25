@@ -60,6 +60,29 @@
     "source-market analysis",
     "independent hotels",
     "boutique hotels",
-    "B&Bs and guesthouses"
+    "B&Bs and guesthouses",
+    "hospitality news",
+    "hotel industry news",
+    "hotel performance data",
+    "hospitality investment",
+    "revenue management"
+  ],
+  "publishingPrinciples": "https://lowseasongrowth.com/pages/editorial-standards",
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "name": "Hospitality News Desk",
+      "url": "https://lowseasongrowth.com/pages/hospitality-news-desk"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Low Season Growth Research",
+      "url": "https://lowseasongrowth.com/pages/research"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Research & Media",
+      "url": "https://lowseasongrowth.com/pages/research-media"
+    }
   ]
 }
