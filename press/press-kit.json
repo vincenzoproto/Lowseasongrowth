@@ -104,5 +104,21 @@
   "entity_metadata": {
     "entity_graph": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/entity-graph.jsonld",
     "website": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/website.jsonld"
-  }
+  },
+  "news_desk": "https://lowseasongrowth.com/pages/hospitality-news-desk",
+  "editorial_standards": "https://lowseasongrowth.com/pages/editorial-standards",
+  "news_feed": "https://lowseasongrowth.com/blogs/news.atom",
+  "machine_readable_news": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/news/index.json",
+  "latest_signal_briefs": [
+    {
+      "date": "2026-09-25",
+      "title": "Hospitality Signal Brief — 25 September 2026: U.S. ADR Record, APAC Investment, REVO Restructuring and IHG Paris",
+      "url": "https://lowseasongrowth.com/blogs/news/hospitality-signal-brief-25-september-2026"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "Hospitality Signal Brief — 24 September 2026: Italy, Europe, Canada, Paris and Accor Asia",
+      "url": "https://lowseasongrowth.com/blogs/news/hospitality-signal-brief-24-september-2026"
+    }
+  ]
 }
