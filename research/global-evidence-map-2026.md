@@ -45,6 +45,23 @@ The LSG Peak-to-Trough Concentration Gap is an LSG descriptive calculation from 
 - Research Note: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note
 - CSV: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-02-international-demand.csv
 
+### Regional domestic and international demand — Research Note 02 supplement
+
+**Source:** Eurostat, *Regions in Europe — 2026 edition*, Tourism  
+**Source publication date:** 23 September 2026  
+**Reference period:** calendar year 2024  
+**Added to this map:** 29 September 2026
+
+Foreign visitors generated more accommodation nights than domestic visitors in **65 of 244 EU regions (26.6%)**. Selected foreign shares were **Kriti (Crete) 94.4%**, **Jadranska Hrvatska 92.0%** and **Illes Balears 90.2%**. By contrast, **96.7%** of nights in Mecklenburg-Vorpommern came from domestic visitors. These are published Eurostat figures.
+
+**LSG interpretation:** compare destination demand mix with the property's actual source markets in the months being targeted before selecting an offer or channel.
+
+**Limit:** annual 2024 regional shares are not 2026 regional growth rates, booking-window measurements or evidence of demand for a specific low-season period or property. They must not be compared with the H1/Q1 2026 indicators as a time trend. The original Research Note 02 CSV covers the 2026 analysis and does not contain this supplement.
+
+- Research Note supplement: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#regional-demand-2024
+- Official source: https://ec.europa.eu/eurostat/web/interactive-publications/regions-2026#tourism
+- Publication record: https://ec.europa.eu/eurostat/web/products-interactive-publications/w/ks-01-26-040
+
 ## Caribbean
 
 ### Low-season RevPAR and source-market diversification — Research Note 03
