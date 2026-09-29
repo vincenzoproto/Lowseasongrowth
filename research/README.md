@@ -20,6 +20,8 @@ Focus: peak-vs-quiet-month concentration across selected European tourism market
 
 Focus: international vs domestic tourism demand growth in the EU during the first half of 2026.
 
+**Updated 29 September 2026:** a separate [regional demand supplement](https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#regional-demand-2024) uses annual 2024 Eurostat evidence to support destination-level and property-level checks. The original 2026 figures, CSV and DOI deposit are unchanged.
+
 - Live article: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note
 - Methodology note: [international-tourism-demand-europe-2026.md](./international-tourism-demand-europe-2026.md)
 - Data: [data/research-note-02-international-demand.csv](./data/research-note-02-international-demand.csv)
