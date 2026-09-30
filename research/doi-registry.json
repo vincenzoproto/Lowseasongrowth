@@ -3,8 +3,8 @@
   "publisher": "Low Season Growth",
   "author": "Vincenzo Proto",
   "website": "https://lowseasongrowth.com",
-  "updated": "2026-09-24",
-  "note": "These DOI records identify archived research datasets and supporting materials. Low Season Growth research notes are descriptive research outputs, not peer-reviewed journal articles or forecasts.",
+  "updated": "2026-09-30",
+  "note": "These DOI records identify archived Low Season Growth hospitality research and practitioner materials. Research Notes are descriptive outputs; practitioner-tool examples are synthetic. DOI registration does not imply peer review, academic affiliation or empirical validation.",
   "records": [
     {
       "id": "lsg-rn-01",
@@ -45,6 +45,26 @@
       "doi_url": "https://doi.org/10.5281/zenodo.22938971",
       "article": "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
       "data": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/data/research-note-04-japan-demand.csv"
+    },
+    {
+      "id": "lsg-mn-01",
+      "title": "Weak-Date Diagnosis for Independent Hotels: A Property-Level Decision Protocol",
+      "focus": "Property-level diagnosis of underperforming stay dates and bounded operational testing",
+      "source": "Low Season Growth methodology; synthetic worked example",
+      "doi": "10.5281/zenodo.23066846",
+      "doi_url": "https://doi.org/10.5281/zenodo.23066846",
+      "article": null,
+      "data": null
+    },
+    {
+      "id": "lsg-tk-01",
+      "title": "Low-Season Offer Economics: A Contribution and Cannibalisation Toolkit for Independent Hotels",
+      "focus": "Contribution economics, selling costs and cannibalisation in low-season hotel offers",
+      "source": "Low Season Growth methodology; synthetic teaching inputs",
+      "doi": "10.5281/zenodo.23067666",
+      "doi_url": "https://doi.org/10.5281/zenodo.23067666",
+      "article": null,
+      "data": null
     }
   ]
 }
