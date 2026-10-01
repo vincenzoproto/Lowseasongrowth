@@ -1,0 +1,58 @@
+{
+  "registry_name": "Low Season Growth Method Registry",
+  "registry_version": "1.0",
+  "published": "2026-10-02",
+  "canonical_site": "https://lowseasongrowth.com",
+  "methods": [
+    {
+      "id": "lsg-weak-date-diagnostic",
+      "name": "LSG Weak-Date Diagnostic",
+      "version": "1.0",
+      "status": "public_framework",
+      "dimensions": [
+        "demand",
+        "fit_positioning",
+        "distribution",
+        "conversion"
+      ],
+      "canonical_url": "https://lowseasongrowth.com/blogs/news/low-season-hotel-demand-diagnostic"
+    },
+    {
+      "id": "lsg-peak-to-trough-concentration-gap",
+      "name": "LSG Peak-to-Trough Concentration Gap",
+      "version": "1.0",
+      "status": "public_descriptive_metric",
+      "canonical_url": "https://lowseasongrowth.com/pages/research-methodology"
+    },
+    {
+      "id": "weak-date-revenue-gap-calculator",
+      "name": "Weak-Date Revenue Gap Calculator",
+      "version": "1.0",
+      "status": "public_planning_tool",
+      "canonical_url": "https://lowseasongrowth.com/pages/hotel-low-season-revenue-gap-calculator"
+    },
+    {
+      "id": "lsg-lift",
+      "name": "LSG Lift",
+      "version": "0.1",
+      "status": "public_framework_in_development",
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-lift"
+    },
+    {
+      "id": "lsg-intelligence",
+      "name": "LSG Intelligence",
+      "version": "beta-0.1",
+      "status": "public_beta_private_internal_engine",
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence"
+    },
+    {
+      "id": "100-property-low-season-benchmark-2026",
+      "name": "100-Property Low Season Benchmark 2026",
+      "version": "recruitment",
+      "status": "open_research_project",
+      "canonical_url": "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026"
+    }
+  ],
+  "citation_url": "https://lowseasongrowth.com/pages/cite-low-season-growth",
+  "note": "This registry records provenance and versions and does not claim exclusivity over generic hospitality concepts."
+}
