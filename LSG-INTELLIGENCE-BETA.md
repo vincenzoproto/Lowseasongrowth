@@ -37,3 +37,9 @@ https://lowseasongrowth.com/pages/lsg-method-registry
 ## Status
 
 Beta — October 2026. Functionality, outputs and scope may change as the system develops.
+
+## Public changelog
+
+https://lowseasongrowth.com/pages/lsg-intelligence-changelog
+
+The changelog records material public changes to version, scope and documented beta behaviour.
