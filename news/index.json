@@ -4,7 +4,7 @@
   "news_desk": "https://lowseasongrowth.com/pages/hospitality-news-desk",
   "editorial_standards": "https://lowseasongrowth.com/pages/editorial-standards",
   "feed": "https://lowseasongrowth.com/blogs/news.atom",
-  "updated": "2026-09-25",
+  "updated": "2026-10-02",
   "editorial_method": "Source-backed hospitality market intelligence. Reported facts are separated from Low Season Growth analysis and material factual claims link to identifiable sources.",
   "signal_briefs": [
     {
@@ -30,6 +30,20 @@
         "Canada hotels",
         "Paris hotels",
         "Accor Asia"
+      ]
+    }
+  ],
+  "product_updates": [
+    {
+      "date": "2026-10-02",
+      "title": "LSG Intelligence Beta: Decision Support for Hotel Weak Dates",
+      "url": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+      "canonical_product_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "topics": [
+        "hotel weak dates",
+        "decision support",
+        "low season",
+        "independent hotels"
       ]
     }
   ]
