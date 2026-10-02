@@ -14,9 +14,10 @@
   "founder": {
     "name": "Vincenzo Proto",
     "role": "Founder",
-    "about": "https://lowseasongrowth.com/pages/about",
+    "about": "https://lowseasongrowth.com/pages/vincenzo-proto",
     "linkedin": "https://www.linkedin.com/in/vincenzoproto",
-    "medium": "https://medium.com/@digitalvincenzoproto"
+    "medium": "https://medium.com/@digitalvincenzoproto",
+    "profile": "https://lowseasongrowth.com/pages/vincenzo-proto"
   },
   "public_website_languages": [
     "en",
@@ -54,7 +55,7 @@
     "insights_feed": "https://lowseasongrowth.com/blogs/news.atom",
     "doi_registry": "https://lowseasongrowth.com/pages/research-doi-registry",
     "media_source": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth",
-    "speaking_research": "https://lowseasongrowth.com/pages/hospitality-speaking-research",
+    "speaking_research": "https://lowseasongrowth.com/pages/vincenzo-proto",
     "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry",
     "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
     "weak_date_glossary": "https://lowseasongrowth.com/pages/hotel-weak-date-glossary",
