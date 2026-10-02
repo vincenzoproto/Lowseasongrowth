@@ -58,6 +58,8 @@ The public-facing beta explains the problem framework and decision logic. Intern
 
 Public beta: https://lowseasongrowth.com/pages/lsg-intelligence
 
+Public reference note: [LSG-INTELLIGENCE-BETA.md](./LSG-INTELLIGENCE-BETA.md)
+
 ## Methods and version history
 
 Named Low Season Growth frameworks, metrics and decision-support assets are versioned publicly:
