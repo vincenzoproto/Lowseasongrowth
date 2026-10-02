@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://lowseasongrowth.com/#organization",
+      "name": "Low Season Growth",
+      "alternateName": "LSG",
+      "url": "https://lowseasongrowth.com/",
+      "description": "Hospitality commercial-strategy and research project focused on hotel low-season demand, weak-date diagnosis, direct bookings and decision support for independent hospitality properties.",
+      "founder": {
+        "@id": "https://lowseasongrowth.com/pages/about#vincenzo-proto"
+      },
+      "sameAs": [
+        "https://github.com/vincenzoproto/Lowseasongrowth"
+      ],
+      "subjectOf": [
+        {
+          "@id": "https://lowseasongrowth.com/pages/research"
+        },
+        {
+          "@id": "https://lowseasongrowth.com/pages/lsg-method-registry"
+        },
+        {
+          "@id": "https://lowseasongrowth.com/pages/lsg-intelligence"
+        }
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://lowseasongrowth.com/pages/about#vincenzo-proto",
+      "name": "Vincenzo Proto",
+      "url": "https://lowseasongrowth.com/pages/about",
+      "founder": {
+        "@id": "https://lowseasongrowth.com/#organization"
+      },
+      "affiliation": {
+        "@id": "https://lowseasongrowth.com/#organization"
+      }
+    }
+  ]
+}
