@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Low Season Growth External Publications",
+  "url": "https://lowseasongrowth.com/pages/research-media",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Article",
+        "headline": "How Independent Hotels Can Turn Soft Dates Into Focused Sales and Marketing Action",
+        "datePublished": "2026-09-25",
+        "url": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/",
+        "author": {
+          "@type": "Person",
+          "name": "Vincenzo Proto",
+          "url": "https://lowseasongrowth.com/pages/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Hotel Technology News"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Article",
+        "headline": "Conheça ações comerciais para trabalhar a baixa temporada",
+        "datePublished": "2026-09-25",
+        "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/",
+        "author": {
+          "@type": "Person",
+          "name": "Vincenzo Proto",
+          "url": "https://lowseasongrowth.com/pages/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Revista Hotéis"
+        }
+      }
+    }
+  ]
+}
