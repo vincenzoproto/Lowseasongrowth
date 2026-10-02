@@ -72,5 +72,7 @@
   ],
   "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry",
   "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
-  "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
+  "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
+  "evidence_standard": "https://lowseasongrowth.com/pages/lsg-evidence-standard",
+  "machine_readable_evidence_standard": "https://lowseasongrowth.com/evidence-standard.json"
 }
