@@ -65,7 +65,8 @@
     "statement": "Low Season Growth distinguishes official source data, LSG calculations and commercial interpretation. LSG-created metrics are not presented as official indicators from the source institution.",
     "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry",
     "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
-    "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
+    "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
+    "evidence_standard": "https://lowseasongrowth.com/pages/lsg-evidence-standard"
   },
   "machine_readable": {
     "llms": "https://lowseasongrowth.com/llms.txt",
@@ -75,7 +76,8 @@
     "method_registry": "https://lowseasongrowth.com/methods.json",
     "evidence_ledger": "https://lowseasongrowth.com/evidence-ledger.json",
     "founder_profile": "https://lowseasongrowth.com/vincenzo-proto.jsonld",
-    "source_profile": "https://lowseasongrowth.com/source.json"
+    "source_profile": "https://lowseasongrowth.com/source.json",
+    "evidence_standard": "https://lowseasongrowth.com/evidence-standard.json"
   },
   "product_and_method_updates": [
     {
