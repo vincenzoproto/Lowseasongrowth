@@ -52,7 +52,8 @@
     "calculator": "https://lowseasongrowth.com/pages/hotel-low-season-revenue-gap-calculator",
     "insights_feed": "https://lowseasongrowth.com/blogs/news.atom",
     "doi_registry": "https://lowseasongrowth.com/pages/research-doi-registry",
-    "media_source": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth"
+    "media_source": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth",
+    "speaking_research": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
   },
   "press_releases": {
     "international_expansion_en": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-en.md",
@@ -68,11 +69,12 @@
     "website_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/website.jsonld",
     "entity_graph_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/entity-graph.jsonld"
   },
-  "updated": "2026-09-24",
+  "updated": "2026-10-02",
   "research_dois": {
     "research_note_01": "https://doi.org/10.5281/zenodo.22937580",
     "research_note_02": "https://doi.org/10.5281/zenodo.22938213",
     "research_note_03": "https://doi.org/10.5281/zenodo.22938535",
     "research_note_04": "https://doi.org/10.5281/zenodo.22938971"
-  }
+  },
+  "official_contact": "vincenzoprotodigital@gmail.com"
 }
