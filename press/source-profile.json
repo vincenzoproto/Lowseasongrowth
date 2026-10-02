@@ -6,7 +6,7 @@
     "name": "Vincenzo Proto",
     "title": "Founder",
     "organization": "Low Season Growth",
-    "profile": "https://lowseasongrowth.com/pages/about",
+    "profile": "https://lowseasongrowth.com/pages/hospitality-speaking-research",
     "linkedin": "https://www.linkedin.com/in/vincenzoproto"
   },
   "organization": {
@@ -38,9 +38,12 @@
     "https://lowseasongrowth.com/blogs/news/caribbean-low-season-2026-revpar-south-american-demand",
     "https://lowseasongrowth.com/blogs/news/japan-tourism-2026-source-market-divergence-lsg-research-note-04",
     "https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026",
-    "https://lowseasongrowth.com/pages/media-data-pack-2026"
+    "https://lowseasongrowth.com/pages/media-data-pack-2026",
+    "https://lowseasongrowth.com/pages/lsg-method-registry",
+    "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
+    "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
   ],
-  "contact": "digital.vincenzoproto@gmail.com",
+  "contact": "vincenzoprotodigital@gmail.com",
   "citation_guidance": "https://lowseasongrowth.com/pages/cite-low-season-growth",
   "public_tools": [
     {
@@ -50,5 +53,24 @@
       "introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
       "note": "Public beta decision-support system; does not guarantee bookings or replace hotel operational systems."
     }
-  ]
+  ],
+  "external_editorial_publications": [
+    {
+      "outlet": "Hotel Technology News",
+      "date": "2026-09-25",
+      "title": "How Independent Hotels Can Turn Soft Dates Into Focused Sales and Marketing Action",
+      "url": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/",
+      "type": "contributed viewpoint"
+    },
+    {
+      "outlet": "Revista Hotéis",
+      "date": "2026-09-25",
+      "title": "Conheça ações comerciais para trabalhar a baixa temporada",
+      "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/",
+      "type": "contributed article"
+    }
+  ],
+  "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry",
+  "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
+  "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
 }
