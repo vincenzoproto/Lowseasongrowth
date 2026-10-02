@@ -12,6 +12,8 @@ Official website: https://lowseasongrowth.com/
 
 ## Press releases
 
+- [2 Oct 2026 — LSG Intelligence Beta (English)](./2026-10-02-lsg-intelligence-beta-en.md)
+
 - [24 Sep 2026 — International expansion (English)](./2026-09-24-global-expansion-en.md)
 - [24 Sep 2026 — International expansion (Japanese)](./2026-09-24-global-expansion-ja.md)
 
