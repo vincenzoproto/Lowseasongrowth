@@ -1,6 +1,6 @@
 {
   "registry_name": "Low Season Growth Method Registry",
-  "registry_version": "1.1",
+  "registry_version": "1.2",
   "published": "2026-10-02",
   "canonical_site": "https://lowseasongrowth.com",
   "methods": [
@@ -43,7 +43,10 @@
       "name": "LSG Intelligence",
       "version": "beta-0.1",
       "status": "public_beta_private_internal_engine",
-      "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence"
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "public_introduction_url": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+      "public_reference_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md",
+      "schema_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/lsg-intelligence.schema.json"
     },
     {
       "id": "100-property-low-season-benchmark-2026",
