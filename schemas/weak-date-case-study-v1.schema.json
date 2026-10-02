@@ -1,0 +1,270 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lowseasongrowth.com/schemas/weak-date-case-study-v1.json",
+  "title": "LSG Weak-Date Case Study Protocol v1.0",
+  "description": "Public data structure for consistent weak-date hotel case-study measurement. It excludes personal guest data.",
+  "type": "object",
+  "required": [
+    "case_id",
+    "stay_period",
+    "measurement_date",
+    "inventory",
+    "baseline",
+    "target",
+    "diagnosis",
+    "actions",
+    "outcomes",
+    "measurement_status",
+    "limitations"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "description": "Anonymous or approved public case identifier."
+    },
+    "property_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Only when public use is approved."
+    },
+    "stay_period": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "measurement_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "inventory": {
+      "type": "object",
+      "properties": {
+        "available_room_nights": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "occupied_room_nights_at_baseline": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "baseline": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "diagnosis": {
+      "type": "object",
+      "required": [
+        "primary"
+      ],
+      "properties": {
+        "primary": {
+          "enum": [
+            "demand",
+            "fit_positioning",
+            "distribution",
+            "conversion"
+          ]
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "demand",
+              "fit_positioning",
+              "distribution",
+              "conversion"
+            ]
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "audience": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "offer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "date",
+          "action_type",
+          "description"
+        ],
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "action_type": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "channel": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "incremental_cost": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "signals": {
+      "type": "object",
+      "properties": {
+        "qualified_replies": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "direct_enquiries": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "proposal_requests": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "booking_attempts": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "reactivated_past_guests": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "outcomes": {
+      "type": "object",
+      "properties": {
+        "confirmed_bookings": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "confirmed_room_nights": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "cancelled_bookings": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "completed_room_nights": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "realized_room_revenue": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "currency": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "measurement_status": {
+      "enum": [
+        "provisional",
+        "mature"
+      ]
+    },
+    "confounding_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "public_approval": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}
