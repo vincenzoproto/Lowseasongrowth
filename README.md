@@ -20,6 +20,11 @@ The central idea is simple: **not every weak hotel date has the same cause**. A 
 
 ## Public resources
 
+- [Publications & Authority Index](./PUBLICATIONS.md) — external editorial publications and clearly labelled owned thought leadership
+
+- Vincenzo Proto — canonical founder profile  
+  https://lowseasongrowth.com/pages/vincenzo-proto
+
 - Hotel Low-Season Marketing & Sales Resources  
   https://lowseasongrowth.com/pages/hotel-low-season-resources
 
