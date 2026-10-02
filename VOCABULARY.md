@@ -17,7 +17,28 @@ A specific stay date, weekday pattern, week or short period that is materially s
 A recurring group of soft stay dates that share a similar pattern and can be diagnosed together.
 
 ### Booking window
-The time between reservation creation and arrival.
+The pattern or range of lead times in which reservations for a segment or stay period typically arrive.
+
+### Lead time
+The number of days between reservation creation and arrival for one booking.
+
+### Occupancy
+The share of available room nights sold for a defined period.
+
+### ADR — Average Daily Rate
+Room revenue divided by rooms sold.
+
+### RevPAR — Revenue Per Available Room
+Room revenue divided by available rooms, or ADR multiplied by occupancy.
+
+### Pickup
+The additional reservations or room nights added between two observation dates for the same future stay period.
+
+### Booking curve
+The shape of the booking position as arrival approaches across multiple lead-time checkpoints.
+
+### Channel mix
+The distribution of bookings across direct, OTA, GDS, wholesale, corporate or other sources.
 
 ### Booking pace
 The rate at which reservations accumulate for a defined stay period.
@@ -56,6 +77,7 @@ A limited commercial intervention with a defined hypothesis, audience, offer, ch
 - **Weak-Date Revenue Gap Calculator v1.0**
 - **LSG Lift v0.1**
 - **LSG Intelligence Beta 0.1**
+- **LSG Weak-Date Case Study Protocol v1.0**
 
 See `METHOD_REGISTRY.md` and `METHOD_CHANGELOG.md` for definitions and version history.
 
