@@ -21,12 +21,38 @@
     "hotel seasonality",
     "tourism demand analysis",
     "source-market analysis",
-    "hospitality research"
+    "hospitality research",
+    "weak-date diagnosis",
+    "hospitality commercial measurement",
+    "source-market divergence",
+    "hospitality research methodology"
   ],
   "email": "vincenzoprotodigital@gmail.com",
-  "subjectOf": {
-    "@type": "WebPage",
-    "name": "Hospitality Speaking & Research — Vincenzo Proto",
-    "url": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
-  }
+  "subjectOf": [
+    {
+      "@type": "WebPage",
+      "name": "Hospitality Speaking & Research — Vincenzo Proto",
+      "url": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
+    },
+    {
+      "@type": "Article",
+      "name": "How Independent Hotels Can Turn Soft Dates Into Focused Sales and Marketing Action",
+      "url": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/"
+    },
+    {
+      "@type": "Article",
+      "name": "Conheça ações comerciais para trabalhar a baixa temporada",
+      "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/"
+    },
+    {
+      "@type": "WebPage",
+      "name": "LSG Method Registry",
+      "url": "https://lowseasongrowth.com/pages/lsg-method-registry"
+    },
+    {
+      "@type": "WebPage",
+      "name": "LSG Evidence Ledger",
+      "url": "https://lowseasongrowth.com/pages/lsg-evidence-ledger"
+    }
+  ]
 }
