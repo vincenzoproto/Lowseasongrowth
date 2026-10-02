@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LSG Certification Registry",
+  "description": "Public verification format for the LSG Low Season Performance Standard. Development status only; no accredited certificates are currently represented.",
+  "type": "object",
+  "required": ["schema_version", "programme_status", "last_updated", "certificates"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "programme_status": {
+      "type": "string",
+      "enum": ["development", "pilot", "formal"]
+    },
+    "last_updated": { "type": "string", "format": "date" },
+    "certificates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "certificate_id",
+          "property_name",
+          "country",
+          "standard_version",
+          "scope",
+          "certification_body",
+          "issued_at",
+          "expires_at",
+          "status",
+          "verification_url"
+        ],
+        "properties": {
+          "certificate_id": { "type": "string" },
+          "property_name": { "type": "string" },
+          "country": { "type": "string" },
+          "standard_version": { "type": "string" },
+          "scope": { "type": "string" },
+          "certification_body": { "type": "string" },
+          "issued_at": { "type": "string", "format": "date" },
+          "expires_at": { "type": "string", "format": "date" },
+          "status": {
+            "type": "string",
+            "enum": ["active", "suspended", "withdrawn", "expired"]
+          },
+          "verification_url": { "type": "string", "format": "uri" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "examples": [{
+    "schema_version": "0.1",
+    "programme_status": "development",
+    "last_updated": "2026-10-02",
+    "certificates": []
+  }]
+}
