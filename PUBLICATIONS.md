@@ -4,6 +4,9 @@ Public index of externally hosted publications, contributed viewpoints, and sele
 
 The register separates **independent/editorial publication channels** from **owned content published on third-party platforms** so that self-published material is not presented as independent media coverage.
 
+Canonical founder profile: https://lowseasongrowth.com/pages/vincenzo-proto  
+Official presence registry: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/presence.json
+
 ## External editorial publications
 
 ### 25 September 2026 — Hotel Technology News
