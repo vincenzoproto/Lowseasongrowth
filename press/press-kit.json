@@ -6,8 +6,9 @@
   "founder": {
     "name": "Vincenzo Proto",
     "title": "Founder",
-    "profile": "https://lowseasongrowth.com/pages/about",
-    "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+    "profile": "https://lowseasongrowth.com/pages/vincenzo-proto",
+    "linkedin": "https://www.linkedin.com/in/vincenzoproto",
+    "medium": "https://medium.com/@digitalvincenzoproto"
   },
   "boilerplate": "Low Season Growth is a hospitality commercial-strategy business focused on independent hotels, B&Bs and guesthouses with recurring quiet periods. Its work centres on low-season marketing, direct-booking strategy, offer design, proactive hotel sales, hospitality research and structured commercial planning.",
   "focus_topics": [
@@ -173,7 +174,7 @@
       "endorsement": false
     }
   ],
-  "speaking_research": "https://lowseasongrowth.com/pages/hospitality-speaking-research",
+  "speaking_research": "https://lowseasongrowth.com/pages/vincenzo-proto",
   "speaking_topics": [
     "diagnosing weak hotel dates before discounting",
     "hotel seasonality and destination resilience",
@@ -189,6 +190,16 @@
       "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
       "introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
       "public_reference": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md"
+    }
+  ],
+  "owned_thought_leadership": [
+    {
+      "platform": "Medium",
+      "date": "2026-10-02",
+      "title": "A weak hotel date is not always a pricing problem",
+      "url": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f",
+      "type": "owned article",
+      "independent_editorial_coverage": false
     }
   ]
 }
