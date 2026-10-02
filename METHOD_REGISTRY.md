@@ -85,6 +85,9 @@ https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA
 Machine-readable metadata:  
 https://github.com/vincenzoproto/Lowseasongrowth/blob/main/lsg-intelligence.schema.json
 
+Public changelog:  
+https://lowseasongrowth.com/pages/lsg-intelligence-changelog
+
 ## 6. 100-Property Low Season Benchmark 2026
 
 **Version:** Recruitment phase  
