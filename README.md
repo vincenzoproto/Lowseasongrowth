@@ -108,6 +108,11 @@ This repository is intentionally limited to public-facing material:
 
 Operational CRM data, prospect lists, customer data, sales-partner records, private procedures, Shopify backups and internal workflows are not stored in this public repository.
 
+## Founder profile
+
+- [Vincenzo Proto — Hospitality Research & Commercial Strategy](./VINCENZO_PROTO.md)
+- https://lowseasongrowth.com/pages/hospitality-speaking-research
+
 ## About
 
 Low Season Growth was founded by **Vincenzo Proto** and is focused on practical commercial execution for periods of weaker hospitality demand.
