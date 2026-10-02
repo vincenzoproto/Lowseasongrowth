@@ -76,6 +76,14 @@ Current named assets include LSG Weak-Date Diagnostic v1.0, LSG Peak-to-Trough C
 
 The 100-Property Low Season Benchmark 2026 is an open research project in recruitment. A recruitment target is not treated as an achieved usable sample. A named commercial case study is not treated as mature evidence until the measurement window has matured and the public version has property approval.
 
+## Publications and authority
+
+- Canonical publications & authority index: https://github.com/vincenzoproto/Lowseasongrowth/blob/main/PUBLICATIONS.md
+- Vincenzo Proto on Medium: https://medium.com/@digitalvincenzoproto
+- Owned thought leadership — 2 October 2026: A weak hotel date is not always a pricing problem
+  https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f
+- Classification: founder-authored / owned content published on a third-party platform; not independent editorial coverage.
+
 ## Core topics
 
 - hotel low-season strategy
