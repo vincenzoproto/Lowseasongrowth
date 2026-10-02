@@ -41,6 +41,26 @@
         {
           "@type": "WebPage",
           "url": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/lsg-method-registry"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/lsg-evidence-ledger"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/hotel-weak-date-glossary"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/lsg-intelligence"
         }
       ],
       "knowsAbout": [
@@ -52,7 +72,10 @@
         "tourism demand analysis",
         "source-market analysis",
         "independent hotels",
-        "B&Bs and guesthouses"
+        "B&Bs and guesthouses",
+        "weak-date diagnosis",
+        "decision support for weak hotel dates",
+        "hospitality commercial measurement"
       ]
     },
     {
@@ -77,6 +100,14 @@
         {
           "@type": "WebPage",
           "url": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth"
+        },
+        {
+          "@type": "Article",
+          "url": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/"
+        },
+        {
+          "@type": "Article",
+          "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalare-a-baixa-temporada/"
         }
       ],
       "knowsAbout": [
@@ -85,7 +116,10 @@
         "direct bookings",
         "hospitality business development",
         "hotel seasonality",
-        "tourism demand analysis"
+        "tourism demand analysis",
+        "weak-date diagnosis",
+        "hospitality research methodology",
+        "commercial measurement"
       ]
     },
     {
