@@ -44,6 +44,12 @@ The central idea is simple: **not every weak hotel date has the same cause**. A 
 - LSG Method Registry — public framework and metric versions  
   https://lowseasongrowth.com/pages/lsg-method-registry
 
+- LSG Weak-Date Case Study Protocol — measurement and reporting  
+  https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
+
+- Hotel Weak-Date Glossary — working vocabulary  
+  https://lowseasongrowth.com/pages/hotel-weak-date-glossary
+
 ## Research
 
 The `research/` directory contains Low Season Growth public research notes, datasets, evidence maps and citation metadata.
@@ -67,6 +73,9 @@ Named Low Season Growth frameworks, metrics and decision-support assets are vers
 - `METHOD_REGISTRY.md` — human-readable canonical registry
 - `method-registry.json` — machine-readable registry
 - `METHOD_CHANGELOG.md` — public change history
+- `CASE_STUDY_PROTOCOL.md` — comparable measurement protocol
+- `schemas/weak-date-case-study-v1.schema.json` — machine-readable case structure
+- `VOCABULARY.md` — public weak-date vocabulary
 - https://lowseasongrowth.com/pages/lsg-method-registry — canonical website registry
 
 The registry records provenance and versions; it does not claim exclusivity over generic hospitality concepts.
