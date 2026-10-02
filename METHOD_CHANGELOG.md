@@ -2,6 +2,13 @@
 
 Public change history for named Low Season Growth frameworks, metrics and decision-support assets.
 
+## 2026-10-02 — Registry v1.1
+
+- Added **LSG Weak-Date Case Study Protocol v1.0**.
+- Added a public JSON Schema for consistent weak-date case-study records.
+- Connected the protocol to the public method registry, Research Hub and Resources Hub.
+- Clarified the public/private boundary: measurement structure is public; property-level operational data and accumulated learning data remain private.
+
 ## 2026-10-02 — Registry v1.0
 
 - Published the first public **LSG Method Registry**.
