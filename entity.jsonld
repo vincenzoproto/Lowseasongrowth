@@ -51,6 +51,26 @@
           "@id": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/"
         }
       ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://lowseasongrowth.com/pages/lsg-intelligence#software",
+      "name": "LSG Intelligence",
+      "alternateName": "LSG Intelligence Beta",
+      "url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "softwareVersion": "Beta 0.1",
+      "isAccessibleForFree": true,
+      "description": "Beta decision-support system by Low Season Growth for independent hotels working on weak dates, demand gaps and commercial actions.",
+      "publisher": {
+        "@id": "https://lowseasongrowth.com/#organization"
+      },
+      "mainEntityOfPage": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "subjectOf": [
+        "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+        "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md"
+      ]
     }
   ]
 }
