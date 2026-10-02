@@ -67,7 +67,8 @@
     "publications_json": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.json",
     "publications_bib": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/research/publications.bib",
     "website_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/website.jsonld",
-    "entity_graph_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/entity-graph.jsonld"
+    "entity_graph_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/entity-graph.jsonld",
+    "speaking_research": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/speaking-research.json"
   },
   "updated": "2026-10-02",
   "research_dois": {
