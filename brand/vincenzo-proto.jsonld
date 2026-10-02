@@ -18,6 +18,15 @@
     "hotel low-season strategy",
     "direct bookings",
     "hospitality business development",
-    "hotel seasonality"
-  ]
+    "hotel seasonality",
+    "tourism demand analysis",
+    "source-market analysis",
+    "hospitality research"
+  ],
+  "email": "vincenzoprotodigital@gmail.com",
+  "subjectOf": {
+    "@type": "WebPage",
+    "name": "Hospitality Speaking & Research — Vincenzo Proto",
+    "url": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
+  }
 }
