@@ -63,6 +63,14 @@
       "status": "public_measurement_protocol",
       "canonical_url": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
       "schema_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/schemas/weak-date-case-study-v1.schema.json"
+    },
+    {
+      "id": "lsg-evidence-standard",
+      "name": "LSG Evidence Standard",
+      "version": "1.0",
+      "status": "public_evidence_reporting_standard",
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-evidence-standard",
+      "machine_readable_url": "https://lowseasongrowth.com/evidence-standard.json"
     }
   ],
   "citation_url": "https://lowseasongrowth.com/pages/cite-low-season-growth",
