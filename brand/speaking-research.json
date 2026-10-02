@@ -30,12 +30,27 @@
     "hub": "https://lowseasongrowth.com/pages/research",
     "methodology": "https://lowseasongrowth.com/pages/research-methodology",
     "benchmark": "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026",
-    "doi_registry": "https://lowseasongrowth.com/pages/research-doi-registry"
+    "doi_registry": "https://lowseasongrowth.com/pages/research-doi-registry",
+    "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry",
+    "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
+    "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
   },
   "notes": [
     "Research Notes are descriptive research outputs, not peer-reviewed journal articles unless explicitly stated otherwise.",
     "Publication or citation by third parties does not imply endorsement or partnership.",
     "The 100-Property Low Season Benchmark 2026 is collecting responses; the final analysis will report the actual usable sample."
   ],
-  "updated": "2026-10-02"
+  "updated": "2026-10-02",
+  "external_publications": [
+    {
+      "outlet": "Hotel Technology News",
+      "date": "2026-09-25",
+      "url": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/"
+    },
+    {
+      "outlet": "Revista Hotéis",
+      "date": "2026-09-25",
+      "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/"
+    }
+  ]
 }
