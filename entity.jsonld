@@ -9,7 +9,7 @@
       "url": "https://lowseasongrowth.com/",
       "description": "Hospitality commercial-strategy and research project focused on hotel low-season demand, weak-date diagnosis, direct bookings and decision support for independent hospitality properties.",
       "founder": {
-        "@id": "https://lowseasongrowth.com/pages/about#vincenzo-proto"
+        "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person"
       },
       "sameAs": [
         "https://github.com/vincenzoproto/Lowseasongrowth"
@@ -34,9 +34,9 @@
     },
     {
       "@type": "Person",
-      "@id": "https://lowseasongrowth.com/pages/about#vincenzo-proto",
+      "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person",
       "name": "Vincenzo Proto",
-      "url": "https://lowseasongrowth.com/pages/about",
+      "url": "https://lowseasongrowth.com/pages/vincenzo-proto",
       "founder": {
         "@id": "https://lowseasongrowth.com/#organization"
       },
@@ -55,7 +55,9 @@
         "https://www.linkedin.com/in/vincenzoproto",
         "https://github.com/vincenzoproto",
         "https://medium.com/@digitalvincenzoproto"
-      ]
+      ],
+      "jobTitle": "Founder, Low Season Growth",
+      "mainEntityOfPage": "https://lowseasongrowth.com/pages/vincenzo-proto"
     },
     {
       "@type": "SoftwareApplication",
@@ -84,7 +86,7 @@
       "url": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f",
       "datePublished": "2026-10-02",
       "creator": {
-        "@id": "https://lowseasongrowth.com/pages/about#vincenzo-proto"
+        "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person"
       },
       "about": {
         "@id": "https://lowseasongrowth.com/#organization"
