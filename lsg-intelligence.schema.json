@@ -7,7 +7,7 @@
   "url": "https://lowseasongrowth.com/pages/lsg-intelligence",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "softwareVersion": "Beta",
+  "softwareVersion": "Beta 0.1",
   "isAccessibleForFree": true,
   "description": "Beta decision-support system by Low Season Growth for independent hotels working on weak dates, demand gaps and commercial actions.",
   "publisher": {
@@ -18,5 +18,6 @@
   "sameAs": [
     "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
     "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md"
-  ]
+  ],
+  "releaseNotes": "https://lowseasongrowth.com/pages/lsg-intelligence-changelog"
 }
