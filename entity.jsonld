@@ -96,7 +96,11 @@
         "name": "Medium",
         "url": "https://medium.com/"
       },
-      "description": "Founder-authored Low Season Growth thought-leadership article on diagnosing weak hotel dates before treating pricing as the default explanation."
+      "description": "Founder-authored Low Season Growth thought-leadership article on diagnosing weak hotel dates before treating pricing as the default explanation.",
+      "author": {
+        "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person"
+      },
+      "mainEntityOfPage": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f"
     }
   ]
 }
