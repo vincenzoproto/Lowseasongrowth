@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "updated": "2026-09-24",
+  "schema_version": "1.1",
+  "updated": "2026-10-02",
   "canonical_url": "https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth",
   "person": {
     "name": "Vincenzo Proto",
@@ -18,7 +18,9 @@
       "direct bookings",
       "hotel sales",
       "tourism demand",
-      "source-market analysis"
+      "source-market analysis",
+      "hotel weak-date diagnosis",
+      "hospitality decision support"
     ]
   },
   "available_for": [
@@ -39,5 +41,14 @@
     "https://lowseasongrowth.com/pages/media-data-pack-2026"
   ],
   "contact": "digital.vincenzoproto@gmail.com",
-  "citation_guidance": "https://lowseasongrowth.com/pages/cite-low-season-growth"
+  "citation_guidance": "https://lowseasongrowth.com/pages/cite-low-season-growth",
+  "public_tools": [
+    {
+      "name": "LSG Intelligence",
+      "status": "Beta 0.1",
+      "url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+      "note": "Public beta decision-support system; does not guarantee bookings or replace hotel operational systems."
+    }
+  ]
 }
