@@ -41,6 +41,9 @@ The central idea is simple: **not every weak hotel date has the same cause**. A 
 - Hospitality Media Source  
   https://lowseasongrowth.com/pages/hospitality-media-source-low-season-growth
 
+- LSG Method Registry — public framework and metric versions  
+  https://lowseasongrowth.com/pages/lsg-method-registry
+
 ## Research
 
 The `research/` directory contains Low Season Growth public research notes, datasets, evidence maps and citation metadata.
@@ -54,6 +57,17 @@ LSG research is designed to keep public-source data, descriptive calculations an
 The public-facing beta explains the problem framework and decision logic. Internal models, learning systems, CRM data and operational intelligence remain private.
 
 Public beta: https://lowseasongrowth.com/pages/lsg-intelligence
+
+## Methods and version history
+
+Named Low Season Growth frameworks, metrics and decision-support assets are versioned publicly:
+
+- `METHOD_REGISTRY.md` — human-readable canonical registry
+- `method-registry.json` — machine-readable registry
+- `METHOD_CHANGELOG.md` — public change history
+- https://lowseasongrowth.com/pages/lsg-method-registry — canonical website registry
+
+The registry records provenance and versions; it does not claim exclusivity over generic hospitality concepts.
 
 ## Citation
 
