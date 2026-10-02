@@ -2,7 +2,7 @@
 
 Canonical public registry of named frameworks, metrics and decision-support assets developed and maintained by Low Season Growth (LSG).
 
-**Registry version:** 1.0  
+**Registry version:** 1.1  
 **First public registry release:** 2 October 2026  
 **Canonical website:** https://lowseasongrowth.com  
 **Research hub:** https://lowseasongrowth.com/pages/research
@@ -89,6 +89,20 @@ The target sample is a recruitment objective. Published results will report the 
 
 Canonical project:  
 https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026
+
+## 7. LSG Weak-Date Case Study Protocol
+
+**Version:** 1.0  
+**Status:** Public measurement protocol  
+**Purpose:** Keep weak-date hotel projects comparable across baseline, diagnosis, actions, commercial signals, bookings, cancellations and completed stays.
+
+The public protocol defines the minimum fields and reporting rules. Property-level operational data and the accumulated private LSG Intelligence learning dataset remain private unless explicitly approved for release.
+
+Canonical protocol:  
+https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
+
+Machine-readable schema:  
+https://github.com/vincenzoproto/Lowseasongrowth/blob/main/schemas/weak-date-case-study-v1.schema.json
 
 ## Versioning policy
 
