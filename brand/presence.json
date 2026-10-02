@@ -59,7 +59,8 @@
     "weak_date_glossary": "https://lowseasongrowth.com/pages/hotel-weak-date-glossary",
     "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
     "intelligence": "https://lowseasongrowth.com/pages/lsg-intelligence",
-    "intelligence_introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates"
+    "intelligence_introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+    "evidence_standard": "https://lowseasongrowth.com/pages/lsg-evidence-standard"
   },
   "press_releases": {
     "international_expansion_en": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-en.md",
@@ -80,7 +81,8 @@
     "evidence_ledger": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/evidence-ledger.json",
     "external_publications": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/publications.jsonld",
     "entity_metadata": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/entity.jsonld",
-    "lsg_intelligence": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json"
+    "lsg_intelligence": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json",
+    "evidence_standard": "https://lowseasongrowth.com/evidence-standard.json"
   },
   "updated": "2026-10-02",
   "research_dois": {
