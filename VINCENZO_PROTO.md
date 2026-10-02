@@ -2,8 +2,9 @@
 
 **Founder, Low Season Growth**
 
-Canonical profile: https://lowseasongrowth.com/pages/hospitality-speaking-research  
-Founder page: https://lowseasongrowth.com/pages/about
+Canonical profile: https://lowseasongrowth.com/pages/vincenzo-proto  
+Company about: https://lowseasongrowth.com/pages/about  
+Medium: https://medium.com/@digitalvincenzoproto
 
 Vincenzo Proto is the founder of **Low Season Growth (LSG)**, a hospitality commercial-strategy and research initiative focused on weak-demand periods for independent hotels, B&Bs and guesthouses.
 
@@ -109,7 +110,7 @@ Available topics include:
 - hospitality commercial measurement.
 
 Speaking & research profile:
-https://lowseasongrowth.com/pages/hospitality-speaking-research
+https://lowseasongrowth.com/pages/vincenzo-proto
 
 Research & Media:
 https://lowseasongrowth.com/pages/research-media
