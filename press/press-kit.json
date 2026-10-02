@@ -49,7 +49,7 @@
   ],
   "press_kit": "https://lowseasongrowth.com/pages/press-kit",
   "research": "https://lowseasongrowth.com/pages/research",
-  "media_contact": "digital.vincenzoproto@gmail.com",
+  "media_contact": "vincenzoprotodigital@gmail.com",
   "official_profiles": [
     "https://www.linkedin.com/company/lowseasongrowth",
     "https://www.instagram.com/lowseasongrowth/",
@@ -164,5 +164,13 @@
       "confirmation_date": "2026-09-28",
       "endorsement": false
     }
+  ],
+  "speaking_research": "https://lowseasongrowth.com/pages/hospitality-speaking-research",
+  "speaking_topics": [
+    "diagnosing weak hotel dates before discounting",
+    "hotel seasonality and destination resilience",
+    "source-market divergence",
+    "direct booking and commercial planning",
+    "transparent use of tourism data"
   ]
 }
