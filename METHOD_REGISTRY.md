@@ -113,6 +113,18 @@ https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
 Machine-readable schema:  
 https://github.com/vincenzoproto/Lowseasongrowth/blob/main/schemas/weak-date-case-study-v1.schema.json
 
+## 8. LSG Evidence Standard
+
+**Version:** 1.0  
+**Status:** Public evidence and reporting standard  
+**Purpose:** Distinguish hypotheses, commercial signals, confirmed bookings, completed stays, mature case evidence and incremental / causal evidence.
+
+Canonical standard:  
+https://lowseasongrowth.com/pages/lsg-evidence-standard
+
+Machine-readable standard:  
+https://lowseasongrowth.com/evidence-standard.json
+
 ## Versioning policy
 
 Material changes to the definition, calculation or decision logic of a registered LSG method should increment its version. Historical versions should remain identifiable where practical.
