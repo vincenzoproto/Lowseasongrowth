@@ -2,7 +2,7 @@
 
 Canonical public registry of named frameworks, metrics and decision-support assets developed and maintained by Low Season Growth (LSG).
 
-**Registry version:** 1.1  
+**Registry version:** 1.2  
 **First public registry release:** 2 October 2026  
 **Canonical website:** https://lowseasongrowth.com  
 **Research hub:** https://lowseasongrowth.com/pages/research
@@ -78,6 +78,12 @@ https://lowseasongrowth.com/pages/lsg-intelligence
 
 Public introduction:  
 https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates
+
+Public reference note:  
+https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md
+
+Machine-readable metadata:  
+https://github.com/vincenzoproto/Lowseasongrowth/blob/main/lsg-intelligence.schema.json
 
 ## 6. 100-Property Low Season Benchmark 2026
 
