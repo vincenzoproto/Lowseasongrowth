@@ -66,6 +66,9 @@ Low Season Growth versions named frameworks and separates method provenance from
 - Case Study Protocol: https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
 - Machine-readable method registry: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/method-registry.json
 - Machine-readable evidence ledger: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/evidence-ledger.json
+- Canonical method registry JSON: https://lowseasongrowth.com/methods.json
+- Canonical evidence ledger JSON: https://lowseasongrowth.com/evidence-ledger.json
+- Canonical founder JSON-LD: https://lowseasongrowth.com/vincenzo-proto.jsonld
 
 Current named assets include LSG Weak-Date Diagnostic v1.0, LSG Peak-to-Trough Concentration Gap v1.0, Weak-Date Revenue Gap Calculator v1.0, LSG Lift v0.1, LSG Intelligence Beta 0.1 and LSG Weak-Date Case Study Protocol v1.0.
 
