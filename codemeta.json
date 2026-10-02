@@ -28,7 +28,15 @@
     "tourism demand",
     "Eurostat",
     "direct bookings",
-    "hotel sales"
+    "hotel sales",
+    "weak-date diagnosis",
+    "hospitality decision support",
+    "LSG Intelligence"
   ],
-  "citation": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/CITATION.cff"
+  "citation": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/CITATION.cff",
+  "relatedLink": [
+    "https://lowseasongrowth.com/pages/lsg-intelligence",
+    "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+    "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json"
+  ]
 }
