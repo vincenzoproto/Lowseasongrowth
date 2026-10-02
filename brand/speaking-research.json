@@ -4,9 +4,10 @@
     "name": "Vincenzo Proto",
     "role": "Founder",
     "email": "vincenzoprotodigital@gmail.com",
-    "profile": "https://lowseasongrowth.com/pages/hospitality-speaking-research",
+    "profile": "https://lowseasongrowth.com/pages/vincenzo-proto",
     "about": "https://lowseasongrowth.com/pages/about",
-    "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+    "linkedin": "https://www.linkedin.com/in/vincenzoproto",
+    "medium": "https://medium.com/@digitalvincenzoproto"
   },
   "formats": [
     "conference session",
@@ -51,6 +52,16 @@
       "outlet": "Revista Hotéis",
       "date": "2026-09-25",
       "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/"
+    }
+  ],
+  "owned_publications": [
+    {
+      "platform": "Medium",
+      "date": "2026-10-02",
+      "title": "A weak hotel date is not always a pricing problem",
+      "url": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f",
+      "type": "owned article",
+      "independent_editorial_coverage": false
     }
   ]
 }
