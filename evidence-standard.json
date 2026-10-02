@@ -1,0 +1,48 @@
+{
+  "standard_name": "LSG Evidence Standard",
+  "version": "1.0",
+  "published": "2026-10-02",
+  "canonical_url": "https://lowseasongrowth.com/pages/lsg-evidence-standard",
+  "levels": [
+    {
+      "code": "E0",
+      "name": "hypothesis_assumption",
+      "public_claim": "planning only"
+    },
+    {
+      "code": "E1",
+      "name": "observed_commercial_signal",
+      "public_claim": "signal, not booking or revenue"
+    },
+    {
+      "code": "E2",
+      "name": "confirmed_booking",
+      "public_claim": "confirmed booking; not realized stay/revenue"
+    },
+    {
+      "code": "E3",
+      "name": "completed_stay",
+      "public_claim": "completed room nights; realized revenue only if reconciled and authorized"
+    },
+    {
+      "code": "E4",
+      "name": "mature_case_evidence",
+      "public_claim": "mature case description; not automatically causal lift"
+    },
+    {
+      "code": "E5",
+      "name": "incremental_causal_evidence",
+      "public_claim": "incremental/causal language only with credible counterfactual design"
+    }
+  ],
+  "attribution_confidence": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "related": {
+    "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
+    "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
+    "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry"
+  }
+}
