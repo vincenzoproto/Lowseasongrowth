@@ -61,6 +61,10 @@
         {
           "@type": "WebPage",
           "url": "https://lowseasongrowth.com/pages/lsg-intelligence"
+        },
+        {
+          "@type": "WebPage",
+          "url": "https://lowseasongrowth.com/pages/lsg-evidence-standard"
         }
       ],
       "knowsAbout": [
