@@ -23,6 +23,12 @@
         },
         {
           "@id": "https://lowseasongrowth.com/pages/lsg-intelligence"
+        },
+        {
+          "@id": "https://lowseasongrowth.com/pages/hotel-weak-date-glossary"
+        },
+        {
+          "@id": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
         }
       ]
     },
@@ -36,7 +42,15 @@
       },
       "affiliation": {
         "@id": "https://lowseasongrowth.com/#organization"
-      }
+      },
+      "subjectOf": [
+        {
+          "@id": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/"
+        },
+        {
+          "@id": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/"
+        }
+      ]
     }
   ]
 }
