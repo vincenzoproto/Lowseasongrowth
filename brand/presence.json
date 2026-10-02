@@ -58,11 +58,13 @@
     "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
     "weak_date_glossary": "https://lowseasongrowth.com/pages/hotel-weak-date-glossary",
     "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
-    "intelligence": "https://lowseasongrowth.com/pages/lsg-intelligence"
+    "intelligence": "https://lowseasongrowth.com/pages/lsg-intelligence",
+    "intelligence_introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates"
   },
   "press_releases": {
     "international_expansion_en": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-en.md",
-    "international_expansion_ja": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-ja.md"
+    "international_expansion_ja": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-09-24-global-expansion-ja.md",
+    "lsg_intelligence_beta_en": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/press/2026-10-02-lsg-intelligence-beta-en.md"
   },
   "machine_readable": {
     "organization_jsonld": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/brand/organization.jsonld",
@@ -77,7 +79,8 @@
     "method_registry": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/method-registry.json",
     "evidence_ledger": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/evidence-ledger.json",
     "external_publications": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/publications.jsonld",
-    "entity_metadata": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/entity.jsonld"
+    "entity_metadata": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/entity.jsonld",
+    "lsg_intelligence": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json"
   },
   "updated": "2026-10-02",
   "research_dois": {
@@ -102,5 +105,11 @@
       "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/",
       "type": "contributed article"
     }
-  ]
+  ],
+  "current_public_beta": {
+    "name": "LSG Intelligence",
+    "version": "Beta 0.1",
+    "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+    "reference": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md"
+  }
 }
