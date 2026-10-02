@@ -1,0 +1,41 @@
+{
+  "brand": "Low Season Growth",
+  "speaker": {
+    "name": "Vincenzo Proto",
+    "role": "Founder",
+    "email": "vincenzoprotodigital@gmail.com",
+    "profile": "https://lowseasongrowth.com/pages/hospitality-speaking-research",
+    "about": "https://lowseasongrowth.com/pages/about",
+    "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+  },
+  "formats": [
+    "conference session",
+    "panel",
+    "workshop",
+    "research briefing",
+    "podcast interview",
+    "webinar",
+    "practitioner discussion"
+  ],
+  "topics": [
+    "diagnosing weak hotel dates before discounting",
+    "hotel seasonality and destination resilience",
+    "source-market divergence",
+    "direct booking and commercial planning",
+    "tourism demand analysis",
+    "transparent use of public tourism data",
+    "independent hotel distribution"
+  ],
+  "research": {
+    "hub": "https://lowseasongrowth.com/pages/research",
+    "methodology": "https://lowseasongrowth.com/pages/research-methodology",
+    "benchmark": "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026",
+    "doi_registry": "https://lowseasongrowth.com/pages/research-doi-registry"
+  },
+  "notes": [
+    "Research Notes are descriptive research outputs, not peer-reviewed journal articles unless explicitly stated otherwise.",
+    "Publication or citation by third parties does not imply endorsement or partnership.",
+    "The 100-Property Low Season Benchmark 2026 is collecting responses; the final analysis will report the actual usable sample."
+  ],
+  "updated": "2026-10-02"
+}
