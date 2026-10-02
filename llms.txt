@@ -64,6 +64,8 @@ Low Season Growth versions named frameworks and separates method provenance from
 - Evidence Ledger: https://lowseasongrowth.com/pages/lsg-evidence-ledger
 - Weak-Date Glossary: https://lowseasongrowth.com/pages/hotel-weak-date-glossary
 - Case Study Protocol: https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
+- Evidence Standard: https://lowseasongrowth.com/pages/lsg-evidence-standard
+- Evidence Standard JSON: https://lowseasongrowth.com/evidence-standard.json
 - Machine-readable method registry: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/method-registry.json
 - Machine-readable evidence ledger: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/evidence-ledger.json
 - Canonical method registry JSON: https://lowseasongrowth.com/methods.json
