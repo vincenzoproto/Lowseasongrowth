@@ -19,7 +19,9 @@
     "source-market analysis",
     "independent hotels",
     "boutique hotels",
-    "B&Bs and guesthouses"
+    "B&Bs and guesthouses",
+    "hotel weak-date diagnosis",
+    "hospitality decision support"
   ],
   "international_expansion_focus": [
     "Europe",
@@ -56,6 +58,12 @@
     "https://github.com/vincenzoproto/Lowseasongrowth"
   ],
   "press_releases": [
+    {
+      "date": "2026-10-02",
+      "language": "en",
+      "title": "Low Season Growth Opens LSG Intelligence Beta for Hotel Weak-Date Decision Support",
+      "url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/press/2026-10-02-lsg-intelligence-beta-en.md"
+    },
     {
       "date": "2026-09-24",
       "language": "en",
@@ -172,5 +180,15 @@
     "source-market divergence",
     "direct booking and commercial planning",
     "transparent use of tourism data"
+  ],
+  "current_projects": [
+    {
+      "name": "LSG Intelligence",
+      "version": "Beta 0.1",
+      "status": "public beta",
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+      "public_reference": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md"
+    }
   ]
 }
