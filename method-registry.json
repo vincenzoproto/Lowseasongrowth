@@ -1,6 +1,6 @@
 {
   "registry_name": "Low Season Growth Method Registry",
-  "registry_version": "1.0",
+  "registry_version": "1.1",
   "published": "2026-10-02",
   "canonical_site": "https://lowseasongrowth.com",
   "methods": [
@@ -51,6 +51,14 @@
       "version": "recruitment",
       "status": "open_research_project",
       "canonical_url": "https://lowseasongrowth.com/blogs/news/100-property-low-season-benchmark-2026"
+    },
+    {
+      "id": "lsg-weak-date-case-study-protocol",
+      "name": "LSG Weak-Date Case Study Protocol",
+      "version": "1.0",
+      "status": "public_measurement_protocol",
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol",
+      "schema_url": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/schemas/weak-date-case-study-v1.schema.json"
     }
   ],
   "citation_url": "https://lowseasongrowth.com/pages/cite-low-season-growth",
