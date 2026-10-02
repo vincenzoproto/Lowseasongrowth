@@ -39,6 +39,22 @@ Method registry: https://lowseasongrowth.com/pages/lsg-method-registry
 
 See `PUBLICATIONS.md`.
 
+## Evidence maturity standard
+
+The **LSG Evidence Standard v1.0** separates:
+- E0 hypothesis / assumption;
+- E1 observed commercial signal;
+- E2 confirmed booking;
+- E3 completed stay;
+- E4 mature case evidence;
+- E5 incremental / causal evidence.
+
+Canonical standard:
+https://lowseasongrowth.com/pages/lsg-evidence-standard
+
+Machine-readable:
+https://lowseasongrowth.com/evidence-standard.json
+
 ## Mature commercial case studies
 
 **None currently listed as mature public evidence.**
