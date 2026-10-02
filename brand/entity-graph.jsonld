@@ -206,7 +206,11 @@
         "name": "Medium",
         "url": "https://medium.com/"
       },
-      "description": "Owned thought-leadership article by Vincenzo Proto / Low Season Growth; not independent editorial coverage."
+      "description": "Owned thought-leadership article by Vincenzo Proto / Low Season Growth; not independent editorial coverage.",
+      "author": {
+        "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person"
+      },
+      "mainEntityOfPage": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f"
     }
   ]
 }
