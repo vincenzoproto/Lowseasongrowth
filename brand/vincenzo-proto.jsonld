@@ -1,10 +1,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "@id": "https://lowseasongrowth.com/pages/about#founder-person",
+  "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person",
   "name": "Vincenzo Proto",
-  "jobTitle": "Founder",
-  "url": "https://lowseasongrowth.com/pages/about",
+  "jobTitle": "Founder, Low Season Growth",
+  "url": "https://lowseasongrowth.com/pages/vincenzo-proto",
   "image": "https://cdn.shopify.com/s/files/1/1059/8488/5078/files/vincenzo-proto-low-season-growth-founder.png?v=1789858458",
   "sameAs": [
     "https://www.linkedin.com/in/vincenzoproto",
@@ -32,8 +32,8 @@
   "subjectOf": [
     {
       "@type": "WebPage",
-      "name": "Hospitality Speaking & Research — Vincenzo Proto",
-      "url": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
+      "name": "Vincenzo Proto — Founder, Low Season Growth | Hospitality Strategy & Research",
+      "url": "https://lowseasongrowth.com/pages/vincenzo-proto"
     },
     {
       "@type": "Article",
@@ -55,5 +55,7 @@
       "name": "LSG Evidence Ledger",
       "url": "https://lowseasongrowth.com/pages/lsg-evidence-ledger"
     }
-  ]
+  ],
+  "mainEntityOfPage": "https://lowseasongrowth.com/pages/vincenzo-proto",
+  "publishingPrinciples": "https://lowseasongrowth.com/pages/editorial-standards"
 }
