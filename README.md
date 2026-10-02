@@ -29,6 +29,9 @@ The central idea is simple: **not every weak hotel date has the same cause**. A 
 - LSG Intelligence Beta — hotel weak-date decision support  
   https://lowseasongrowth.com/pages/lsg-intelligence
 
+- LSG Intelligence public changelog  
+  https://lowseasongrowth.com/pages/lsg-intelligence-changelog
+
 - Hotel Low-Season Decision Tools  
   https://lowseasongrowth.com/pages/hotel-quick-decision-tools
 
