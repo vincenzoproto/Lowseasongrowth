@@ -28,8 +28,8 @@
     {
       "@type": "ContactPoint",
       "contactType": "media inquiries",
-      "email": "digital.vincenzoproto@gmail.com",
-      "url": "https://lowseasongrowth.com/pages/press-kit"
+      "email": "vincenzoprotodigital@gmail.com",
+      "url": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
     }
   ],
   "areaServed": [
@@ -83,6 +83,11 @@
       "@type": "WebPage",
       "name": "Research & Media",
       "url": "https://lowseasongrowth.com/pages/research-media"
+    },
+    {
+      "@type": "WebPage",
+      "name": "Hospitality Speaking & Research",
+      "url": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
     }
   ]
 }
