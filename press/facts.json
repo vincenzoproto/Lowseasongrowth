@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "updated": "2026-09-24",
+  "schema_version": "1.1",
+  "updated": "2026-10-02",
   "organization": {
     "name": "Low Season Growth",
     "alternate_name": "LSG",
@@ -67,5 +67,19 @@
     "organization_jsonld": "https://lowseasongrowth.com/organization.jsonld",
     "research_index": "https://lowseasongrowth.com/research.json",
     "public_repository": "https://github.com/vincenzoproto/Lowseasongrowth/tree/main/research"
-  }
+  },
+  "product_and_method_updates": [
+    {
+      "name": "LSG Intelligence",
+      "version": "Beta 0.1",
+      "status": "public beta",
+      "launched_publicly": "2026-10-02",
+      "description": "Decision-support system for structuring hotel weak-date problems before selecting a commercial action to test.",
+      "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
+      "introduction": "https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates",
+      "public_reference": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md",
+      "machine_readable_metadata": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json",
+      "limitations": "Decision support only; not a PMS, RMS, channel manager, booking engine, revenue forecast or guarantee of bookings."
+    }
+  ]
 }
