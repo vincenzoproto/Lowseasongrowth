@@ -15,7 +15,8 @@
     "name": "Vincenzo Proto",
     "role": "Founder",
     "about": "https://lowseasongrowth.com/pages/about",
-    "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+    "linkedin": "https://www.linkedin.com/in/vincenzoproto",
+    "medium": "https://medium.com/@digitalvincenzoproto"
   },
   "public_website_languages": [
     "en",
@@ -82,7 +83,8 @@
     "external_publications": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/publications.jsonld",
     "entity_metadata": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/entity.jsonld",
     "lsg_intelligence": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json",
-    "evidence_standard": "https://lowseasongrowth.com/evidence-standard.json"
+    "evidence_standard": "https://lowseasongrowth.com/evidence-standard.json",
+    "publications_authority_index": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/PUBLICATIONS.md"
   },
   "updated": "2026-10-02",
   "research_dois": {
@@ -113,5 +115,16 @@
     "version": "Beta 0.1",
     "canonical_url": "https://lowseasongrowth.com/pages/lsg-intelligence",
     "reference": "https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md"
-  }
+  },
+  "owned_thought_leadership": [
+    {
+      "platform": "Medium",
+      "date": "2026-10-02",
+      "title": "A weak hotel date is not always a pricing problem",
+      "url": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f",
+      "type": "owned article",
+      "description": "Founder-authored Low Season Growth article on diagnosing weak hotel dates before treating pricing as the default explanation.",
+      "independent_editorial_coverage": false
+    }
+  ]
 }
