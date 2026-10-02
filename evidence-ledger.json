@@ -1,0 +1,78 @@
+{
+  "ledger_name": "LSG Evidence Ledger",
+  "version": "1.0",
+  "published": "2026-10-02",
+  "canonical_url": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
+  "research": [
+    {
+      "id": "research-note-01",
+      "status": "published_research",
+      "title": "European Tourism Seasonality 2026"
+    },
+    {
+      "id": "research-note-02",
+      "status": "published_research",
+      "title": "International Tourism Demand in Europe 2026"
+    },
+    {
+      "id": "research-note-03",
+      "status": "published_research",
+      "title": "Caribbean Low Season 2026"
+    },
+    {
+      "id": "research-note-04",
+      "status": "published_research",
+      "title": "Japan Tourism 2026"
+    }
+  ],
+  "methods": [
+    {
+      "name": "LSG Weak-Date Diagnostic",
+      "version": "1.0",
+      "status": "registered_method"
+    },
+    {
+      "name": "LSG Peak-to-Trough Concentration Gap",
+      "version": "1.0",
+      "status": "registered_metric"
+    },
+    {
+      "name": "Weak-Date Revenue Gap Calculator",
+      "version": "1.0",
+      "status": "public_tool"
+    },
+    {
+      "name": "LSG Lift",
+      "version": "0.1",
+      "status": "framework_in_development"
+    },
+    {
+      "name": "LSG Intelligence",
+      "version": "beta-0.1",
+      "status": "public_beta_private_learning_system"
+    },
+    {
+      "name": "LSG Weak-Date Case Study Protocol",
+      "version": "1.0",
+      "status": "public_measurement_protocol"
+    }
+  ],
+  "open_research": [
+    {
+      "name": "100-Property Low Season Benchmark 2026",
+      "status": "recruitment"
+    }
+  ],
+  "external_publications": [
+    {
+      "publisher": "Hotel Technology News",
+      "date": "2026-09-25"
+    },
+    {
+      "publisher": "Revista Hotéis",
+      "date": "2026-09-25"
+    }
+  ],
+  "mature_public_case_studies": [],
+  "private_layer_note": "Property-level operational records and accumulated LSG Intelligence learning data remain private."
+}
