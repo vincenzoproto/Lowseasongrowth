@@ -2,6 +2,13 @@
 
 Public change history for named Low Season Growth frameworks, metrics and decision-support assets.
 
+## 2026-10-02 — Registry v1.2
+
+- Added **LSG Evidence Standard v1.0**.
+- Introduced E0–E5 evidence levels from hypothesis through causal/incremental evidence.
+- Added separate low / medium / high attribution-confidence labels.
+- Linked reporting claims to evidence maturity so signals, bookings and completed stays are not conflated.
+
 ## 2026-10-02 — Registry v1.1
 
 - Added **LSG Weak-Date Case Study Protocol v1.0**.
