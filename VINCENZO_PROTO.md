@@ -39,6 +39,16 @@ https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-tem
 
 Contributed article on diagnosing weak periods before defaulting to discounting and on treating low-season demand as a commercial problem by date, audience, offer and channel.
 
+## Owned thought leadership
+
+### Medium — 2 October 2026
+
+**A weak hotel date is not always a pricing problem**
+
+https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f
+
+Founder-authored Low Season Growth article on diagnosing a weak hotel date rather than treating pricing as the default explanation. This is owned content published on Medium and is not independent editorial coverage.
+
 ## Low Season Growth research
 
 Public research hub:
