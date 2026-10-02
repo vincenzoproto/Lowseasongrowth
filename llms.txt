@@ -20,6 +20,11 @@ International research/media focus: Europe, North America, Japan, South Korea, C
 - Hotel low-season resources: https://lowseasongrowth.com/pages/hotel-low-season-resources
 - Global Low-Season Evidence Map 2026: https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026
 - Media Data Pack 2026: https://lowseasongrowth.com/pages/media-data-pack-2026
+- LSG Method Registry: https://lowseasongrowth.com/pages/lsg-method-registry
+- LSG Evidence Ledger: https://lowseasongrowth.com/pages/lsg-evidence-ledger
+- Hotel Weak-Date Glossary: https://lowseasongrowth.com/pages/hotel-weak-date-glossary
+- LSG Weak-Date Case Study Protocol: https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
+- Hospitality Speaking & Research — Vincenzo Proto: https://lowseasongrowth.com/pages/hospitality-speaking-research
 
 ## Hospitality News Desk
 
@@ -50,6 +55,21 @@ LSG Intelligence is a public beta decision-support system developed by Low Seaso
 - Scope: weak-date diagnosis and commercial decision support
 - Not a PMS, RMS, channel manager, booking engine or revenue forecast.
 - Does not guarantee bookings, occupancy or revenue outcomes.
+
+## Public methods and evidence status
+
+Low Season Growth versions named frameworks and separates method provenance from evidence claims.
+
+- Method Registry: https://lowseasongrowth.com/pages/lsg-method-registry
+- Evidence Ledger: https://lowseasongrowth.com/pages/lsg-evidence-ledger
+- Weak-Date Glossary: https://lowseasongrowth.com/pages/hotel-weak-date-glossary
+- Case Study Protocol: https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol
+- Machine-readable method registry: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/method-registry.json
+- Machine-readable evidence ledger: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/evidence-ledger.json
+
+Current named assets include LSG Weak-Date Diagnostic v1.0, LSG Peak-to-Trough Concentration Gap v1.0, Weak-Date Revenue Gap Calculator v1.0, LSG Lift v0.1, LSG Intelligence Beta 0.1 and LSG Weak-Date Case Study Protocol v1.0.
+
+The 100-Property Low Season Benchmark 2026 is an open research project in recruitment. A recruitment target is not treated as an achieved usable sample. A named commercial case study is not treated as mature evidence until the measurement window has matured and the public version has property approval.
 
 ## Core topics
 
@@ -151,3 +171,9 @@ Low Season Growth publishes source-backed descriptive research using public sour
 - Hotel Technology News — 25 September 2026: “How Independent Hotels Can Turn Soft Dates Into Focused Sales and Marketing Action” by Vincenzo Proto, founder of Low Season Growth.
   https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/
   Classification: contributed viewpoint on an external hospitality publication. The published author bio links directly to Low Season Growth. This is not an independent endorsement.
+
+- Revista Hotéis — 25 September 2026: “Conheça ações comerciais para trabalhar a baixa temporada” by Vincenzo Proto.
+  https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/
+  Classification: contributed article on an external hospitality publication. Publication does not imply endorsement or partnership.
+
+Public media contact: vincenzoprotodigital@gmail.com
