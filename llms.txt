@@ -36,6 +36,21 @@ Low Season Growth operates a source-backed hospitality newsroom covering hotel p
 
 Signal Briefs separate reported facts from LSG interpretation and link material claims to identifiable sources.
 
+
+## LSG Intelligence
+
+LSG Intelligence is a public beta decision-support system developed by Low Season Growth for independent hotels, B&Bs and guesthouses working on specific weak dates and low-demand periods.
+
+- Canonical beta: https://lowseasongrowth.com/pages/lsg-intelligence
+- Public introduction: https://lowseasongrowth.com/blogs/news/lsg-intelligence-beta-hotel-weak-dates
+- Public reference note: https://github.com/vincenzoproto/Lowseasongrowth/blob/main/LSG-INTELLIGENCE-BETA.md
+- Machine-readable metadata: https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json
+- Public version: Beta 0.1
+- Publisher: Low Season Growth
+- Scope: weak-date diagnosis and commercial decision support
+- Not a PMS, RMS, channel manager, booking engine or revenue forecast.
+- Does not guarantee bookings, occupancy or revenue outcomes.
+
 ## Core topics
 
 - hotel low-season strategy
