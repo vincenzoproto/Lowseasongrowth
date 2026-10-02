@@ -50,6 +50,9 @@ The central idea is simple: **not every weak hotel date has the same cause**. A 
 - Hotel Weak-Date Glossary — working vocabulary  
   https://lowseasongrowth.com/pages/hotel-weak-date-glossary
 
+- LSG Evidence Ledger — public evidence status and case-study gate  
+  https://lowseasongrowth.com/pages/lsg-evidence-ledger
+
 ## Research
 
 The `research/` directory contains Low Season Growth public research notes, datasets, evidence maps and citation metadata.
@@ -78,6 +81,8 @@ Named Low Season Growth frameworks, metrics and decision-support assets are vers
 - `CASE_STUDY_PROTOCOL.md` — comparable measurement protocol
 - `schemas/weak-date-case-study-v1.schema.json` — machine-readable case structure
 - `VOCABULARY.md` — public weak-date vocabulary
+- `EVIDENCE_LEDGER.md` — public evidence-status register
+- `evidence-ledger.json` — machine-readable evidence register
 - https://lowseasongrowth.com/pages/lsg-method-registry — canonical website registry
 
 The registry records provenance and versions; it does not claim exclusivity over generic hospitality concepts.
