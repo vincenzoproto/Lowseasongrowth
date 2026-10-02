@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "updated": "2026-10-02",
   "organization": {
     "name": "Low Season Growth",
@@ -9,13 +9,15 @@
     "founder": {
       "name": "Vincenzo Proto",
       "about": "https://lowseasongrowth.com/pages/about",
-      "linkedin": "https://www.linkedin.com/in/vincenzoproto"
+      "linkedin": "https://www.linkedin.com/in/vincenzoproto",
+      "speaking_research": "https://lowseasongrowth.com/pages/hospitality-speaking-research"
     },
     "company_links": {
       "linkedin": "https://www.linkedin.com/company/lowseasongrowth/",
       "instagram": "https://www.instagram.com/lowseasongrowth/",
       "github": "https://github.com/vincenzoproto/Lowseasongrowth"
-    }
+    },
+    "public_contact": "vincenzoprotodigital@gmail.com"
   },
   "public_research": [
     {
@@ -60,13 +62,20 @@
     "research_hub": "https://lowseasongrowth.com/pages/research",
     "research_media": "https://lowseasongrowth.com/pages/research-media",
     "press_kit": "https://lowseasongrowth.com/pages/press-kit",
-    "statement": "Low Season Growth distinguishes official source data, LSG calculations and commercial interpretation. LSG-created metrics are not presented as official indicators from the source institution."
+    "statement": "Low Season Growth distinguishes official source data, LSG calculations and commercial interpretation. LSG-created metrics are not presented as official indicators from the source institution.",
+    "method_registry": "https://lowseasongrowth.com/pages/lsg-method-registry",
+    "evidence_ledger": "https://lowseasongrowth.com/pages/lsg-evidence-ledger",
+    "case_study_protocol": "https://lowseasongrowth.com/pages/lsg-weak-date-case-study-protocol"
   },
   "machine_readable": {
     "llms": "https://lowseasongrowth.com/llms.txt",
     "organization_jsonld": "https://lowseasongrowth.com/organization.jsonld",
     "research_index": "https://lowseasongrowth.com/research.json",
-    "public_repository": "https://github.com/vincenzoproto/Lowseasongrowth/tree/main/research"
+    "public_repository": "https://github.com/vincenzoproto/Lowseasongrowth/tree/main/research",
+    "method_registry": "https://lowseasongrowth.com/methods.json",
+    "evidence_ledger": "https://lowseasongrowth.com/evidence-ledger.json",
+    "founder_profile": "https://lowseasongrowth.com/vincenzo-proto.jsonld",
+    "source_profile": "https://lowseasongrowth.com/source.json"
   },
   "product_and_method_updates": [
     {
@@ -81,5 +90,31 @@
       "machine_readable_metadata": "https://raw.githubusercontent.com/vincenzoproto/Lowseasongrowth/main/lsg-intelligence.schema.json",
       "limitations": "Decision support only; not a PMS, RMS, channel manager, booking engine, revenue forecast or guarantee of bookings."
     }
-  ]
+  ],
+  "external_editorial_publications": [
+    {
+      "date": "2026-09-25",
+      "outlet": "Hotel Technology News",
+      "title": "How Independent Hotels Can Turn Soft Dates Into Focused Sales and Marketing Action",
+      "url": "https://hoteltechnologynews.com/2026/09/how-independent-hotels-can-turn-soft-dates-into-focused-sales-and-marketing-action/",
+      "author": "Vincenzo Proto",
+      "type": "contributed viewpoint",
+      "endorsement": false
+    },
+    {
+      "date": "2026-09-25",
+      "outlet": "Revista Hotéis",
+      "title": "Conheça ações comerciais para trabalhar a baixa temporada",
+      "url": "https://revistahoteis.com.br/conheca-acoes-comerciais-para-trabalhar-a-baixa-temporada/",
+      "author": "Vincenzo Proto",
+      "type": "contributed article",
+      "endorsement": false
+    }
+  ],
+  "evidence_status": {
+    "mature_public_case_studies": 0,
+    "benchmark_status": "recruitment",
+    "intelligence_status": "public beta",
+    "note": "A named commercial case study is not listed as mature evidence until its measurement window has matured and the property has approved the public version."
+  }
 }
