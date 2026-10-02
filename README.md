@@ -66,6 +66,8 @@ Public beta: https://lowseasongrowth.com/pages/lsg-intelligence
 
 Public reference note: [LSG-INTELLIGENCE-BETA.md](./LSG-INTELLIGENCE-BETA.md)
 
+- Machine-readable LSG Intelligence metadata: [`lsg-intelligence.schema.json`](./lsg-intelligence.schema.json)
+
 ## Methods and version history
 
 Named Low Season Growth frameworks, metrics and decision-support assets are versioned publicly:
