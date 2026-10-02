@@ -13,7 +13,7 @@
       "slogan": "Hospitality for a brighter tomorrow.",
       "description": "Hospitality commercial-strategy and research business focused on independent hotels, B&Bs and guesthouses with quieter periods, direct-booking opportunities, structured hotel sales and low-season demand.",
       "founder": {
-        "@id": "https://lowseasongrowth.com/pages/about#founder-person"
+        "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person"
       },
       "sameAs": [
         "https://www.linkedin.com/company/lowseasongrowth",
@@ -86,10 +86,10 @@
     },
     {
       "@type": "Person",
-      "@id": "https://lowseasongrowth.com/pages/about#founder-person",
+      "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person",
       "name": "Vincenzo Proto",
-      "jobTitle": "Founder",
-      "url": "https://lowseasongrowth.com/pages/about",
+      "jobTitle": "Founder, Low Season Growth",
+      "url": "https://lowseasongrowth.com/pages/vincenzo-proto",
       "image": "https://cdn.shopify.com/s/files/1/1059/8488/5078/files/vincenzo-proto-low-season-growth-founder.png?v=1789858458",
       "sameAs": [
         "https://www.linkedin.com/in/vincenzoproto",
@@ -127,7 +127,9 @@
         "weak-date diagnosis",
         "hospitality research methodology",
         "commercial measurement"
-      ]
+      ],
+      "mainEntityOfPage": "https://lowseasongrowth.com/pages/vincenzo-proto",
+      "publishingPrinciples": "https://lowseasongrowth.com/pages/editorial-standards"
     },
     {
       "@context": "https://schema.org",
@@ -194,7 +196,7 @@
       "url": "https://medium.com/@digitalvincenzoproto/a-weak-hotel-date-is-not-always-a-pricing-problem-2dcf96aee77f",
       "datePublished": "2026-10-02",
       "creator": {
-        "@id": "https://lowseasongrowth.com/pages/about#founder-person"
+        "@id": "https://lowseasongrowth.com/pages/vincenzo-proto#person"
       },
       "about": {
         "@id": "https://lowseasongrowth.com/#organization"
