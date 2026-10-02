@@ -114,7 +114,8 @@ Operational CRM data, prospect lists, customer data, sales-partner records, priv
 ## Founder profile
 
 - [Vincenzo Proto — Hospitality Research & Commercial Strategy](./VINCENZO_PROTO.md)
-- https://lowseasongrowth.com/pages/hospitality-speaking-research
+- Canonical profile: https://lowseasongrowth.com/pages/vincenzo-proto
+- Medium: https://medium.com/@digitalvincenzoproto
 
 ## About
 
