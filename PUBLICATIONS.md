@@ -9,6 +9,15 @@ Official presence registry: https://raw.githubusercontent.com/vincenzoproto/Lows
 
 ## External editorial publications
 
+### 3 October 2026 — Hotel Speak
+
+**Title:** Before the Discount: What a Weak Hotel Date Is Really Telling You  
+**Platform:** Hotel Speak  
+**URL:** https://www.hotelspeak.com/2026/10/before-the-discount-what-a-weak-hotel-date-is-really-telling-you/  
+**Type:** Contributor article / third-party editorial publication  
+**Editorial confirmation:** Hotel Speak editor confirmed the article live on 3 October 2026 — Gmail message `1a1015f980b7d953`  
+**Authority treatment:** Author-submitted contributor article published by a third-party hospitality outlet. This is distinct from self-publishing on Medium, but it should not be described as independent editorial coverage or unsolicited journalistic coverage.
+
 ### 25 September 2026 — Hotel Technology News
 
 **Title:** How Independent Hotels Can Turn Soft Dates Into Focused Sales and Marketing Action  
