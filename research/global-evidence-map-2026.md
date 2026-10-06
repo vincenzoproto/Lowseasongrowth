@@ -62,6 +62,28 @@ Foreign visitors generated more accommodation nights than domestic visitors in *
 - Official source: https://ec.europa.eu/eurostat/web/interactive-publications/regions-2026#tourism
 - Publication record: https://ec.europa.eu/eurostat/web/products-interactive-publications/w/ks-01-26-040
 
+### Platform-booked short-stay demand — LSG Data-Led Insight
+
+**Source:** Eurostat, short-stay accommodation offered via online platforms  
+**Source publication date:** 2 October 2026  
+**Reference period:** Q2 2026 at national level; Q1 2026 at NUTS 2 regional level  
+**Added to this map:** 6 October 2026
+
+- EU platform-booked short-stay guest nights in Q2 2026: **258.8 million**
+- Year-on-year change vs Q2 2025: **+5.3%** (**+13.1 million nights**)
+- Change vs Q2 2024: **+23.9%** (**+50.0 million nights**)
+- Q1 2026 year-on-year growth in the same series: **+9.7%**; the year-on-year growth rate slowed by **4.4 percentage points** in Q2.
+- Selected Q2 growth: **Malta +25.0%**, **Italy +8.1%**, **Germany +6.5%**, **France +6.2%**, **Spain +1.9%**.
+- Top Q1 regions by platform-booked guest nights: **Canarias 8.8m**, **Rhône-Alpes 8.8m**, **Andalucía 8.3m**.
+
+**LSG interpretation:** platform-booked short-stay demand is still growing, but the pace has slowed and performance differs sharply by destination. Use this as a destination and channel signal rather than proof of hotel-level demand.
+
+**Scope warning:** Eurostat states that this series covers holiday rentals and other short-stay accommodation offered through Airbnb, Booking and Expedia, excluding hotels and campsites. Because of possible overlaps, these figures cannot be added to general tourist-accommodation statistics.
+
+- LSG Insight: https://lowseasongrowth.com/blogs/news/european-short-stay-platform-demand-q2-2026
+- Official release: https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20261002-1
+- Detailed Eurostat article: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Short-stay_accommodation_offered_via_online_platforms_-_monthly_data
+
 ## Caribbean
 
 ### Low-season RevPAR and source-market diversification — Research Note 03
