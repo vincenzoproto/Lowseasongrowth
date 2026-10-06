@@ -1,7 +1,7 @@
 {
   "name": "LSG Global Low-Season Evidence Map 2026",
   "publisher": "Low Season Growth",
-  "updated": "2026-09-29",
+  "updated": "2026-10-06",
   "canonicalUrl": "https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026",
   "comparabilityNote": "Regions use different source institutions, periods and metrics. This resource is an evidence index, not a cross-region ranking.",
   "regions": [
@@ -116,7 +116,7 @@
             {
               "market": "Jadranska Hrvatska",
               "metric": "Foreign share of accommodation nights",
-              "value": 92.0,
+              "value": 92,
               "unit": "percent",
               "classification": "official source figure"
             },
@@ -139,6 +139,93 @@
           "limitations": "Annual 2024 regional shares are not regional 2026 growth rates, booking-window measurements or evidence of demand for a specific low-season period or property. Do not compare them with H1/Q1 2026 indicators as a time trend. Practical recommendations are LSG interpretation.",
           "article": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#regional-demand-2024",
           "archiveNote": "Separate live-page and working-repository supplement. The original Research Note 02 2026 CSV, DOI deposit and frozen snapshots are unchanged."
+        },
+        {
+          "contentType": "lsg-data-led-insight",
+          "contentId": "european-short-stay-platform-demand-q2-2026",
+          "topic": "platform-booked short-stay accommodation demand",
+          "source": "Eurostat — Short-stay accommodation offered via online platforms",
+          "sourcePeriod": "Q2 2026 national; Q1 2026 NUTS 2 regional",
+          "sourcePublicationDate": "2026-10-02",
+          "added": "2026-10-06",
+          "sourceUrl": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20261002-1",
+          "detailsUrl": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Short-stay_accommodation_offered_via_online_platforms_-_monthly_data",
+          "headlineEvidence": [
+            {
+              "metric": "EU platform-booked short-stay guest nights",
+              "value": 258.8,
+              "unit": "million guest nights",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Q2 2026 year-on-year growth",
+              "value": 5.3,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Additional nights vs Q2 2025",
+              "value": 13.1,
+              "unit": "million guest nights",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Growth vs Q2 2024",
+              "value": 23.9,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Q1 2026 year-on-year growth",
+              "value": 9.7,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "LSG change in YoY growth rate from Q1 to Q2",
+              "value": -4.4,
+              "unit": "percentage points",
+              "classification": "LSG descriptive calculation"
+            },
+            {
+              "market": "Italy",
+              "metric": "Q2 2026 guest-night growth",
+              "value": 8.1,
+              "unit": "percent YoY",
+              "classification": "official source figure"
+            },
+            {
+              "market": "Spain",
+              "metric": "Q2 2026 guest-night growth",
+              "value": 1.9,
+              "unit": "percent YoY",
+              "classification": "official source figure"
+            },
+            {
+              "market": "Canarias",
+              "metric": "Q1 2026 platform-booked guest nights",
+              "value": 8.8,
+              "unit": "million guest nights",
+              "classification": "official source figure"
+            },
+            {
+              "market": "Rhône-Alpes",
+              "metric": "Q1 2026 platform-booked guest nights",
+              "value": 8.8,
+              "unit": "million guest nights",
+              "classification": "official source figure"
+            },
+            {
+              "market": "Andalucía",
+              "metric": "Q1 2026 platform-booked guest nights",
+              "value": 8.3,
+              "unit": "million guest nights",
+              "classification": "official source figure"
+            }
+          ],
+          "interpretation": "Platform-booked short-stay demand is still growing, but growth has slowed and destination performance remains uneven. LSG treats this as a destination and channel signal, not proof of hotel-level demand.",
+          "limitations": "This Eurostat series covers holiday rentals and other short-stay accommodation offered through Airbnb, Booking and Expedia, excluding hotels and campsites. Due to possible overlaps, it cannot be added to general tourist-accommodation statistics.",
+          "article": "https://lowseasongrowth.com/blogs/news/european-short-stay-platform-demand-q2-2026"
         }
       ]
     },
