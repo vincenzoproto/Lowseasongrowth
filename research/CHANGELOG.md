@@ -1,5 +1,20 @@
 # Low Season Growth Research Changelog
 
+## 6 October 2026 — Eurostat platform short-stay demand update
+
+### Added
+- A published LSG Data-Led Insight on Eurostat's 2 October 2026 release for short-stay accommodation booked via Airbnb, Booking and Expedia.
+- Q2 2026 EU total of 258.8 million guest nights, +5.3% year on year (+13.1 million) and +23.9% vs Q2 2024 (+50.0 million).
+- A separate platform-demand layer in the Global Low-Season Evidence Map, including Q1 2026 regional leaders and selected country growth rates.
+- Machine-readable evidence with an explicit scope warning that the series excludes hotels and campsites and cannot be added to general accommodation statistics.
+
+### Preserved
+- Research Note 01 and Research Note 02 core figures, CSV datasets, DOI deposits and frozen snapshots remain unchanged.
+- The platform data is treated as a destination/channel signal, not as hotel occupancy or hotel booking data.
+
+### Source
+https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20261002-1
+
 ## 29 September 2026 — Research Note 02 regional evidence amendment
 
 ### Added
