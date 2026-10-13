@@ -1,7 +1,7 @@
 {
   "name": "LSG Global Low-Season Evidence Map 2026",
   "publisher": "Low Season Growth",
-  "updated": "2026-10-06",
+  "updated": "2026-10-13",
   "canonicalUrl": "https://lowseasongrowth.com/pages/global-low-season-evidence-map-2026",
   "comparabilityNote": "Regions use different source institutions, periods and metrics. This resource is an evidence index, not a cross-region ranking.",
   "regions": [
@@ -139,6 +139,91 @@
           "limitations": "Annual 2024 regional shares are not regional 2026 growth rates, booking-window measurements or evidence of demand for a specific low-season period or property. Do not compare them with H1/Q1 2026 indicators as a time trend. Practical recommendations are LSG interpretation.",
           "article": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#regional-demand-2024",
           "archiveNote": "Separate live-page and working-repository supplement. The original Research Note 02 2026 CSV, DOI deposit and frozen snapshots are unchanged."
+        },
+        {
+          "researchNote": "lsg-research-note-02",
+          "contentType": "research-note-supplement",
+          "contentId": "eu-resident-travel-2025",
+          "topic": "EU residents travel patterns and tourism expenditure",
+          "source": "Eurostat — More than 90% of EU residents’ trips are inside the EU",
+          "sourcePeriod": "2025 (calendar year)",
+          "sourcePublicationDate": "2026-10-09",
+          "added": "2026-10-13",
+          "sourceUrl": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20261009-1",
+          "sourceDatasets": [
+            "tour_dem_tttot",
+            "tour_dem_extot"
+          ],
+          "headlineEvidence": [
+            {
+              "metric": "Trips by EU residents",
+              "value": 1.2,
+              "unit": "billion trips",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Year-on-year trip growth",
+              "value": 1.4,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Additional trips vs 2024",
+              "value": 17,
+              "unit": "million trips",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Domestic trips",
+              "value": 848,
+              "unit": "million trips",
+              "share": 70,
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Foreign trips within the EU",
+              "value": 264,
+              "unit": "million trips",
+              "share": 22,
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Trips staying within the EU",
+              "value": 92,
+              "unit": "percent",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Domestic trip expenditure",
+              "value": 266.2,
+              "unit": "EUR billion",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Foreign trip expenditure",
+              "value": 379.4,
+              "unit": "EUR billion",
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Domestic accommodation expenditure",
+              "value": 90.3,
+              "unit": "EUR billion",
+              "share": 34,
+              "classification": "official source figure"
+            },
+            {
+              "metric": "Foreign accommodation expenditure",
+              "value": 131.3,
+              "unit": "EUR billion",
+              "share": 35,
+              "classification": "official source figure"
+            }
+          ],
+          "interpretation": "Cross-border travel is a smaller share of trips than domestic travel but represents a larger pool of total tourism expenditure. LSG uses this as source-market context for weak-date planning, not as proof of hotel-level demand.",
+          "limitations": "Trip counts, tourism expenditure and accommodation nights are different indicators. These figures are not hotel-only occupancy data. Foreign-trip expenditure includes trips outside the EU, while the 264 million figure refers specifically to foreign trips within the EU.",
+          "article": "https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#eu-resident-travel-2025",
+          "archiveNote": "Live-page and working-repository supplement. Original Research Note 02 2026 CSV, DOI deposit and frozen snapshots remain unchanged."
         },
         {
           "contentType": "lsg-data-led-insight",
