@@ -1,5 +1,26 @@
 # Low Season Growth Research Changelog
 
+## 13 October 2026 — Eurostat EU resident travel and expenditure update
+
+### Added
+- A separate 2025 EU-resident travel and tourism-expenditure supplement to Research Note 02, based on Eurostat's 9 October 2026 release.
+- Official figures: 1.20 billion trips (+1.4%; +17 million), 848 million domestic trips (70%), 264 million foreign trips within the EU (22%), and 92% of trips remaining within the EU.
+- Expenditure context: €266.2bn on domestic trips vs €379.4bn on foreign trips; accommodation expenditure of €90.3bn (34%) domestic vs €131.3bn (35%) foreign.
+- A separate Global Evidence Map entry in human-readable and machine-readable form.
+
+### Scope and interpretation
+- Trips, tourism expenditure and accommodation nights remain separate metrics and are not combined into a single growth series.
+- Foreign-trip expenditure includes destinations outside the EU; the 264 million figure refers specifically to foreign trips within the EU.
+- The supplement is used as source-market context for weak-date planning, not as proof of hotel occupancy or hotel-level demand.
+
+### Preserved
+- Original Research Note 02 2026 accommodation-night figures and calculations.
+- Research Note 02 CSV, DOI deposit and frozen research snapshots.
+- Research Note 01 and the Peak-to-Trough Concentration Gap.
+
+### Source
+https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20261009-1
+
 ## 6 October 2026 — Eurostat platform short-stay demand update
 
 ### Added
