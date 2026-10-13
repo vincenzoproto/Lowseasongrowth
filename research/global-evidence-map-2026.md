@@ -62,6 +62,28 @@ Foreign visitors generated more accommodation nights than domestic visitors in *
 - Official source: https://ec.europa.eu/eurostat/web/interactive-publications/regions-2026#tourism
 - Publication record: https://ec.europa.eu/eurostat/web/products-interactive-publications/w/ks-01-26-040
 
+### EU residents' trips and tourism expenditure — Research Note 02 supplement
+
+**Source:** Eurostat, *More than 90% of EU residents’ trips are inside the EU*  
+**Source publication date:** 9 October 2026  
+**Reference period:** calendar year 2025  
+**Added to this map:** 13 October 2026
+
+- Trips by EU residents: **1.20 billion**, **+1.4%** vs 2024 (**+17 million**)
+- Domestic trips: **848 million (70%)**
+- Foreign trips within the EU: **264 million (22%)**
+- Trips staying within the EU: **92%**; destinations outside the EU: **8%**
+- Total expenditure: **€266.2bn domestic** vs **€379.4bn foreign trips**
+- Accommodation expenditure: **€90.3bn (34%) domestic** vs **€131.3bn (35%) foreign trips**
+
+**LSG interpretation:** cross-border travel represents a smaller share of trips than domestic travel but a larger pool of total tourism expenditure. For weak-date planning, this supports source-market analysis rather than assuming national or EU averages translate directly into hotel demand.
+
+**Scope warning:** these are trip and expenditure statistics for EU residents, not hotel-only accommodation-night or occupancy figures. Foreign-trip expenditure includes trips outside the EU; the **264 million** figure refers specifically to foreign trips within the EU.
+
+- Research Note supplement: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#eu-resident-travel-2025
+- Official release: https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20261009-1
+- Eurostat datasets: tour_dem_tttot, tour_dem_extot
+
 ### Platform-booked short-stay demand — LSG Data-Led Insight
 
 **Source:** Eurostat, short-stay accommodation offered via online platforms  
