@@ -6,6 +6,8 @@ Date: 23 September 2026
 
 **Updated 29 September 2026:** added regional context using annual 2024 data. The original 2026 figures and CSV are unchanged.
 
+**Updated 13 October 2026:** added 2025 EU-resident trip and tourism-expenditure context from Eurostat. The original 2026 accommodation-night figures, CSV and DOI are unchanged.
+
 Live article: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note
 DOI: https://doi.org/10.5281/zenodo.22938213
 
@@ -29,6 +31,10 @@ It is intended to make the analysis transparent and reproducible. It is descript
 - Eurostat, *Regions in Europe — 2026 edition*, Tourism. Published **23 September 2026**; regional accommodation reference year **2024**.  
   https://ec.europa.eu/eurostat/web/interactive-publications/regions-2026#tourism  
   Publication record: https://ec.europa.eu/eurostat/web/products-interactive-publications/w/ks-01-26-040
+
+- Eurostat, *More than 90% of EU residents’ trips are inside the EU*. Published **9 October 2026**; reference year **2025**.  
+  https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20261009-1  
+  Source datasets: tour_dem_tttot, tour_dem_extot
 
 ## Headline figures
 
@@ -88,6 +94,20 @@ So approximately **73.1%** of the additional nights recorded in Q1 came from int
 
 Live supplement: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#regional-demand-2024
 
+## EU residents' travel patterns and tourism expenditure — 2025
+
+**Official evidence.** Eurostat reported **1.20 billion personal and professional trips** by EU residents in 2025, up **1.4%** from 2024 (**+17 million trips**). Of the total, **848 million trips were domestic (70%)** and **264 million were foreign trips within the EU (22%)**. Overall, **92%** of trips stayed within the EU, while **8%** had destinations outside the EU.
+
+Domestic trips were more numerous, but total expenditure was higher on foreign trips: **€266.2 billion** for domestic trips and **€379.4 billion** for foreign trips. Accommodation represented **€90.3 billion (34%)** of domestic-trip expenditure and **€131.3 billion (35%)** of foreign-trip expenditure.
+
+**LSG interpretation.** Trip frequency, tourism expenditure and accommodation nights are different indicators. The data strengthens the case for source-market analysis and cross-border demand testing, but it does not show that international hotel demand is stronger in every destination or weak period.
+
+**Apply it to your hotel.** For a weak date, compare source markets already generating bookings with markets that have practical access to the destination, then test whether the offer and direct-booking route are relevant to those travellers.
+
+**Comparability limit.** These 2025 figures cover trips made by EU residents and associated expenditure. They are not hotel-only statistics, do not measure room occupancy and are not combined with the 2026 accommodation-night series. Foreign-trip expenditure includes trips outside the EU; the **264 million** figure refers specifically to foreign trips within the EU.
+
+Live supplement: https://lowseasongrowth.com/blogs/news/international-tourism-demand-europe-2026-lsg-research-note#eu-resident-travel-2025
+
 ## Interpretation
 
 The figures indicate that international demand contributed disproportionately to recent EU tourism growth, but exposure to foreign demand varies substantially by country.
@@ -100,7 +120,7 @@ This does **not** imply that every destination or hotel should target internatio
 
 See [data/research-note-02-international-demand.csv](./data/research-note-02-international-demand.csv).
 
-This CSV remains the original 2026 dataset; the separate 2024 regional supplement is not included in it.
+This CSV remains the original 2026 dataset; the separate 2024 regional supplement and 2025 resident-travel/expenditure supplement are not included in it.
 
 ## Citation
 
@@ -109,6 +129,8 @@ Suggested citation:
 > Low Season Growth (2026), “International Tourism Is Growing Faster Than Domestic Demand in Europe: LSG Research Note 02”, DOI: 10.5281/zenodo.22938213, based on Eurostat tourist-accommodation statistics.
 
 The regional supplement was added to the live page and this working repository on **29 September 2026**. This update does not revise the original DOI deposit or frozen research snapshots. For the supplement, cite the updated live page and the Eurostat regional source directly.
+
+The EU-resident travel and expenditure supplement was added on **13 October 2026**. It also leaves the original DOI deposit, 2026 CSV and frozen snapshots unchanged. For this supplement, cite the updated live page and the Eurostat 9 October 2026 release.
 
 Research and media contact:  
 https://lowseasongrowth.com/pages/research-media
