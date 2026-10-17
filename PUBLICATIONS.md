@@ -9,6 +9,15 @@ Official presence registry: https://raw.githubusercontent.com/vincenzoproto/Lows
 
 ## External editorial publications
 
+### 14 October 2026 — Hotel Speak
+
+**Title:** A Booking Gap Is Not a Demand Diagnosis: Four Checks Before You Discount  
+**Platform:** Hotel Speak  
+**URL:** https://www.hotelspeak.com/2026/10/a-booking-gap-is-not-a-demand-diagnosis-four-checks-before-you-discount/  
+**Type:** Contributor article / third-party editorial publication  
+**Author attribution:** Vincenzo Proto, founder of Low Season Growth  
+**Authority treatment:** Author-submitted contributor article published by a third-party hospitality outlet. Hotel Speak links to Low Season Growth from the author profile. Publication should not be described as an endorsement or as unsolicited independent reporting about Low Season Growth.
+
 ### 3 October 2026 — Hotel Speak
 
 **Title:** Before the Discount: What a Weak Hotel Date Is Really Telling You  
